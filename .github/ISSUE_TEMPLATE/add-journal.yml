@@ -1,0 +1,106 @@
+name: Add a journal
+description: Suggest journal venue metadata.
+title: "[Journal]: "
+labels:
+  - data
+  - journal
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for journal metadata. Journals do not need deadline fields unless there is a dated special issue call.
+  - type: input
+    id: journal_id
+    attributes:
+      label: Journal ID
+      description: Suggested lowercase ID.
+      placeholder: emse
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Full journal name
+      placeholder: Empirical Software Engineering
+    validations:
+      required: true
+  - type: input
+    id: short_name
+    attributes:
+      label: Short name
+      placeholder: EMSE
+    validations:
+      required: true
+  - type: input
+    id: publisher
+    attributes:
+      label: Publisher
+      placeholder: Springer
+  - type: input
+    id: website
+    attributes:
+      label: Official website
+      placeholder: https://link.springer.com/journal/10664
+    validations:
+      required: true
+  - type: checkboxes
+    id: categories
+    attributes:
+      label: Categories
+      description: Select all that apply.
+      options:
+        - label: AI4SE
+        - label: SE4AI
+        - label: MDE
+        - label: Testing
+        - label: Maintenance
+        - label: Requirements
+        - label: Architecture
+        - label: DigitalTwins
+        - label: EmpiricalSE
+        - label: SoftwareAnalytics
+        - label: ProgramAnalysis
+        - label: Security
+        - label: HumanCenteredSE
+  - type: textarea
+    id: ranking
+    attributes:
+      label: Ranking or metrics
+      description: Optional. Include the metric year for impact factor.
+      placeholder: |
+        CORE:
+        CCF: B
+        JCR: Q1
+        Impact factor: 4.1
+        Metrics year: 2025
+  - type: input
+    id: source
+    attributes:
+      label: Source URL for metadata
+      placeholder: https://example.com/journal
+    validations:
+      required: true
+  - type: input
+    id: checked_date
+    attributes:
+      label: Date checked
+      description: Use YYYY-MM-DD.
+      placeholder: 2026-05-02
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any extra context for maintainers.
+  - type: checkboxes
+    id: quality
+    attributes:
+      label: Data quality checklist
+      options:
+        - label: I used an official or clearly authoritative source.
+          required: true
+        - label: Impact factor data includes a metrics year if provided.
+          required: true
+        - label: I did not guess rankings or metrics.
+          required: true

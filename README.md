@@ -56,6 +56,10 @@ npm run build:data
 
 ## How to Add a New Deadline
 
+If you do not want to edit YAML directly, open a structured issue form:
+
+https://github.com/Aries-Fu/se-publication-deadlines/issues/new/choose
+
 Add a new entry to one of the files under `data/deadlines/`.
 
 Journal metadata belongs under `data/venues/`. Journals do not need deadline records unless they host a dated special issue call.
@@ -233,6 +237,16 @@ Favorites are stored in the user's browser with `localStorage`. They are private
 5. Open a pull request.
 6. GitHub Actions will validate the data format and build the site.
 7. Maintainers review and merge.
+
+## Issue Forms
+
+Use GitHub Issue Forms if you want to suggest data without editing YAML:
+
+- Add a deadline: conference and special issue calls
+- Add a journal: journal metadata without deadline rows
+- Correct existing data: wrong dates, venue metadata, rankings, metrics, or source links
+
+Maintainers convert accepted issue submissions into YAML changes.
 
 ## Data Quality Rules
 

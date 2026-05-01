@@ -1,51 +1,135 @@
 name: Add a deadline
-description: Suggest a new software engineering publication deadline.
+description: Suggest a conference or special issue deadline.
 title: "[Deadline]: "
 labels:
   - data
   - deadline
 body:
-  - type: input
-    id: venue
+  - type: markdown
     attributes:
-      label: Venue
-      description: Full venue name and short name if known.
+      value: |
+        Thanks for helping improve the tracker.
+
+        Use this form for conference deadlines and special issue calls. Use the journal form for journal metadata without deadlines.
+  - type: input
+    id: venue_id
+    attributes:
+      label: Venue ID
+      description: Existing venue ID if known. If not known, suggest a short lowercase ID.
+      placeholder: icse
+    validations:
+      required: true
+  - type: input
+    id: venue_name
+    attributes:
+      label: Venue name
+      description: Full venue name and short name.
       placeholder: International Conference on Software Engineering (ICSE)
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Call title
+      description: Name of the track, call, or special issue.
+      placeholder: ICSE 2027 Research Track
     validations:
       required: true
   - type: dropdown
     id: type
     attributes:
-      label: Deadline type
+      label: Record type
       options:
         - conference
         - special_issue
     validations:
       required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - open
+        - tentative
+        - closed
+    validations:
+      required: true
   - type: textarea
     id: dates
     attributes:
-      label: Dates
-      description: Include labels, dates, and timezone.
+      label: Deadlines
+      description: Include label, date in YYYY-MM-DD format, and timezone.
       placeholder: |
         abstract: 2026-06-23, Anywhere on Earth
         full_paper: 2026-06-30, Anywhere on Earth
+        notification: 2026-10-20, Anywhere on Earth
     validations:
       required: true
+  - type: checkboxes
+    id: categories
+    attributes:
+      label: Categories
+      description: Select all that apply.
+      options:
+        - label: AI4SE
+        - label: SE4AI
+        - label: MDE
+        - label: Testing
+        - label: Maintenance
+        - label: Requirements
+        - label: Architecture
+        - label: DigitalTwins
+        - label: EmpiricalSE
+        - label: SoftwareAnalytics
+        - label: ProgramAnalysis
+        - label: Security
+        - label: HumanCenteredSE
   - type: input
     id: source
     attributes:
       label: Official source URL
+      description: Prefer the official call-for-papers page.
       placeholder: https://example.com/cfp
     validations:
       required: true
-  - type: textarea
-    id: categories
+  - type: input
+    id: submission
     attributes:
-      label: Suggested categories
-      placeholder: AI4SE, Testing, Maintenance
+      label: Submission URL
+      description: Optional submission system URL.
+      placeholder: https://example.com/submission
+  - type: input
+    id: checked_date
+    attributes:
+      label: Date checked
+      description: Use YYYY-MM-DD.
+      placeholder: 2026-05-02
+    validations:
+      required: true
+  - type: textarea
+    id: ranking
+    attributes:
+      label: Ranking or metrics
+      description: Optional. Do not guess.
+      placeholder: |
+        CORE: A*
+        CCF: A
+        JCR: Q1
+        Impact factor: 4.1
+        Metrics year: 2025
   - type: textarea
     id: notes
     attributes:
       label: Notes
       description: Any extra context for maintainers.
+  - type: checkboxes
+    id: quality
+    attributes:
+      label: Data quality checklist
+      options:
+        - label: I used an official or clearly authoritative source.
+          required: true
+        - label: Dates use YYYY-MM-DD.
+          required: true
+        - label: I did not guess rankings, impact factors, or deadlines.
+          required: true

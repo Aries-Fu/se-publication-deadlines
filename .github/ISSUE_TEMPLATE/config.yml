@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contribution guide
+    url: https://github.com/Aries-Fu/se-publication-deadlines/blob/main/CONTRIBUTING.md
+    about: Read the contribution workflow and data rules.
+  - name: Open a pull request instead
+    url: https://github.com/Aries-Fu/se-publication-deadlines/compare
+    about: Use this if you already edited the YAML data files.

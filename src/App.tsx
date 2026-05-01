@@ -25,7 +25,7 @@ import { cn } from "./lib/utils";
 
 const data = generatedDeadlines as GeneratedData;
 const repoUrl = "https://github.com/Aries-Fu/se-publication-deadlines";
-const addDeadlineUrl = `${repoUrl}/issues/new?template=add-deadline.yml`;
+const suggestDataUrl = `${repoUrl}/issues/new/choose`;
 const favoritesStorageKey = "se-publication-deadlines:favorites";
 
 const initialFilters: FiltersState = {
@@ -333,13 +333,13 @@ export default function App(): JSX.Element {
                 GitHub
               </a>
               <a
-                href={addDeadlineUrl}
+                href={suggestDataUrl}
                 target="_blank"
                 rel="noreferrer"
                 className={cn(buttonVariants())}
               >
                 <Plus className="h-4 w-4" />
-                Add a deadline
+                Suggest data
               </a>
             </div>
           </div>

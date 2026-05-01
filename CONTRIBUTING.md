@@ -9,6 +9,14 @@ Thank you for helping maintain Software Engineering Publication Deadlines.
 3. Run validation if you can.
 4. Open a pull request.
 
+If you do not want to edit YAML, use one of the structured issue forms:
+
+- Add a deadline
+- Add a journal
+- Correct existing data
+
+Issue form submissions still need maintainer review before they become website data.
+
 ## Add a Deadline
 
 Add conference and special issue calls under `data/deadlines/`.
