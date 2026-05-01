@@ -73,9 +73,9 @@ export function formatDaysLeft(daysLeft: number): string {
 }
 
 export function labelDeadline(label: DeadlineLabel | string): string {
-  return deadlineLabelText[label as DeadlineLabel] ?? label.replaceAll("_", " ");
+  return deadlineLabelText[label as DeadlineLabel] ?? label.split("_").join(" ");
 }
 
 export function labelRecordType(type: DeadlineRecordType | string): string {
-  return recordTypeText[type as DeadlineRecordType] ?? type.replaceAll("_", " ");
+  return recordTypeText[type as DeadlineRecordType] ?? type.split("_").join(" ");
 }
