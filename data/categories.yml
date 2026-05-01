@@ -1,0 +1,29 @@
+- id: SE
+  name: Software Engineering
+  children:
+    - id: AI4SE
+      name: AI for Software Engineering
+    - id: SE4AI
+      name: Software Engineering for AI
+    - id: MDE
+      name: Model-Driven Engineering
+    - id: Testing
+      name: Software Testing
+    - id: Maintenance
+      name: Software Maintenance and Evolution
+    - id: Requirements
+      name: Requirements Engineering
+    - id: Architecture
+      name: Software Architecture
+    - id: DigitalTwins
+      name: Digital Twins
+    - id: EmpiricalSE
+      name: Empirical Software Engineering
+    - id: SoftwareAnalytics
+      name: Software Analytics
+    - id: ProgramAnalysis
+      name: Program Analysis
+    - id: Security
+      name: Software Security
+    - id: HumanCenteredSE
+      name: Human-Centered Software Engineering

@@ -1,0 +1,51 @@
+- id: emse-agentic-se-2026
+  venueId: emse
+  title: "Special Issue on Agentic Software Engineering: The Rise of AI Teammates"
+  type: special_issue
+  status: open
+  deadlines:
+    - label: full_paper
+      description: Final submission deadline
+      date: 2026-09-28
+      timezone: Anywhere on Earth
+  categories:
+    primary: SE
+    secondary:
+      - AI4SE
+      - HumanCenteredSE
+      - EmpiricalSE
+  links:
+    callForPapers: https://emsejournal.github.io/special_issues/2026_SI_Agentic_SE.html
+    submission: http://www.editorialmanager.com/emse/
+  source:
+    url: https://emsejournal.github.io/special_issues/2026_SI_Agentic_SE.html
+    checkedDate: 2026-05-02
+  notes: >
+    Authors are encouraged to submit before the final deadline because review may begin on receipt.
+
+- id: emse-ease-2026-invite
+  venueId: emse
+  title: "By Invite Only: Evaluation and Assessment in Software Engineering 2026"
+  type: special_issue
+  status: open
+  deadlines:
+    - label: submission_open
+      description: Submissions open
+      date: 2026-06-12
+      timezone: Anywhere on Earth
+    - label: full_paper
+      description: Submission deadline
+      date: 2026-10-31
+      timezone: Anywhere on Earth
+  categories:
+    primary: SE
+    secondary:
+      - EmpiricalSE
+      - HumanCenteredSE
+  links:
+    callForPapers: https://link.springer.com/collections/jefiadfibb
+  source:
+    url: https://link.springer.com/collections/jefiadfibb
+    checkedDate: 2026-05-02
+  notes: >
+    Invite-only special issue for selected EASE 2026 contributions.

@@ -1,0 +1,154 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.org/se-publication-deadlines/deadline.schema.json",
+  "title": "Software engineering publication deadline records",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "venueId",
+      "title",
+      "type",
+      "status",
+      "deadlines",
+      "categories",
+      "source"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]*$"
+      },
+      "venueId": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]*$"
+      },
+      "title": {
+        "type": "string",
+        "minLength": 3
+      },
+      "type": {
+        "type": "string",
+        "enum": ["conference", "journal", "magazine", "special_issue"]
+      },
+      "status": {
+        "type": "string",
+        "enum": ["open", "closed", "tentative"]
+      },
+      "deadlines": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["label", "date", "timezone"],
+          "properties": {
+            "label": {
+              "type": "string",
+              "enum": [
+                "abstract",
+                "full_paper",
+                "submission",
+                "submission_open",
+                "author_response",
+                "notification",
+                "revision",
+                "camera_ready",
+                "final_decision",
+                "registration",
+                "proposal"
+              ]
+            },
+            "description": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string",
+              "format": "date"
+            },
+            "timezone": {
+              "type": "string",
+              "minLength": 2
+            }
+          }
+        }
+      },
+      "categories": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["primary", "secondary"],
+        "properties": {
+          "primary": {
+            "type": "string"
+          },
+          "secondary": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          }
+        }
+      },
+      "links": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string",
+          "format": "uri"
+        },
+        "properties": {
+          "callForPapers": {
+            "type": "string",
+            "format": "uri"
+          },
+          "submission": {
+            "type": "string",
+            "format": "uri"
+          },
+          "website": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "rank": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "core": {
+            "type": "string",
+            "enum": ["A*", "A", "B", "C"]
+          },
+          "ccf": {
+            "type": "string",
+            "enum": ["A", "B", "C"]
+          },
+          "jcrQuartile": {
+            "type": "string",
+            "enum": ["Q1", "Q2", "Q3", "Q4"]
+          }
+        }
+      },
+      "source": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["url", "checkedDate"],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "checkedDate": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      },
+      "notes": {
+        "type": "string"
+      }
+    }
+  }
+}

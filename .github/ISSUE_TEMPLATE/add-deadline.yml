@@ -1,0 +1,53 @@
+name: Add a deadline
+description: Suggest a new software engineering publication deadline.
+title: "[Deadline]: "
+labels:
+  - data
+  - deadline
+body:
+  - type: input
+    id: venue
+    attributes:
+      label: Venue
+      description: Full venue name and short name if known.
+      placeholder: International Conference on Software Engineering (ICSE)
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Deadline type
+      options:
+        - conference
+        - journal
+        - magazine
+        - special_issue
+    validations:
+      required: true
+  - type: textarea
+    id: dates
+    attributes:
+      label: Dates
+      description: Include labels, dates, and timezone.
+      placeholder: |
+        abstract: 2026-06-23, Anywhere on Earth
+        full_paper: 2026-06-30, Anywhere on Earth
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source URL
+      placeholder: https://example.com/cfp
+    validations:
+      required: true
+  - type: textarea
+    id: categories
+    attributes:
+      label: Suggested categories
+      placeholder: AI4SE, Testing, Maintenance
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any extra context for maintainers.

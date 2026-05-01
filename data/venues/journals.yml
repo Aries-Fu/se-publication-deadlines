@@ -1,0 +1,84 @@
+- id: emse
+  name: Empirical Software Engineering
+  shortName: EMSE
+  type: journal
+  publisher: Springer
+  website: https://link.springer.com/journal/10664
+  categories:
+    primary: SE
+    secondary:
+      - EmpiricalSE
+      - SoftwareAnalytics
+      - AI4SE
+  ranking:
+    ccf: B
+  metricsYear: 2025
+  notes: >
+    A major journal for empirical software engineering research.
+  source:
+    url: https://link.springer.com/journal/10664
+    checkedDate: 2026-05-02
+
+- id: jss
+  name: Journal of Systems and Software
+  shortName: JSS
+  type: journal
+  publisher: Elsevier
+  website: https://www.sciencedirect.com/journal/journal-of-systems-and-software
+  categories:
+    primary: SE
+    secondary:
+      - Architecture
+      - Maintenance
+      - MDE
+      - Testing
+  ranking:
+    ccf: B
+  metrics:
+    impactFactor: 4.1
+  metricsYear: 2025
+  notes: >
+    A broad software systems and software engineering journal.
+  source:
+    url: https://www.sciencedirect.com/journal/journal-of-systems-and-software
+    checkedDate: 2026-05-02
+
+- id: tse
+  name: IEEE Transactions on Software Engineering
+  shortName: TSE
+  type: journal
+  publisher: IEEE
+  website: https://www.computer.org/csdl/journal/ts
+  categories:
+    primary: SE
+    secondary:
+      - Requirements
+      - Testing
+      - Maintenance
+      - Architecture
+      - EmpiricalSE
+  ranking:
+    ccf: A
+  notes: >
+    A flagship journal covering the software engineering discipline.
+  source:
+    url: https://www.computer.org/csdl/journal/ts
+    checkedDate: 2026-05-02
+
+- id: ieee-software
+  name: IEEE Software
+  shortName: IEEE Software
+  type: magazine
+  publisher: IEEE
+  website: https://www.computer.org/csdl/magazine/so
+  categories:
+    primary: SE
+    secondary:
+      - Architecture
+      - Maintenance
+      - HumanCenteredSE
+  notes: >
+    A practitioner-facing magazine for software engineering methods, experience, and practice.
+  source:
+    url: https://www.computer.org/csdl/magazine/so
+    checkedDate: 2026-05-02

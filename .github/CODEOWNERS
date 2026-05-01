@@ -1,0 +1,4 @@
+# Require maintainer review for data changes.
+data/ @Aries-Fu
+schemas/ @Aries-Fu
+scripts/ @Aries-Fu

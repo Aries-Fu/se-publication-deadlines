@@ -1,0 +1,1864 @@
+{
+  "generatedAt": "2026-05-01T17:05:31Z",
+  "categories": [
+    {
+      "id": "SE",
+      "name": "Software Engineering",
+      "children": [
+        {
+          "id": "AI4SE",
+          "name": "AI for Software Engineering"
+        },
+        {
+          "id": "SE4AI",
+          "name": "Software Engineering for AI"
+        },
+        {
+          "id": "MDE",
+          "name": "Model-Driven Engineering"
+        },
+        {
+          "id": "Testing",
+          "name": "Software Testing"
+        },
+        {
+          "id": "Maintenance",
+          "name": "Software Maintenance and Evolution"
+        },
+        {
+          "id": "Requirements",
+          "name": "Requirements Engineering"
+        },
+        {
+          "id": "Architecture",
+          "name": "Software Architecture"
+        },
+        {
+          "id": "DigitalTwins",
+          "name": "Digital Twins"
+        },
+        {
+          "id": "EmpiricalSE",
+          "name": "Empirical Software Engineering"
+        },
+        {
+          "id": "SoftwareAnalytics",
+          "name": "Software Analytics"
+        },
+        {
+          "id": "ProgramAnalysis",
+          "name": "Program Analysis"
+        },
+        {
+          "id": "Security",
+          "name": "Software Security"
+        },
+        {
+          "id": "HumanCenteredSE",
+          "name": "Human-Centered Software Engineering"
+        }
+      ]
+    }
+  ],
+  "venues": [
+    {
+      "id": "icse",
+      "name": "International Conference on Software Engineering",
+      "shortName": "ICSE",
+      "type": "conference",
+      "publisher": "ACM/IEEE",
+      "website": "https://conf.researchr.org/series/icse",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Requirements",
+          "Testing",
+          "Maintenance",
+          "Architecture",
+          "EmpiricalSE",
+          "AI4SE"
+        ]
+      },
+      "ranking": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "notes": "A premier general software engineering conference.\n",
+      "source": {
+        "url": "https://conf.researchr.org/series/icse",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
+      "id": "fse",
+      "name": "ACM International Conference on the Foundations of Software Engineering",
+      "shortName": "FSE",
+      "type": "conference",
+      "publisher": "ACM",
+      "website": "https://conf.researchr.org/series/fse",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Testing",
+          "Maintenance",
+          "Requirements",
+          "Architecture",
+          "AI4SE"
+        ]
+      },
+      "ranking": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "notes": "A premier software engineering conference formerly known as ESEC/FSE.\n",
+      "source": {
+        "url": "https://conf.researchr.org/series/fse",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
+      "id": "ase",
+      "name": "IEEE/ACM International Conference on Automated Software Engineering",
+      "shortName": "ASE",
+      "type": "conference",
+      "publisher": "ACM/IEEE",
+      "website": "https://conf.researchr.org/series/ase",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Testing",
+          "ProgramAnalysis",
+          "Maintenance",
+          "Requirements",
+          "MDE"
+        ]
+      },
+      "ranking": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "notes": "A premier venue for automated techniques, tools, and foundations for software engineering.\n",
+      "source": {
+        "url": "https://conf.researchr.org/series/ase",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
+      "id": "issta",
+      "name": "ACM SIGSOFT International Symposium on Software Testing and Analysis",
+      "shortName": "ISSTA",
+      "type": "conference",
+      "publisher": "ACM",
+      "website": "https://conf.researchr.org/series/issta",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Testing",
+          "ProgramAnalysis",
+          "Security"
+        ]
+      },
+      "ranking": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "notes": "A leading symposium for software testing and program analysis.\n",
+      "source": {
+        "url": "https://conf.researchr.org/series/issta",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
+      "id": "models",
+      "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+      "shortName": "MODELS",
+      "type": "conference",
+      "publisher": "ACM/IEEE",
+      "website": "https://conf.researchr.org/series/models",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins"
+        ]
+      },
+      "ranking": {
+        "core": "A"
+      },
+      "notes": "A primary conference for model-driven engineering research and practice.\n",
+      "source": {
+        "url": "https://conf.researchr.org/series/models",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
+      "id": "emse",
+      "name": "Empirical Software Engineering",
+      "shortName": "EMSE",
+      "type": "journal",
+      "publisher": "Springer",
+      "website": "https://link.springer.com/journal/10664",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "EmpiricalSE",
+          "SoftwareAnalytics",
+          "AI4SE"
+        ]
+      },
+      "ranking": {
+        "ccf": "B"
+      },
+      "metricsYear": 2025,
+      "notes": "A major journal for empirical software engineering research.\n",
+      "source": {
+        "url": "https://link.springer.com/journal/10664",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
+      "id": "jss",
+      "name": "Journal of Systems and Software",
+      "shortName": "JSS",
+      "type": "journal",
+      "publisher": "Elsevier",
+      "website": "https://www.sciencedirect.com/journal/journal-of-systems-and-software",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Architecture",
+          "Maintenance",
+          "MDE",
+          "Testing"
+        ]
+      },
+      "ranking": {
+        "ccf": "B"
+      },
+      "metrics": {
+        "impactFactor": 4.1
+      },
+      "metricsYear": 2025,
+      "notes": "A broad software systems and software engineering journal.\n",
+      "source": {
+        "url": "https://www.sciencedirect.com/journal/journal-of-systems-and-software",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
+      "id": "tse",
+      "name": "IEEE Transactions on Software Engineering",
+      "shortName": "TSE",
+      "type": "journal",
+      "publisher": "IEEE",
+      "website": "https://www.computer.org/csdl/journal/ts",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Requirements",
+          "Testing",
+          "Maintenance",
+          "Architecture",
+          "EmpiricalSE"
+        ]
+      },
+      "ranking": {
+        "ccf": "A"
+      },
+      "notes": "A flagship journal covering the software engineering discipline.\n",
+      "source": {
+        "url": "https://www.computer.org/csdl/journal/ts",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
+      "id": "ieee-software",
+      "name": "IEEE Software",
+      "shortName": "IEEE Software",
+      "type": "magazine",
+      "publisher": "IEEE",
+      "website": "https://www.computer.org/csdl/magazine/so",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Architecture",
+          "Maintenance",
+          "HumanCenteredSE"
+        ]
+      },
+      "notes": "A practitioner-facing magazine for software engineering methods, experience, and practice.\n",
+      "source": {
+        "url": "https://www.computer.org/csdl/magazine/so",
+        "checkedDate": "2026-05-02"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "ase-2026-research-track",
+      "venueId": "ase",
+      "title": "ASE 2026 Research Papers",
+      "type": "conference",
+      "status": "open",
+      "deadlines": [
+        {
+          "label": "full_paper",
+          "description": "Paper submission",
+          "date": "2026-03-26",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Initial notification",
+          "date": "2026-06-18",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "revision",
+          "description": "Revision submission for major revisions",
+          "date": "2026-07-16",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Notification for major revisions",
+          "date": "2026-07-29",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "camera_ready",
+          "description": "Camera-ready papers",
+          "date": "2026-08-03",
+          "timezone": "Anywhere on Earth"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Testing",
+          "ProgramAnalysis",
+          "Maintenance",
+          "Requirements",
+          "MDE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/ase-2026/ase-2026-research-track",
+        "submission": "https://ase26.hotcrp.com/"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/ase-2026/ase-2026-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research track dates are listed as AoE on the official ASE 2026 Research Papers page.\n"
+    },
+    {
+      "id": "fse-2026-research-papers",
+      "venueId": "fse",
+      "title": "FSE 2026 Research Papers",
+      "type": "conference",
+      "status": "closed",
+      "deadlines": [
+        {
+          "label": "abstract",
+          "description": "Paper registration",
+          "date": "2025-09-04",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "full_paper",
+          "description": "Full paper submission",
+          "date": "2025-09-11",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Initial notification",
+          "date": "2025-12-22",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "revision",
+          "description": "Revised manuscript submission",
+          "date": "2026-02-24",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "camera_ready",
+          "description": "Camera-ready",
+          "date": "2026-04-23",
+          "timezone": "Anywhere on Earth"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Testing",
+          "Maintenance",
+          "Architecture",
+          "Requirements"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/fse-2026/fse-2026-research-papers",
+        "submission": "https://fse2026.hotcrp.com/"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/fse-2026/fse-2026-research-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official FSE 2026 Research Papers page.\n"
+    },
+    {
+      "id": "icse-2027-research-track",
+      "venueId": "icse",
+      "title": "ICSE 2027 Research Track",
+      "type": "conference",
+      "status": "open",
+      "deadlines": [
+        {
+          "label": "abstract",
+          "description": "Mandatory abstract",
+          "date": "2026-06-23",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "full_paper",
+          "description": "Full paper submission",
+          "date": "2026-06-30",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "author_response",
+          "description": "Author response period begins",
+          "date": "2026-09-23",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Notification",
+          "date": "2026-10-20",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "revision",
+          "description": "Revision due",
+          "date": "2026-11-17",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "camera_ready",
+          "description": "Camera-ready for directly accepted papers",
+          "date": "2026-11-24",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "final_decision",
+          "description": "Final decision for major revision papers",
+          "date": "2026-12-18",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "camera_ready",
+          "description": "Camera-ready for accepted major revision papers",
+          "date": "2027-01-25",
+          "timezone": "Anywhere on Earth"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "EmpiricalSE",
+          "Testing",
+          "Maintenance",
+          "Requirements",
+          "Architecture"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ICSE 2027 uses one research-track submission cycle according to the official page.\n"
+    },
+    {
+      "id": "emse-agentic-se-2026",
+      "venueId": "emse",
+      "title": "Special Issue on Agentic Software Engineering: The Rise of AI Teammates",
+      "type": "special_issue",
+      "status": "open",
+      "deadlines": [
+        {
+          "label": "full_paper",
+          "description": "Final submission deadline",
+          "date": "2026-09-28",
+          "timezone": "Anywhere on Earth"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "HumanCenteredSE",
+          "EmpiricalSE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://emsejournal.github.io/special_issues/2026_SI_Agentic_SE.html",
+        "submission": "http://www.editorialmanager.com/emse/"
+      },
+      "source": {
+        "url": "https://emsejournal.github.io/special_issues/2026_SI_Agentic_SE.html",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Authors are encouraged to submit before the final deadline because review may begin on receipt.\n"
+    },
+    {
+      "id": "emse-ease-2026-invite",
+      "venueId": "emse",
+      "title": "By Invite Only: Evaluation and Assessment in Software Engineering 2026",
+      "type": "special_issue",
+      "status": "open",
+      "deadlines": [
+        {
+          "label": "submission_open",
+          "description": "Submissions open",
+          "date": "2026-06-12",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "full_paper",
+          "description": "Submission deadline",
+          "date": "2026-10-31",
+          "timezone": "Anywhere on Earth"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "EmpiricalSE",
+          "HumanCenteredSE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://link.springer.com/collections/jefiadfibb"
+      },
+      "source": {
+        "url": "https://link.springer.com/collections/jefiadfibb",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Invite-only special issue for selected EASE 2026 contributions.\n"
+    }
+  ],
+  "deadlineRows": [
+    {
+      "id": "fse-2026-research-papers:0:abstract",
+      "recordId": "fse-2026-research-papers",
+      "venueId": "fse",
+      "venue": {
+        "id": "fse",
+        "name": "ACM International Conference on the Foundations of Software Engineering",
+        "shortName": "FSE",
+        "type": "conference",
+        "publisher": "ACM",
+        "website": "https://conf.researchr.org/series/fse",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Testing",
+            "Maintenance",
+            "Requirements",
+            "Architecture",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier software engineering conference formerly known as ESEC/FSE.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/fse",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "FSE 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Testing",
+          "Maintenance",
+          "Architecture",
+          "Requirements"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/fse-2026/fse-2026-research-papers",
+        "submission": "https://fse2026.hotcrp.com/"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/fse-2026/fse-2026-research-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official FSE 2026 Research Papers page.\n",
+      "deadlineLabel": "abstract",
+      "deadlineDescription": "Paper registration",
+      "deadlineDate": "2025-09-04",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "fse-2026-research-papers:1:full_paper",
+      "recordId": "fse-2026-research-papers",
+      "venueId": "fse",
+      "venue": {
+        "id": "fse",
+        "name": "ACM International Conference on the Foundations of Software Engineering",
+        "shortName": "FSE",
+        "type": "conference",
+        "publisher": "ACM",
+        "website": "https://conf.researchr.org/series/fse",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Testing",
+            "Maintenance",
+            "Requirements",
+            "Architecture",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier software engineering conference formerly known as ESEC/FSE.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/fse",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "FSE 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Testing",
+          "Maintenance",
+          "Architecture",
+          "Requirements"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/fse-2026/fse-2026-research-papers",
+        "submission": "https://fse2026.hotcrp.com/"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/fse-2026/fse-2026-research-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official FSE 2026 Research Papers page.\n",
+      "deadlineLabel": "full_paper",
+      "deadlineDescription": "Full paper submission",
+      "deadlineDate": "2025-09-11",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "fse-2026-research-papers:2:notification",
+      "recordId": "fse-2026-research-papers",
+      "venueId": "fse",
+      "venue": {
+        "id": "fse",
+        "name": "ACM International Conference on the Foundations of Software Engineering",
+        "shortName": "FSE",
+        "type": "conference",
+        "publisher": "ACM",
+        "website": "https://conf.researchr.org/series/fse",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Testing",
+            "Maintenance",
+            "Requirements",
+            "Architecture",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier software engineering conference formerly known as ESEC/FSE.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/fse",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "FSE 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Testing",
+          "Maintenance",
+          "Architecture",
+          "Requirements"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/fse-2026/fse-2026-research-papers",
+        "submission": "https://fse2026.hotcrp.com/"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/fse-2026/fse-2026-research-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official FSE 2026 Research Papers page.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Initial notification",
+      "deadlineDate": "2025-12-22",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "fse-2026-research-papers:3:revision",
+      "recordId": "fse-2026-research-papers",
+      "venueId": "fse",
+      "venue": {
+        "id": "fse",
+        "name": "ACM International Conference on the Foundations of Software Engineering",
+        "shortName": "FSE",
+        "type": "conference",
+        "publisher": "ACM",
+        "website": "https://conf.researchr.org/series/fse",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Testing",
+            "Maintenance",
+            "Requirements",
+            "Architecture",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier software engineering conference formerly known as ESEC/FSE.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/fse",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "FSE 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Testing",
+          "Maintenance",
+          "Architecture",
+          "Requirements"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/fse-2026/fse-2026-research-papers",
+        "submission": "https://fse2026.hotcrp.com/"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/fse-2026/fse-2026-research-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official FSE 2026 Research Papers page.\n",
+      "deadlineLabel": "revision",
+      "deadlineDescription": "Revised manuscript submission",
+      "deadlineDate": "2026-02-24",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "ase-2026-research-track:0:full_paper",
+      "recordId": "ase-2026-research-track",
+      "venueId": "ase",
+      "venue": {
+        "id": "ase",
+        "name": "IEEE/ACM International Conference on Automated Software Engineering",
+        "shortName": "ASE",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/ase",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "AI4SE",
+            "Testing",
+            "ProgramAnalysis",
+            "Maintenance",
+            "Requirements",
+            "MDE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier venue for automated techniques, tools, and foundations for software engineering.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/ase",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ASE 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Testing",
+          "ProgramAnalysis",
+          "Maintenance",
+          "Requirements",
+          "MDE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/ase-2026/ase-2026-research-track",
+        "submission": "https://ase26.hotcrp.com/"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/ase-2026/ase-2026-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research track dates are listed as AoE on the official ASE 2026 Research Papers page.\n",
+      "deadlineLabel": "full_paper",
+      "deadlineDescription": "Paper submission",
+      "deadlineDate": "2026-03-26",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "fse-2026-research-papers:4:camera_ready",
+      "recordId": "fse-2026-research-papers",
+      "venueId": "fse",
+      "venue": {
+        "id": "fse",
+        "name": "ACM International Conference on the Foundations of Software Engineering",
+        "shortName": "FSE",
+        "type": "conference",
+        "publisher": "ACM",
+        "website": "https://conf.researchr.org/series/fse",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Testing",
+            "Maintenance",
+            "Requirements",
+            "Architecture",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier software engineering conference formerly known as ESEC/FSE.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/fse",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "FSE 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Testing",
+          "Maintenance",
+          "Architecture",
+          "Requirements"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/fse-2026/fse-2026-research-papers",
+        "submission": "https://fse2026.hotcrp.com/"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/fse-2026/fse-2026-research-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official FSE 2026 Research Papers page.\n",
+      "deadlineLabel": "camera_ready",
+      "deadlineDescription": "Camera-ready",
+      "deadlineDate": "2026-04-23",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "emse-ease-2026-invite:0:submission_open",
+      "recordId": "emse-ease-2026-invite",
+      "venueId": "emse",
+      "venue": {
+        "id": "emse",
+        "name": "Empirical Software Engineering",
+        "shortName": "EMSE",
+        "type": "journal",
+        "publisher": "Springer",
+        "website": "https://link.springer.com/journal/10664",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "EmpiricalSE",
+            "SoftwareAnalytics",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "ccf": "B"
+        },
+        "metricsYear": 2025,
+        "notes": "A major journal for empirical software engineering research.\n",
+        "source": {
+          "url": "https://link.springer.com/journal/10664",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "By Invite Only: Evaluation and Assessment in Software Engineering 2026",
+      "recordType": "special_issue",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "EmpiricalSE",
+          "HumanCenteredSE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://link.springer.com/collections/jefiadfibb"
+      },
+      "rank": {
+        "ccf": "B"
+      },
+      "source": {
+        "url": "https://link.springer.com/collections/jefiadfibb",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Invite-only special issue for selected EASE 2026 contributions.\n",
+      "deadlineLabel": "submission_open",
+      "deadlineDescription": "Submissions open",
+      "deadlineDate": "2026-06-12",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "ase-2026-research-track:1:notification",
+      "recordId": "ase-2026-research-track",
+      "venueId": "ase",
+      "venue": {
+        "id": "ase",
+        "name": "IEEE/ACM International Conference on Automated Software Engineering",
+        "shortName": "ASE",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/ase",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "AI4SE",
+            "Testing",
+            "ProgramAnalysis",
+            "Maintenance",
+            "Requirements",
+            "MDE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier venue for automated techniques, tools, and foundations for software engineering.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/ase",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ASE 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Testing",
+          "ProgramAnalysis",
+          "Maintenance",
+          "Requirements",
+          "MDE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/ase-2026/ase-2026-research-track",
+        "submission": "https://ase26.hotcrp.com/"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/ase-2026/ase-2026-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research track dates are listed as AoE on the official ASE 2026 Research Papers page.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Initial notification",
+      "deadlineDate": "2026-06-18",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "icse-2027-research-track:0:abstract",
+      "recordId": "icse-2027-research-track",
+      "venueId": "icse",
+      "venue": {
+        "id": "icse",
+        "name": "International Conference on Software Engineering",
+        "shortName": "ICSE",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/icse",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Testing",
+            "Maintenance",
+            "Architecture",
+            "EmpiricalSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier general software engineering conference.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/icse",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ICSE 2027 Research Track",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "EmpiricalSE",
+          "Testing",
+          "Maintenance",
+          "Requirements",
+          "Architecture"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ICSE 2027 uses one research-track submission cycle according to the official page.\n",
+      "deadlineLabel": "abstract",
+      "deadlineDescription": "Mandatory abstract",
+      "deadlineDate": "2026-06-23",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "icse-2027-research-track:1:full_paper",
+      "recordId": "icse-2027-research-track",
+      "venueId": "icse",
+      "venue": {
+        "id": "icse",
+        "name": "International Conference on Software Engineering",
+        "shortName": "ICSE",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/icse",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Testing",
+            "Maintenance",
+            "Architecture",
+            "EmpiricalSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier general software engineering conference.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/icse",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ICSE 2027 Research Track",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "EmpiricalSE",
+          "Testing",
+          "Maintenance",
+          "Requirements",
+          "Architecture"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ICSE 2027 uses one research-track submission cycle according to the official page.\n",
+      "deadlineLabel": "full_paper",
+      "deadlineDescription": "Full paper submission",
+      "deadlineDate": "2026-06-30",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "ase-2026-research-track:2:revision",
+      "recordId": "ase-2026-research-track",
+      "venueId": "ase",
+      "venue": {
+        "id": "ase",
+        "name": "IEEE/ACM International Conference on Automated Software Engineering",
+        "shortName": "ASE",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/ase",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "AI4SE",
+            "Testing",
+            "ProgramAnalysis",
+            "Maintenance",
+            "Requirements",
+            "MDE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier venue for automated techniques, tools, and foundations for software engineering.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/ase",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ASE 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Testing",
+          "ProgramAnalysis",
+          "Maintenance",
+          "Requirements",
+          "MDE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/ase-2026/ase-2026-research-track",
+        "submission": "https://ase26.hotcrp.com/"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/ase-2026/ase-2026-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research track dates are listed as AoE on the official ASE 2026 Research Papers page.\n",
+      "deadlineLabel": "revision",
+      "deadlineDescription": "Revision submission for major revisions",
+      "deadlineDate": "2026-07-16",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "ase-2026-research-track:3:notification",
+      "recordId": "ase-2026-research-track",
+      "venueId": "ase",
+      "venue": {
+        "id": "ase",
+        "name": "IEEE/ACM International Conference on Automated Software Engineering",
+        "shortName": "ASE",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/ase",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "AI4SE",
+            "Testing",
+            "ProgramAnalysis",
+            "Maintenance",
+            "Requirements",
+            "MDE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier venue for automated techniques, tools, and foundations for software engineering.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/ase",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ASE 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Testing",
+          "ProgramAnalysis",
+          "Maintenance",
+          "Requirements",
+          "MDE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/ase-2026/ase-2026-research-track",
+        "submission": "https://ase26.hotcrp.com/"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/ase-2026/ase-2026-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research track dates are listed as AoE on the official ASE 2026 Research Papers page.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Notification for major revisions",
+      "deadlineDate": "2026-07-29",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "ase-2026-research-track:4:camera_ready",
+      "recordId": "ase-2026-research-track",
+      "venueId": "ase",
+      "venue": {
+        "id": "ase",
+        "name": "IEEE/ACM International Conference on Automated Software Engineering",
+        "shortName": "ASE",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/ase",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "AI4SE",
+            "Testing",
+            "ProgramAnalysis",
+            "Maintenance",
+            "Requirements",
+            "MDE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier venue for automated techniques, tools, and foundations for software engineering.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/ase",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ASE 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Testing",
+          "ProgramAnalysis",
+          "Maintenance",
+          "Requirements",
+          "MDE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/ase-2026/ase-2026-research-track",
+        "submission": "https://ase26.hotcrp.com/"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/ase-2026/ase-2026-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research track dates are listed as AoE on the official ASE 2026 Research Papers page.\n",
+      "deadlineLabel": "camera_ready",
+      "deadlineDescription": "Camera-ready papers",
+      "deadlineDate": "2026-08-03",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "icse-2027-research-track:2:author_response",
+      "recordId": "icse-2027-research-track",
+      "venueId": "icse",
+      "venue": {
+        "id": "icse",
+        "name": "International Conference on Software Engineering",
+        "shortName": "ICSE",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/icse",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Testing",
+            "Maintenance",
+            "Architecture",
+            "EmpiricalSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier general software engineering conference.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/icse",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ICSE 2027 Research Track",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "EmpiricalSE",
+          "Testing",
+          "Maintenance",
+          "Requirements",
+          "Architecture"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ICSE 2027 uses one research-track submission cycle according to the official page.\n",
+      "deadlineLabel": "author_response",
+      "deadlineDescription": "Author response period begins",
+      "deadlineDate": "2026-09-23",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "emse-agentic-se-2026:0:full_paper",
+      "recordId": "emse-agentic-se-2026",
+      "venueId": "emse",
+      "venue": {
+        "id": "emse",
+        "name": "Empirical Software Engineering",
+        "shortName": "EMSE",
+        "type": "journal",
+        "publisher": "Springer",
+        "website": "https://link.springer.com/journal/10664",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "EmpiricalSE",
+            "SoftwareAnalytics",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "ccf": "B"
+        },
+        "metricsYear": 2025,
+        "notes": "A major journal for empirical software engineering research.\n",
+        "source": {
+          "url": "https://link.springer.com/journal/10664",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "Special Issue on Agentic Software Engineering: The Rise of AI Teammates",
+      "recordType": "special_issue",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "HumanCenteredSE",
+          "EmpiricalSE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://emsejournal.github.io/special_issues/2026_SI_Agentic_SE.html",
+        "submission": "http://www.editorialmanager.com/emse/"
+      },
+      "rank": {
+        "ccf": "B"
+      },
+      "source": {
+        "url": "https://emsejournal.github.io/special_issues/2026_SI_Agentic_SE.html",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Authors are encouraged to submit before the final deadline because review may begin on receipt.\n",
+      "deadlineLabel": "full_paper",
+      "deadlineDescription": "Final submission deadline",
+      "deadlineDate": "2026-09-28",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "icse-2027-research-track:3:notification",
+      "recordId": "icse-2027-research-track",
+      "venueId": "icse",
+      "venue": {
+        "id": "icse",
+        "name": "International Conference on Software Engineering",
+        "shortName": "ICSE",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/icse",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Testing",
+            "Maintenance",
+            "Architecture",
+            "EmpiricalSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier general software engineering conference.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/icse",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ICSE 2027 Research Track",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "EmpiricalSE",
+          "Testing",
+          "Maintenance",
+          "Requirements",
+          "Architecture"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ICSE 2027 uses one research-track submission cycle according to the official page.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Notification",
+      "deadlineDate": "2026-10-20",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "emse-ease-2026-invite:1:full_paper",
+      "recordId": "emse-ease-2026-invite",
+      "venueId": "emse",
+      "venue": {
+        "id": "emse",
+        "name": "Empirical Software Engineering",
+        "shortName": "EMSE",
+        "type": "journal",
+        "publisher": "Springer",
+        "website": "https://link.springer.com/journal/10664",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "EmpiricalSE",
+            "SoftwareAnalytics",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "ccf": "B"
+        },
+        "metricsYear": 2025,
+        "notes": "A major journal for empirical software engineering research.\n",
+        "source": {
+          "url": "https://link.springer.com/journal/10664",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "By Invite Only: Evaluation and Assessment in Software Engineering 2026",
+      "recordType": "special_issue",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "EmpiricalSE",
+          "HumanCenteredSE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://link.springer.com/collections/jefiadfibb"
+      },
+      "rank": {
+        "ccf": "B"
+      },
+      "source": {
+        "url": "https://link.springer.com/collections/jefiadfibb",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Invite-only special issue for selected EASE 2026 contributions.\n",
+      "deadlineLabel": "full_paper",
+      "deadlineDescription": "Submission deadline",
+      "deadlineDate": "2026-10-31",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "icse-2027-research-track:4:revision",
+      "recordId": "icse-2027-research-track",
+      "venueId": "icse",
+      "venue": {
+        "id": "icse",
+        "name": "International Conference on Software Engineering",
+        "shortName": "ICSE",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/icse",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Testing",
+            "Maintenance",
+            "Architecture",
+            "EmpiricalSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier general software engineering conference.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/icse",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ICSE 2027 Research Track",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "EmpiricalSE",
+          "Testing",
+          "Maintenance",
+          "Requirements",
+          "Architecture"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ICSE 2027 uses one research-track submission cycle according to the official page.\n",
+      "deadlineLabel": "revision",
+      "deadlineDescription": "Revision due",
+      "deadlineDate": "2026-11-17",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "icse-2027-research-track:5:camera_ready",
+      "recordId": "icse-2027-research-track",
+      "venueId": "icse",
+      "venue": {
+        "id": "icse",
+        "name": "International Conference on Software Engineering",
+        "shortName": "ICSE",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/icse",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Testing",
+            "Maintenance",
+            "Architecture",
+            "EmpiricalSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier general software engineering conference.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/icse",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ICSE 2027 Research Track",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "EmpiricalSE",
+          "Testing",
+          "Maintenance",
+          "Requirements",
+          "Architecture"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ICSE 2027 uses one research-track submission cycle according to the official page.\n",
+      "deadlineLabel": "camera_ready",
+      "deadlineDescription": "Camera-ready for directly accepted papers",
+      "deadlineDate": "2026-11-24",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "icse-2027-research-track:6:final_decision",
+      "recordId": "icse-2027-research-track",
+      "venueId": "icse",
+      "venue": {
+        "id": "icse",
+        "name": "International Conference on Software Engineering",
+        "shortName": "ICSE",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/icse",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Testing",
+            "Maintenance",
+            "Architecture",
+            "EmpiricalSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier general software engineering conference.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/icse",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ICSE 2027 Research Track",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "EmpiricalSE",
+          "Testing",
+          "Maintenance",
+          "Requirements",
+          "Architecture"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ICSE 2027 uses one research-track submission cycle according to the official page.\n",
+      "deadlineLabel": "final_decision",
+      "deadlineDescription": "Final decision for major revision papers",
+      "deadlineDate": "2026-12-18",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "icse-2027-research-track:7:camera_ready",
+      "recordId": "icse-2027-research-track",
+      "venueId": "icse",
+      "venue": {
+        "id": "icse",
+        "name": "International Conference on Software Engineering",
+        "shortName": "ICSE",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/icse",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Testing",
+            "Maintenance",
+            "Architecture",
+            "EmpiricalSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A*",
+          "ccf": "A"
+        },
+        "notes": "A premier general software engineering conference.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/icse",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ICSE 2027 Research Track",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "EmpiricalSE",
+          "Testing",
+          "Maintenance",
+          "Requirements",
+          "Architecture"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track"
+      },
+      "rank": {
+        "core": "A*",
+        "ccf": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ICSE 2027 uses one research-track submission cycle according to the official page.\n",
+      "deadlineLabel": "camera_ready",
+      "deadlineDescription": "Camera-ready for accepted major revision papers",
+      "deadlineDate": "2027-01-25",
+      "timezone": "Anywhere on Earth"
+    }
+  ]
+}

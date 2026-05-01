@@ -1,0 +1,111 @@
+- id: icse
+  name: International Conference on Software Engineering
+  shortName: ICSE
+  type: conference
+  publisher: ACM/IEEE
+  website: https://conf.researchr.org/series/icse
+  categories:
+    primary: SE
+    secondary:
+      - Requirements
+      - Testing
+      - Maintenance
+      - Architecture
+      - EmpiricalSE
+      - AI4SE
+  ranking:
+    core: A*
+    ccf: A
+  notes: >
+    A premier general software engineering conference.
+  source:
+    url: https://conf.researchr.org/series/icse
+    checkedDate: 2026-05-02
+
+- id: fse
+  name: ACM International Conference on the Foundations of Software Engineering
+  shortName: FSE
+  type: conference
+  publisher: ACM
+  website: https://conf.researchr.org/series/fse
+  categories:
+    primary: SE
+    secondary:
+      - Testing
+      - Maintenance
+      - Requirements
+      - Architecture
+      - AI4SE
+  ranking:
+    core: A*
+    ccf: A
+  notes: >
+    A premier software engineering conference formerly known as ESEC/FSE.
+  source:
+    url: https://conf.researchr.org/series/fse
+    checkedDate: 2026-05-02
+
+- id: ase
+  name: IEEE/ACM International Conference on Automated Software Engineering
+  shortName: ASE
+  type: conference
+  publisher: ACM/IEEE
+  website: https://conf.researchr.org/series/ase
+  categories:
+    primary: SE
+    secondary:
+      - AI4SE
+      - Testing
+      - ProgramAnalysis
+      - Maintenance
+      - Requirements
+      - MDE
+  ranking:
+    core: A*
+    ccf: A
+  notes: >
+    A premier venue for automated techniques, tools, and foundations for software engineering.
+  source:
+    url: https://conf.researchr.org/series/ase
+    checkedDate: 2026-05-02
+
+- id: issta
+  name: ACM SIGSOFT International Symposium on Software Testing and Analysis
+  shortName: ISSTA
+  type: conference
+  publisher: ACM
+  website: https://conf.researchr.org/series/issta
+  categories:
+    primary: SE
+    secondary:
+      - Testing
+      - ProgramAnalysis
+      - Security
+  ranking:
+    core: A*
+    ccf: A
+  notes: >
+    A leading symposium for software testing and program analysis.
+  source:
+    url: https://conf.researchr.org/series/issta
+    checkedDate: 2026-05-02
+
+- id: models
+  name: ACM/IEEE International Conference on Model Driven Engineering Languages and Systems
+  shortName: MODELS
+  type: conference
+  publisher: ACM/IEEE
+  website: https://conf.researchr.org/series/models
+  categories:
+    primary: SE
+    secondary:
+      - MDE
+      - Architecture
+      - DigitalTwins
+  ranking:
+    core: A
+  notes: >
+    A primary conference for model-driven engineering research and practice.
+  source:
+    url: https://conf.researchr.org/series/models
+    checkedDate: 2026-05-02

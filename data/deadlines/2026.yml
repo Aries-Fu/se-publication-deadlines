@@ -1,0 +1,86 @@
+- id: ase-2026-research-track
+  venueId: ase
+  title: ASE 2026 Research Papers
+  type: conference
+  status: open
+  deadlines:
+    - label: full_paper
+      description: Paper submission
+      date: 2026-03-26
+      timezone: Anywhere on Earth
+    - label: notification
+      description: Initial notification
+      date: 2026-06-18
+      timezone: Anywhere on Earth
+    - label: revision
+      description: Revision submission for major revisions
+      date: 2026-07-16
+      timezone: Anywhere on Earth
+    - label: notification
+      description: Notification for major revisions
+      date: 2026-07-29
+      timezone: Anywhere on Earth
+    - label: camera_ready
+      description: Camera-ready papers
+      date: 2026-08-03
+      timezone: Anywhere on Earth
+  categories:
+    primary: SE
+    secondary:
+      - AI4SE
+      - Testing
+      - ProgramAnalysis
+      - Maintenance
+      - Requirements
+      - MDE
+  links:
+    callForPapers: https://conf.researchr.org/track/ase-2026/ase-2026-research-track
+    submission: https://ase26.hotcrp.com/
+  source:
+    url: https://conf.researchr.org/track/ase-2026/ase-2026-research-track
+    checkedDate: 2026-05-02
+  notes: >
+    Research track dates are listed as AoE on the official ASE 2026 Research Papers page.
+
+- id: fse-2026-research-papers
+  venueId: fse
+  title: FSE 2026 Research Papers
+  type: conference
+  status: closed
+  deadlines:
+    - label: abstract
+      description: Paper registration
+      date: 2025-09-04
+      timezone: Anywhere on Earth
+    - label: full_paper
+      description: Full paper submission
+      date: 2025-09-11
+      timezone: Anywhere on Earth
+    - label: notification
+      description: Initial notification
+      date: 2025-12-22
+      timezone: Anywhere on Earth
+    - label: revision
+      description: Revised manuscript submission
+      date: 2026-02-24
+      timezone: Anywhere on Earth
+    - label: camera_ready
+      description: Camera-ready
+      date: 2026-04-23
+      timezone: Anywhere on Earth
+  categories:
+    primary: SE
+    secondary:
+      - AI4SE
+      - Testing
+      - Maintenance
+      - Architecture
+      - Requirements
+  links:
+    callForPapers: https://conf.researchr.org/track/fse-2026/fse-2026-research-papers
+    submission: https://fse2026.hotcrp.com/
+  source:
+    url: https://conf.researchr.org/track/fse-2026/fse-2026-research-papers
+    checkedDate: 2026-05-02
+  notes: >
+    Research paper dates are listed as AoE on the official FSE 2026 Research Papers page.
