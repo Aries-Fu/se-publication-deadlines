@@ -1,4 +1,4 @@
-import { Grid2X2, ListTree, RotateCcw, Search, Table2 } from "lucide-react";
+import { Grid2X2, ListTree, RotateCcw, Search, Star, Table2 } from "lucide-react";
 import type {
   CategoryGroup,
   DeadlineRow,
@@ -30,11 +30,20 @@ const emptyFilters: FiltersState = {
   deadlineLabel: "",
   status: "",
   ranking: "",
+  favoritesOnly: false,
 };
 
 const sortOptions: Array<{ value: SortKey; label: string }> = [
   { value: "nearest", label: "Nearest deadline first" },
   { value: "latest", label: "Latest deadline first" },
+  { value: "venue", label: "Venue name A-Z" },
+  { value: "core", label: "CORE ranking" },
+  { value: "ccf", label: "CCF ranking" },
+  { value: "jcr", label: "JCR quartile" },
+  { value: "impactFactor", label: "Impact factor" },
+];
+
+const journalSortOptions: Array<{ value: SortKey; label: string }> = [
   { value: "venue", label: "Venue name A-Z" },
   { value: "core", label: "CORE ranking" },
   { value: "ccf", label: "CCF ranking" },
@@ -53,10 +62,12 @@ export function Filters({
   onViewModeChange,
 }: FiltersProps): JSX.Element {
   const selectedPrimary = categories.find((category) => category.id === filters.primaryCategory);
+  const isJournalList = filters.venueType === "journal";
   const secondaryOptions = selectedPrimary
     ? selectedPrimary.children
     : categories.flatMap((category) => category.children);
   const deadlineLabels = Array.from(new Set(rows.map((row) => row.deadlineLabel))).sort();
+  const availableSortOptions = isJournalList ? journalSortOptions : sortOptions;
 
   const update = (patch: Partial<FiltersState>) => {
     onFiltersChange({ ...filters, ...patch });
@@ -85,14 +96,15 @@ export function Filters({
             onChange={(event) => onSortChange(event.target.value as SortKey)}
             className="lg:w-56"
           >
-            {sortOptions.map((option) => (
+            {availableSortOptions.map((option) => (
               <option key={option.value} value={option.value}>
                 {option.label}
               </option>
             ))}
           </Select>
 
-          <div className="flex items-center gap-2">
+          {!isJournalList ? (
+            <div className="flex items-center gap-2">
             <Button
               type="button"
               variant={viewMode === "table" ? "default" : "outline"}
@@ -123,7 +135,19 @@ export function Filters({
             >
               <ListTree className="h-4 w-4" />
             </Button>
-          </div>
+            </div>
+          ) : null}
+
+          <label className="flex h-10 items-center gap-2 rounded-md border border-input bg-white px-3 text-sm font-medium text-slate-700 shadow-sm">
+            <input
+              type="checkbox"
+              checked={filters.favoritesOnly}
+              onChange={(event) => update({ favoritesOnly: event.target.checked })}
+              className="h-4 w-4 rounded border-slate-300 text-sky-600 focus:ring-sky-500"
+            />
+            <Star className="h-4 w-4 text-amber-500" aria-hidden="true" />
+            Favorites only
+          </label>
         </div>
 
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
@@ -158,38 +182,52 @@ export function Filters({
           <Select
             label="Venue type"
             value={filters.venueType}
-            onChange={(event) => update({ venueType: event.target.value })}
+            onChange={(event) => {
+              const venueType = event.target.value;
+              update({
+                venueType,
+                deadlineLabel: venueType === "journal" ? "" : filters.deadlineLabel,
+                status: venueType === "journal" ? "" : filters.status,
+              });
+
+              if (venueType === "journal" && (sortKey === "nearest" || sortKey === "latest")) {
+                onSortChange("venue");
+              }
+            }}
           >
             <option value="">All types</option>
             <option value="conference">Conference</option>
             <option value="journal">Journal</option>
-            <option value="magazine">Magazine</option>
             <option value="special_issue">Special issue</option>
           </Select>
 
-          <Select
-            label="Deadline type"
-            value={filters.deadlineLabel}
-            onChange={(event) => update({ deadlineLabel: event.target.value })}
-          >
-            <option value="">All deadlines</option>
-            {deadlineLabels.map((label) => (
-              <option key={label} value={label}>
-                {labelDeadline(label)}
-              </option>
-            ))}
-          </Select>
+          {!isJournalList ? (
+            <Select
+              label="Deadline type"
+              value={filters.deadlineLabel}
+              onChange={(event) => update({ deadlineLabel: event.target.value })}
+            >
+              <option value="">All deadlines</option>
+              {deadlineLabels.map((label) => (
+                <option key={label} value={label}>
+                  {labelDeadline(label)}
+                </option>
+              ))}
+            </Select>
+          ) : null}
 
-          <Select
-            label="Status"
-            value={filters.status}
-            onChange={(event) => update({ status: event.target.value })}
-          >
-            <option value="">All statuses</option>
-            <option value="open">Open</option>
-            <option value="closed">Closed</option>
-            <option value="tentative">Tentative</option>
-          </Select>
+          {!isJournalList ? (
+            <Select
+              label="Status"
+              value={filters.status}
+              onChange={(event) => update({ status: event.target.value })}
+            >
+              <option value="">All statuses</option>
+              <option value="open">Open</option>
+              <option value="closed">Closed</option>
+              <option value="tentative">Tentative</option>
+            </Select>
+          ) : null}
 
           <Select
             label="Ranking"

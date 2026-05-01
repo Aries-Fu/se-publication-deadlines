@@ -64,6 +64,10 @@ export function filterDeadlineRows(rows: DeadlineRow[], filters: FiltersState): 
     }
 
     if (filters.venueType) {
+      if (filters.venueType === "journal") {
+        return false;
+      }
+
       if (filters.venueType === "special_issue" && row.recordType !== "special_issue") {
         return false;
       }

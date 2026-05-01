@@ -17,10 +17,9 @@ export const deadlineLabelText: Record<DeadlineLabel, string> = {
   proposal: "Proposal",
 };
 
-export const recordTypeText: Record<DeadlineRecordType, string> = {
+export const recordTypeText: Record<string, string> = {
   conference: "Conference",
   journal: "Journal",
-  magazine: "Magazine",
   special_issue: "Special issue",
 };
 

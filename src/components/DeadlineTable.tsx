@@ -9,6 +9,7 @@ import type { DeadlineRow } from "../types/deadline";
 import { cn } from "../lib/utils";
 import { formatDeadlineDate, labelDeadline, labelRecordType } from "../utils/date";
 import { CountdownBadge } from "./CountdownBadge";
+import { FavoriteButton } from "./FavoriteButton";
 import { VenueMetadataPopover } from "./VenueMetadataPopover";
 import { Badge } from "./ui/badge";
 
@@ -45,7 +46,31 @@ function RankCell({ row }: { row: DeadlineRow }): JSX.Element {
   );
 }
 
+type DeadlineTableMeta = {
+  favoriteIds: Set<string>;
+  onToggleFavorite: (id: string) => void;
+};
+
+function deadlineFavoriteId(row: DeadlineRow): string {
+  return `deadline:${row.recordId}`;
+}
+
 const columns: Array<ColumnDef<DeadlineRow>> = [
+  {
+    header: "Favorite",
+    cell: ({ row, table }) => {
+      const meta = table.options.meta as DeadlineTableMeta;
+      const favoriteId = deadlineFavoriteId(row.original);
+
+      return (
+        <FavoriteButton
+          active={meta.favoriteIds.has(favoriteId)}
+          onToggle={() => meta.onToggleFavorite(favoriteId)}
+          label={`Favorite ${row.original.title}`}
+        />
+      );
+    },
+  },
   {
     header: "Venue",
     cell: ({ row }) => (
@@ -152,13 +177,23 @@ const columns: Array<ColumnDef<DeadlineRow>> = [
 
 type DeadlineTableProps = {
   rows: DeadlineRow[];
+  favoriteIds: Set<string>;
+  onToggleFavorite: (id: string) => void;
 };
 
-export function DeadlineTable({ rows }: DeadlineTableProps): JSX.Element {
+export function DeadlineTable({
+  rows,
+  favoriteIds,
+  onToggleFavorite,
+}: DeadlineTableProps): JSX.Element {
   const table = useReactTable({
     data: rows,
     columns,
     getCoreRowModel: getCoreRowModel(),
+    meta: {
+      favoriteIds,
+      onToggleFavorite,
+    },
   });
 
   return (

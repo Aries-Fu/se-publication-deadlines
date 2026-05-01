@@ -1,6 +1,6 @@
 # Software Engineering Publication Deadlines
 
-A community-maintained deadline tracker for software engineering conferences, journals, magazines, and special issues.
+A community-maintained tracker for software engineering conferences, journals, and special issues.
 
 The project uses a low-maintenance architecture:
 
@@ -20,9 +20,11 @@ https://aries-fu.github.io/se-publication-deadlines/
 This repository tracks deadlines related to software engineering publication opportunities, including:
 
 - Research track deadlines for conferences
-- Journal and magazine calls
+- Journal venue metadata
 - Special issue submission deadlines
 - Multi-stage deadlines such as abstract, full paper, revision, notification, and camera-ready dates
+
+Journals are shown as a venue list rather than deadline rows. Their deadline and status fields are displayed as `N/A` unless there is a dated special issue record.
 
 ## Data Structure
 
@@ -55,6 +57,8 @@ npm run build:data
 ## How to Add a New Deadline
 
 Add a new entry to one of the files under `data/deadlines/`.
+
+Journal metadata belongs under `data/venues/`. Journals do not need deadline records unless they host a dated special issue call.
 
 Use this format:
 
@@ -213,6 +217,12 @@ Build the site:
 ```bash
 npm run build
 ```
+
+## Favorites
+
+The website supports local favorites. Users can star deadline records or journal venues, then enable `Favorites only` in the filters.
+
+Favorites are stored in the user's browser with `localStorage`. They are private to that browser and are not committed to the repository.
 
 ## How to Submit a Pull Request
 

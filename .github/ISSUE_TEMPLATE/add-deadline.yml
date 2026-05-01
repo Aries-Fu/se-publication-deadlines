@@ -19,8 +19,6 @@ body:
       label: Deadline type
       options:
         - conference
-        - journal
-        - magazine
         - special_issue
     validations:
       required: true

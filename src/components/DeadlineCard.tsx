@@ -2,15 +2,27 @@ import { CalendarDays, ExternalLink } from "lucide-react";
 import type { DeadlineRow } from "../types/deadline";
 import { formatDeadlineDate, labelDeadline, labelRecordType } from "../utils/date";
 import { CountdownBadge } from "./CountdownBadge";
+import { FavoriteButton } from "./FavoriteButton";
 import { VenueMetadataPopover } from "./VenueMetadataPopover";
 import { Badge } from "./ui/badge";
 
 type DeadlineCardProps = {
   row: DeadlineRow;
+  favoriteIds: Set<string>;
+  onToggleFavorite: (id: string) => void;
 };
 
-export function DeadlineCard({ row }: DeadlineCardProps): JSX.Element {
+function deadlineFavoriteId(row: DeadlineRow): string {
+  return `deadline:${row.recordId}`;
+}
+
+export function DeadlineCard({
+  row,
+  favoriteIds,
+  onToggleFavorite,
+}: DeadlineCardProps): JSX.Element {
   const jcrQuartile = row.rank.jcrQuartile ?? row.venue.metrics?.jcrQuartile;
+  const favoriteId = deadlineFavoriteId(row);
   const rankParts = [
     row.rank.core ? `CORE ${row.rank.core}` : undefined,
     row.rank.ccf ? `CCF ${row.rank.ccf}` : undefined,
@@ -29,7 +41,14 @@ export function DeadlineCard({ row }: DeadlineCardProps): JSX.Element {
               <p className="mt-1 text-sm text-slate-500">{row.deadlineDescription}</p>
             ) : null}
           </div>
-          <Badge variant="outline">{labelRecordType(row.recordType)}</Badge>
+          <div className="flex items-center gap-2">
+            <Badge variant="outline">{labelRecordType(row.recordType)}</Badge>
+            <FavoriteButton
+              active={favoriteIds.has(favoriteId)}
+              onToggle={() => onToggleFavorite(favoriteId)}
+              label={`Favorite ${row.title}`}
+            />
+          </div>
         </div>
 
         <div className="flex flex-wrap gap-1">

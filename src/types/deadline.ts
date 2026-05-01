@@ -1,5 +1,5 @@
-export type VenueType = "conference" | "journal" | "magazine";
-export type DeadlineRecordType = VenueType | "special_issue";
+export type VenueType = "conference" | "journal";
+export type DeadlineRecordType = "conference" | "special_issue";
 export type DeadlineStatus = "open" | "closed" | "tentative";
 
 export type DeadlineLabel =
@@ -116,6 +116,7 @@ export type FiltersState = {
   deadlineLabel: string;
   status: string;
   ranking: string;
+  favoritesOnly: boolean;
 };
 
 export type SortKey =

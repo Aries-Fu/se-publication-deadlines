@@ -9,8 +9,8 @@ export const allowedCoreRanks = ["A*", "A", "B", "C"] as const;
 export const allowedCcfRanks = ["A", "B", "C"] as const;
 export const allowedJcrQuartiles = ["Q1", "Q2", "Q3", "Q4"] as const;
 
-export type VenueType = "conference" | "journal" | "magazine";
-export type DeadlineRecordType = VenueType | "special_issue";
+export type VenueType = "conference" | "journal";
+export type DeadlineRecordType = "conference" | "special_issue";
 export type DeadlineStatus = "open" | "closed" | "tentative";
 export type DeadlineLabel =
   | "abstract"

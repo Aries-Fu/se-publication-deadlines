@@ -64,21 +64,3 @@
   source:
     url: https://www.computer.org/csdl/journal/ts
     checkedDate: 2026-05-02
-
-- id: ieee-software
-  name: IEEE Software
-  shortName: IEEE Software
-  type: magazine
-  publisher: IEEE
-  website: https://www.computer.org/csdl/magazine/so
-  categories:
-    primary: SE
-    secondary:
-      - Architecture
-      - Maintenance
-      - HumanCenteredSE
-  notes: >
-    A practitioner-facing magazine for software engineering methods, experience, and practice.
-  source:
-    url: https://www.computer.org/csdl/magazine/so
-    checkedDate: 2026-05-02

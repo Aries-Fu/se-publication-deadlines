@@ -20,7 +20,7 @@ import {
 } from "./data-utils";
 
 const errors: string[] = [];
-const allowedVenueTypes = new Set(["conference", "journal", "magazine"]);
+const allowedVenueTypes = new Set(["conference", "journal"]);
 
 function rel(filePath: string): string {
   return relative(rootDir, filePath);

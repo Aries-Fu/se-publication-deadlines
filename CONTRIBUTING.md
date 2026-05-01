@@ -11,7 +11,9 @@ Thank you for helping maintain Software Engineering Publication Deadlines.
 
 ## Add a Deadline
 
-Add conference, journal, magazine, and special issue calls under `data/deadlines/`.
+Add conference and special issue calls under `data/deadlines/`.
+
+Journal metadata belongs under `data/venues/`. A journal should not be added as a deadline record unless the contribution is for a dated special issue.
 
 Rules:
 
@@ -25,6 +27,8 @@ Rules:
 ## Add Venue Metadata
 
 Add venue records under `data/venues/`.
+
+Journals are displayed in the website's Journal list. They do not need deadline fields; the frontend shows deadline-specific columns as `N/A`.
 
 Required fields:
 
