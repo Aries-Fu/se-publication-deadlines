@@ -97,7 +97,7 @@ export type LoadedDeadlineRecord = DeadlineRecord & {
 
 export async function readYamlArray<T>(filePath: string): Promise<T[]> {
   const raw = await readFile(filePath, "utf8");
-  const parsed = yaml.load(raw);
+  const parsed = yaml.load(raw, { schema: yaml.JSON_SCHEMA });
 
   if (parsed === null || parsed === undefined) {
     return [];
