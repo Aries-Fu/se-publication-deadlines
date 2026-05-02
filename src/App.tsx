@@ -29,7 +29,7 @@ const suggestDataUrl = `${repoUrl}/issues/new/choose`;
 const favoritesStorageKey = "se-publication-deadlines:favorites";
 const infinitePageSize = 25;
 const pageShellClass =
-  "mx-auto flex min-w-[1680px] max-w-none flex-col px-6 sm:px-8 lg:px-10 xl:px-12";
+  "mx-auto flex w-full max-w-[1500px] flex-col px-4 sm:px-6 lg:px-8";
 
 const initialFilters: FiltersState = {
   search: "",

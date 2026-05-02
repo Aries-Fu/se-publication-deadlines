@@ -71,3 +71,166 @@
   checkFrequency: weekly
   notes: >
     Springer collection page for invite-only EASE 2026 special issue.
+
+- id: models-2026-research-papers
+  kind: deadline
+  recordId: models-2026-research-papers
+  venueId: models
+  adapter: researchr
+  url: https://conf.researchr.org/track/models-2026/models-2026-research-papers
+  expectedDeadlineLabels:
+    - abstract
+    - full_paper
+    - author_response
+    - notification
+    - camera_ready
+  checkFrequency: weekly
+  notes: >
+    Official Researchr page for MODELS 2026 research papers.
+
+- id: er-2026-research-papers
+  kind: deadline
+  recordId: er-2026-research-papers
+  venueId: er
+  adapter: genericHtmlDateScanner
+  url: https://er2026.org/dates.html
+  expectedDeadlineLabels:
+    - abstract
+    - full_paper
+    - notification
+    - camera_ready
+  checkFrequency: weekly
+  notes: >
+    Official ER 2026 important dates page.
+
+- id: caise-2026-full-papers
+  kind: deadline
+  recordId: caise-2026-full-papers
+  venueId: caise
+  adapter: genericHtmlDateScanner
+  url: https://caise26.polimi.it/?page_id=60
+  expectedDeadlineLabels:
+    - abstract
+    - full_paper
+    - notification
+  checkFrequency: weekly
+  notes: >
+    Official CAiSE 2026 call for full papers.
+
+- id: edoc-2026-research-papers
+  kind: deadline
+  recordId: edoc-2026-research-papers
+  venueId: edoc
+  adapter: researchr
+  url: https://conf.researchr.org/track/edoc-2026/edoc-2026-papers
+  expectedDeadlineLabels:
+    - submission
+    - notification
+    - camera_ready
+  checkFrequency: weekly
+  notes: >
+    Official Researchr page for EDOC 2026 research papers.
+
+- id: icsme-2026-research-papers
+  kind: deadline
+  recordId: icsme-2026-research-papers
+  venueId: icsme
+  adapter: researchr
+  url: https://conf.researchr.org/track/icsme-2026/icsme-2026-papers
+  expectedDeadlineLabels:
+    - abstract
+    - full_paper
+    - notification
+    - author_response
+  checkFrequency: weekly
+  notes: >
+    Official Researchr page for ICSME 2026 research papers.
+
+- id: models-2026-workshops
+  kind: workshop
+  recordId: models-2026-workshops
+  venueId: models
+  adapter: researchr
+  url: https://conf.researchr.org/track/models-2026/models-2026-workshops
+  expectedDeadlineLabels:
+    - proposal
+    - submission
+    - notification
+    - camera_ready
+  checkFrequency: weekly
+  notes: >
+    Official Researchr page for MODELS 2026 workshops.
+
+- id: caise-2026-workshops
+  kind: workshop
+  recordId: caise-2026-workshops
+  venueId: caise
+  adapter: genericHtmlDateScanner
+  url: https://caise26.polimi.it/
+  expectedDeadlineLabels:
+    - submission
+    - notification
+  checkFrequency: weekly
+  notes: >
+    Official CAiSE 2026 homepage with workshop dates.
+
+- id: er-2026-workshop-proposals
+  kind: workshop
+  recordId: er-2026-workshop-proposals
+  venueId: er
+  adapter: genericHtmlDateScanner
+  url: https://er2026.org/dates.html
+  expectedDeadlineLabels:
+    - proposal
+    - notification
+  checkFrequency: weekly
+  notes: >
+    Official ER 2026 important dates page with workshop proposal dates.
+
+- id: jss-ai-performance-reliability-sustainability-2026
+  kind: special_issue
+  recordId: jss-ai-performance-reliability-sustainability-2026
+  venueId: jss
+  adapter: genericHtmlDateScanner
+  url: https://www.sciencedirect.com/journal/journal-of-systems-and-software
+  expectedDeadlineLabels:
+    - full_paper
+  checkFrequency: weekly
+  notes: >
+    Journal of Systems and Software calls for papers page.
+
+- id: jss-ai-for-software-architecting-2026
+  kind: special_issue
+  recordId: jss-ai-for-software-architecting-2026
+  venueId: jss
+  adapter: genericHtmlDateScanner
+  url: https://www.sciencedirect.com/journal/journal-of-systems-and-software
+  expectedDeadlineLabels:
+    - full_paper
+  checkFrequency: weekly
+  notes: >
+    Journal of Systems and Software calls for papers page.
+
+- id: ist-green-software-evolution-2026
+  kind: special_issue
+  recordId: ist-green-software-evolution-2026
+  venueId: ist
+  adapter: genericHtmlDateScanner
+  url: https://www.sciencedirect.com/journal/information-and-software-technology/special-issues
+  expectedDeadlineLabels:
+    - full_paper
+  checkFrequency: weekly
+  notes: >
+    Information and Software Technology special issues page.
+
+- id: ist-human-factor-genai-2026
+  kind: special_issue
+  recordId: ist-human-factor-genai-2026
+  venueId: ist
+  adapter: genericHtmlDateScanner
+  url: https://www.sciencedirect.com/journal/information-and-software-technology/special-issues
+  expectedDeadlineLabels:
+    - full_paper
+  checkFrequency: weekly
+  notes: >
+    Information and Software Technology special issues page.

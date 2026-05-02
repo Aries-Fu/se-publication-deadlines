@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01T18:37:30Z",
+  "generatedAt": "2026-05-02T08:07:18Z",
   "categories": [
     {
       "id": "SE",
@@ -194,6 +194,111 @@
       }
     },
     {
+      "id": "er",
+      "name": "International Conference on Conceptual Modeling",
+      "shortName": "ER",
+      "type": "conference",
+      "publisher": "Springer",
+      "website": "https://conceptualmodeling.org/",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Requirements",
+          "Architecture",
+          "DigitalTwins",
+          "HumanCenteredSE"
+        ]
+      },
+      "ranking": {
+        "core": "A"
+      },
+      "notes": "A long-running venue for conceptual modeling research and applications.\n",
+      "source": {
+        "url": "https://conceptualmodeling.org/",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
+      "id": "caise",
+      "name": "International Conference on Advanced Information Systems Engineering",
+      "shortName": "CAiSE",
+      "type": "conference",
+      "publisher": "Springer",
+      "website": "https://caise26.polimi.it/",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Requirements",
+          "Architecture",
+          "MDE",
+          "DigitalTwins",
+          "HumanCenteredSE",
+          "AI4SE"
+        ]
+      },
+      "ranking": {
+        "core": "A"
+      },
+      "notes": "A major information systems engineering conference with strong links to modeling, requirements, architecture, and process engineering.\n",
+      "source": {
+        "url": "https://caise26.polimi.it/",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
+      "id": "edoc",
+      "name": "IEEE International Enterprise Distributed Object Computing Conference",
+      "shortName": "EDOC",
+      "type": "conference",
+      "publisher": "IEEE/Springer",
+      "website": "https://conf.researchr.org/series/edoc",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Architecture",
+          "MDE",
+          "Requirements",
+          "Security",
+          "DigitalTwins"
+        ]
+      },
+      "ranking": {
+        "core": "B"
+      },
+      "notes": "A conference on enterprise computing, enterprise architecture, process modeling, service systems, and model-driven approaches.\n",
+      "source": {
+        "url": "https://conf.researchr.org/series/edoc",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
+      "id": "icsme",
+      "name": "IEEE International Conference on Software Maintenance and Evolution",
+      "shortName": "ICSME",
+      "type": "conference",
+      "publisher": "IEEE",
+      "website": "https://conf.researchr.org/series/icsme",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Maintenance",
+          "Testing",
+          "ProgramAnalysis",
+          "EmpiricalSE",
+          "AI4SE"
+        ]
+      },
+      "ranking": {
+        "core": "A"
+      },
+      "notes": "A premier venue for software maintenance, evolution, comprehension, and related empirical and tooling research.\n",
+      "source": {
+        "url": "https://conf.researchr.org/series/icsme",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
       "id": "emse",
       "name": "Empirical Software Engineering",
       "shortName": "EMSE",
@@ -219,6 +324,38 @@
       }
     },
     {
+      "id": "tosem",
+      "name": "ACM Transactions on Software Engineering and Methodology",
+      "shortName": "TOSEM",
+      "type": "journal",
+      "publisher": "ACM",
+      "website": "https://dl.acm.org/journal/tosem",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Requirements",
+          "Testing",
+          "Maintenance",
+          "Architecture",
+          "EmpiricalSE",
+          "ProgramAnalysis"
+        ]
+      },
+      "ranking": {
+        "ccf": "A"
+      },
+      "metrics": {
+        "impactFactor": 6.2,
+        "jcrQuartile": "Q1"
+      },
+      "metricsYear": 2025,
+      "notes": "ACM archival journal for software engineering and methodology. Impact factor follows ACM's 2025 impact factor announcement.\n",
+      "source": {
+        "url": "https://dl.acm.org/journal/tosem",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
       "id": "jss",
       "name": "Journal of Systems and Software",
       "shortName": "JSS",
@@ -238,7 +375,8 @@
         "ccf": "B"
       },
       "metrics": {
-        "impactFactor": 4.1
+        "impactFactor": 4.1,
+        "jcrQuartile": "Q1"
       },
       "metricsYear": 2025,
       "notes": "A broad software systems and software engineering journal.\n",
@@ -267,9 +405,73 @@
       "ranking": {
         "ccf": "A"
       },
+      "metrics": {
+        "impactFactor": 5.6,
+        "jcrQuartile": "Q1"
+      },
+      "metricsYear": 2025,
       "notes": "A flagship journal covering the software engineering discipline.\n",
       "source": {
         "url": "https://www.computer.org/csdl/journal/ts",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
+      "id": "ist",
+      "name": "Information and Software Technology",
+      "shortName": "IST",
+      "type": "journal",
+      "publisher": "Elsevier",
+      "website": "https://www.sciencedirect.com/journal/information-and-software-technology",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Requirements",
+          "Architecture",
+          "Testing",
+          "Maintenance",
+          "EmpiricalSE",
+          "HumanCenteredSE"
+        ]
+      },
+      "ranking": {
+        "ccf": "B"
+      },
+      "metrics": {
+        "impactFactor": 4.3,
+        "jcrQuartile": "Q1"
+      },
+      "metricsYear": 2025,
+      "notes": "A software engineering and information systems journal covering methods, tools, empirical studies, and technology transfer.\n",
+      "source": {
+        "url": "https://www.sciencedirect.com/journal/information-and-software-technology",
+        "checkedDate": "2026-05-02"
+      }
+    },
+    {
+      "id": "sosym",
+      "name": "Software and Systems Modeling",
+      "shortName": "SoSyM",
+      "type": "journal",
+      "publisher": "Springer",
+      "website": "https://link.springer.com/journal/10270",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins",
+          "Requirements",
+          "AI4SE"
+        ]
+      },
+      "metrics": {
+        "impactFactor": 3.2
+      },
+      "metricsYear": 2025,
+      "notes": "A journal focused on software and systems modeling, model-driven engineering, modeling languages, tools, and applications. The 2025 impact factor is reported in the SoSyM 2025 summary editorial.\n",
+      "source": {
+        "url": "https://link.springer.com/journal/10270",
         "checkedDate": "2026-05-02"
       }
     }
@@ -391,6 +593,274 @@
         "checkedDate": "2026-05-02"
       },
       "notes": "Research paper dates are listed as AoE on the official FSE 2026 Research Papers page.\n"
+    },
+    {
+      "id": "models-2026-research-papers",
+      "venueId": "models",
+      "title": "MODELS 2026 Research Papers",
+      "type": "conference",
+      "status": "closed",
+      "deadlines": [
+        {
+          "label": "abstract",
+          "description": "Abstract submission",
+          "date": "2026-03-20",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "full_paper",
+          "description": "Paper submission",
+          "date": "2026-03-27",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "author_response",
+          "description": "Author response period begins",
+          "date": "2026-05-27",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Author notification",
+          "date": "2026-06-17",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "camera_ready",
+          "description": "Camera-ready due",
+          "date": "2026-07-31",
+          "timezone": "Anywhere on Earth"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/models-2026/models-2026-research-papers"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/models-2026/models-2026-research-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official MODELS 2026 Research Papers page.\n"
+    },
+    {
+      "id": "er-2026-research-papers",
+      "venueId": "er",
+      "title": "ER 2026 Research Papers",
+      "type": "conference",
+      "status": "open",
+      "deadlines": [
+        {
+          "label": "abstract",
+          "description": "Mandatory paper abstract submission",
+          "date": "2026-05-05",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "full_paper",
+          "description": "Paper submission",
+          "date": "2026-05-12",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Paper acceptance notification",
+          "date": "2026-07-14",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "camera_ready",
+          "description": "Camera-ready submission and author registration",
+          "date": "2026-07-28",
+          "timezone": "Anywhere on Earth"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Requirements",
+          "Architecture",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://er2026.org/cfp.html"
+      },
+      "source": {
+        "url": "https://er2026.org/dates.html",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ER 2026 important dates are listed as end-of-day AoE on the official conference site.\n"
+    },
+    {
+      "id": "caise-2026-full-papers",
+      "venueId": "caise",
+      "title": "CAiSE 2026 Full Papers",
+      "type": "conference",
+      "status": "closed",
+      "deadlines": [
+        {
+          "label": "abstract",
+          "description": "Mandatory abstract submission, extended deadline",
+          "date": "2025-11-21",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "full_paper",
+          "description": "Paper submission",
+          "date": "2025-11-28",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Notification of acceptance",
+          "date": "2026-02-12",
+          "timezone": "Anywhere on Earth"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Requirements",
+          "Architecture",
+          "MDE",
+          "DigitalTwins",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://caise26.polimi.it/?page_id=60",
+        "submission": "https://easychair.org/my/conference?conf=caise2026"
+      },
+      "source": {
+        "url": "https://caise26.polimi.it/?page_id=60",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Full paper dates are listed on the official CAiSE 2026 call for full papers.\n"
+    },
+    {
+      "id": "edoc-2026-research-papers",
+      "venueId": "edoc",
+      "title": "EDOC 2026 Research Papers",
+      "type": "conference",
+      "status": "open",
+      "deadlines": [
+        {
+          "label": "submission",
+          "description": "First submission deadline",
+          "date": "2026-03-20",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "First submission notification",
+          "date": "2026-04-26",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "submission",
+          "description": "Second submission deadline",
+          "date": "2026-05-22",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Second submission notification",
+          "date": "2026-07-08",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "camera_ready",
+          "description": "Camera-ready submission",
+          "date": "2026-08-07",
+          "timezone": "Anywhere on Earth"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Architecture",
+          "MDE",
+          "Requirements",
+          "Security",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/edoc-2026/edoc-2026-papers",
+        "submission": "https://easychair.org/conferences/?conf=cbiedoc2026"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/edoc-2026/edoc-2026-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "EDOC 2026 offers two submission deadlines according to the official Researchr page.\n"
+    },
+    {
+      "id": "icsme-2026-research-papers",
+      "venueId": "icsme",
+      "title": "ICSME 2026 Research Papers",
+      "type": "conference",
+      "status": "closed",
+      "deadlines": [
+        {
+          "label": "abstract",
+          "description": "Abstract submission",
+          "date": "2026-02-27",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "full_paper",
+          "description": "Paper submission",
+          "date": "2026-03-06",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Early decisions notification",
+          "date": "2026-05-03",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "author_response",
+          "description": "Author response period begins",
+          "date": "2026-05-04",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Final notification",
+          "date": "2026-05-29",
+          "timezone": "Anywhere on Earth"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Maintenance",
+          "Testing",
+          "ProgramAnalysis",
+          "EmpiricalSE",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icsme-2026/icsme-2026-papers",
+        "submission": "https://easychair.org/conferences/?conf=icsme2026"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icsme-2026/icsme-2026-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official ICSME 2026 Research Papers page.\n"
     },
     {
       "id": "icse-2027-research-track",
@@ -535,6 +1005,263 @@
         "checkedDate": "2026-05-02"
       },
       "notes": "Invite-only special issue for selected EASE 2026 contributions.\n"
+    },
+    {
+      "id": "jss-ai-performance-reliability-sustainability-2026",
+      "venueId": "jss",
+      "title": "Special Issue on AI Techniques for Performance, Reliability, and Sustainability of Modern Software Systems",
+      "type": "special_issue",
+      "status": "open",
+      "deadlines": [
+        {
+          "label": "full_paper",
+          "description": "Manuscript submission deadline",
+          "date": "2026-09-30",
+          "timezone": "Not specified by source"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Architecture",
+          "Maintenance",
+          "Testing"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://www.sciencedirect.com/journal/journal-of-systems-and-software"
+      },
+      "source": {
+        "url": "https://www.sciencedirect.com/journal/journal-of-systems-and-software",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Listed under calls for papers on the Journal of Systems and Software page.\n"
+    },
+    {
+      "id": "jss-ai-for-software-architecting-2026",
+      "venueId": "jss",
+      "title": "Artificial Intelligence for Software Architecting",
+      "type": "special_issue",
+      "status": "closed",
+      "deadlines": [
+        {
+          "label": "full_paper",
+          "description": "Manuscript submission deadline",
+          "date": "2026-03-15",
+          "timezone": "Not specified by source"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Architecture"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://www.sciencedirect.com/journal/journal-of-systems-and-software"
+      },
+      "source": {
+        "url": "https://www.sciencedirect.com/journal/journal-of-systems-and-software",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Listed under calls for papers on the Journal of Systems and Software page.\n"
+    },
+    {
+      "id": "ist-green-software-evolution-2026",
+      "venueId": "ist",
+      "title": "Green Software Evolution",
+      "type": "special_issue",
+      "status": "open",
+      "deadlines": [
+        {
+          "label": "full_paper",
+          "description": "Manuscript submission deadline",
+          "date": "2026-08-15",
+          "timezone": "Not specified by source"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Maintenance",
+          "Architecture",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://www.sciencedirect.com/journal/information-and-software-technology/special-issues"
+      },
+      "source": {
+        "url": "https://www.sciencedirect.com/journal/information-and-software-technology/special-issues",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Listed under calls for papers on the Information and Software Technology special issues page.\n"
+    },
+    {
+      "id": "ist-human-factor-genai-2026",
+      "venueId": "ist",
+      "title": "Human Factor in Generative AI: Trust, Usability, and Responsible Adoption",
+      "type": "special_issue",
+      "status": "open",
+      "deadlines": [
+        {
+          "label": "full_paper",
+          "description": "Manuscript submission deadline",
+          "date": "2026-07-31",
+          "timezone": "Not specified by source"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "HumanCenteredSE",
+          "EmpiricalSE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://www.sciencedirect.com/journal/information-and-software-technology/special-issues"
+      },
+      "source": {
+        "url": "https://www.sciencedirect.com/journal/information-and-software-technology/special-issues",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Listed under calls for papers on the Information and Software Technology special issues page.\n"
+    },
+    {
+      "id": "models-2026-workshops",
+      "venueId": "models",
+      "title": "MODELS 2026 Workshops",
+      "type": "workshop",
+      "status": "open",
+      "deadlines": [
+        {
+          "label": "proposal",
+          "description": "Workshop proposal submissions deadline",
+          "date": "2026-03-06",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Workshop proposal acceptance notification",
+          "date": "2026-03-27",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "submission",
+          "description": "Workshop paper submissions deadline",
+          "date": "2026-07-03",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Workshop paper notification",
+          "date": "2026-07-31",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "camera_ready",
+          "description": "Workshop paper camera-ready deadline",
+          "date": "2026-08-14",
+          "timezone": "Anywhere on Earth"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins",
+          "HumanCenteredSE",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/models-2026/models-2026-workshops"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/models-2026/models-2026-workshops",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Aggregated workshop-track dates for MODELS 2026 from the official Researchr page.\n"
+    },
+    {
+      "id": "caise-2026-workshops",
+      "venueId": "caise",
+      "title": "CAiSE 2026 Workshops",
+      "type": "workshop",
+      "status": "closed",
+      "deadlines": [
+        {
+          "label": "submission",
+          "description": "Workshop paper submission",
+          "date": "2026-03-08",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Workshop paper notification",
+          "date": "2026-03-31",
+          "timezone": "Anywhere on Earth"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Requirements",
+          "Architecture",
+          "MDE",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://caise26.polimi.it/"
+      },
+      "source": {
+        "url": "https://caise26.polimi.it/",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Aggregated workshop dates listed on the official CAiSE 2026 homepage.\n"
+    },
+    {
+      "id": "er-2026-workshop-proposals",
+      "venueId": "er",
+      "title": "ER 2026 Workshop Proposals",
+      "type": "workshop",
+      "status": "closed",
+      "deadlines": [
+        {
+          "label": "proposal",
+          "description": "Workshop proposals due, extended deadline",
+          "date": "2026-03-07",
+          "timezone": "Anywhere on Earth"
+        },
+        {
+          "label": "notification",
+          "description": "Workshop proposals notification, extended deadline",
+          "date": "2026-03-17",
+          "timezone": "Anywhere on Earth"
+        }
+      ],
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Requirements",
+          "Architecture",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://er2026.org/cfp.html"
+      },
+      "source": {
+        "url": "https://er2026.org/dates.html",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Workshop proposal dates are listed as end-of-day AoE on the official ER 2026 dates page.\n"
     }
   ],
   "deadlineRows": [
@@ -663,6 +1390,128 @@
       "timezone": "Anywhere on Earth"
     },
     {
+      "id": "caise-2026-full-papers:0:abstract",
+      "recordId": "caise-2026-full-papers",
+      "venueId": "caise",
+      "venue": {
+        "id": "caise",
+        "name": "International Conference on Advanced Information Systems Engineering",
+        "shortName": "CAiSE",
+        "type": "conference",
+        "publisher": "Springer",
+        "website": "https://caise26.polimi.it/",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Architecture",
+            "MDE",
+            "DigitalTwins",
+            "HumanCenteredSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A major information systems engineering conference with strong links to modeling, requirements, architecture, and process engineering.\n",
+        "source": {
+          "url": "https://caise26.polimi.it/",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "CAiSE 2026 Full Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Requirements",
+          "Architecture",
+          "MDE",
+          "DigitalTwins",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://caise26.polimi.it/?page_id=60",
+        "submission": "https://easychair.org/my/conference?conf=caise2026"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://caise26.polimi.it/?page_id=60",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Full paper dates are listed on the official CAiSE 2026 call for full papers.\n",
+      "deadlineLabel": "abstract",
+      "deadlineDescription": "Mandatory abstract submission, extended deadline",
+      "deadlineDate": "2025-11-21",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "caise-2026-full-papers:1:full_paper",
+      "recordId": "caise-2026-full-papers",
+      "venueId": "caise",
+      "venue": {
+        "id": "caise",
+        "name": "International Conference on Advanced Information Systems Engineering",
+        "shortName": "CAiSE",
+        "type": "conference",
+        "publisher": "Springer",
+        "website": "https://caise26.polimi.it/",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Architecture",
+            "MDE",
+            "DigitalTwins",
+            "HumanCenteredSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A major information systems engineering conference with strong links to modeling, requirements, architecture, and process engineering.\n",
+        "source": {
+          "url": "https://caise26.polimi.it/",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "CAiSE 2026 Full Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Requirements",
+          "Architecture",
+          "MDE",
+          "DigitalTwins",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://caise26.polimi.it/?page_id=60",
+        "submission": "https://easychair.org/my/conference?conf=caise2026"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://caise26.polimi.it/?page_id=60",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Full paper dates are listed on the official CAiSE 2026 call for full papers.\n",
+      "deadlineLabel": "full_paper",
+      "deadlineDescription": "Paper submission",
+      "deadlineDate": "2025-11-28",
+      "timezone": "Anywhere on Earth"
+    },
+    {
       "id": "fse-2026-research-papers:2:notification",
       "recordId": "fse-2026-research-papers",
       "venueId": "fse",
@@ -725,6 +1574,67 @@
       "timezone": "Anywhere on Earth"
     },
     {
+      "id": "caise-2026-full-papers:2:notification",
+      "recordId": "caise-2026-full-papers",
+      "venueId": "caise",
+      "venue": {
+        "id": "caise",
+        "name": "International Conference on Advanced Information Systems Engineering",
+        "shortName": "CAiSE",
+        "type": "conference",
+        "publisher": "Springer",
+        "website": "https://caise26.polimi.it/",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Architecture",
+            "MDE",
+            "DigitalTwins",
+            "HumanCenteredSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A major information systems engineering conference with strong links to modeling, requirements, architecture, and process engineering.\n",
+        "source": {
+          "url": "https://caise26.polimi.it/",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "CAiSE 2026 Full Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Requirements",
+          "Architecture",
+          "MDE",
+          "DigitalTwins",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://caise26.polimi.it/?page_id=60",
+        "submission": "https://easychair.org/my/conference?conf=caise2026"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://caise26.polimi.it/?page_id=60",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Full paper dates are listed on the official CAiSE 2026 call for full papers.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Notification of acceptance",
+      "deadlineDate": "2026-02-12",
+      "timezone": "Anywhere on Earth"
+    },
+    {
       "id": "fse-2026-research-papers:3:revision",
       "recordId": "fse-2026-research-papers",
       "venueId": "fse",
@@ -784,6 +1694,534 @@
       "deadlineLabel": "revision",
       "deadlineDescription": "Revised manuscript submission",
       "deadlineDate": "2026-02-24",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "icsme-2026-research-papers:0:abstract",
+      "recordId": "icsme-2026-research-papers",
+      "venueId": "icsme",
+      "venue": {
+        "id": "icsme",
+        "name": "IEEE International Conference on Software Maintenance and Evolution",
+        "shortName": "ICSME",
+        "type": "conference",
+        "publisher": "IEEE",
+        "website": "https://conf.researchr.org/series/icsme",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Maintenance",
+            "Testing",
+            "ProgramAnalysis",
+            "EmpiricalSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A premier venue for software maintenance, evolution, comprehension, and related empirical and tooling research.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/icsme",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ICSME 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Maintenance",
+          "Testing",
+          "ProgramAnalysis",
+          "EmpiricalSE",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icsme-2026/icsme-2026-papers",
+        "submission": "https://easychair.org/conferences/?conf=icsme2026"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icsme-2026/icsme-2026-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official ICSME 2026 Research Papers page.\n",
+      "deadlineLabel": "abstract",
+      "deadlineDescription": "Abstract submission",
+      "deadlineDate": "2026-02-27",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "models-2026-workshops:0:proposal",
+      "recordId": "models-2026-workshops",
+      "venueId": "models",
+      "venue": {
+        "id": "models",
+        "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+        "shortName": "MODELS",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/models",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Architecture",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A primary conference for model-driven engineering research and practice.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/models",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "MODELS 2026 Workshops",
+      "recordType": "workshop",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins",
+          "HumanCenteredSE",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/models-2026/models-2026-workshops"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/models-2026/models-2026-workshops",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Aggregated workshop-track dates for MODELS 2026 from the official Researchr page.\n",
+      "deadlineLabel": "proposal",
+      "deadlineDescription": "Workshop proposal submissions deadline",
+      "deadlineDate": "2026-03-06",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "icsme-2026-research-papers:1:full_paper",
+      "recordId": "icsme-2026-research-papers",
+      "venueId": "icsme",
+      "venue": {
+        "id": "icsme",
+        "name": "IEEE International Conference on Software Maintenance and Evolution",
+        "shortName": "ICSME",
+        "type": "conference",
+        "publisher": "IEEE",
+        "website": "https://conf.researchr.org/series/icsme",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Maintenance",
+            "Testing",
+            "ProgramAnalysis",
+            "EmpiricalSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A premier venue for software maintenance, evolution, comprehension, and related empirical and tooling research.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/icsme",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ICSME 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Maintenance",
+          "Testing",
+          "ProgramAnalysis",
+          "EmpiricalSE",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icsme-2026/icsme-2026-papers",
+        "submission": "https://easychair.org/conferences/?conf=icsme2026"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icsme-2026/icsme-2026-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official ICSME 2026 Research Papers page.\n",
+      "deadlineLabel": "full_paper",
+      "deadlineDescription": "Paper submission",
+      "deadlineDate": "2026-03-06",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "er-2026-workshop-proposals:0:proposal",
+      "recordId": "er-2026-workshop-proposals",
+      "venueId": "er",
+      "venue": {
+        "id": "er",
+        "name": "International Conference on Conceptual Modeling",
+        "shortName": "ER",
+        "type": "conference",
+        "publisher": "Springer",
+        "website": "https://conceptualmodeling.org/",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Requirements",
+            "Architecture",
+            "DigitalTwins",
+            "HumanCenteredSE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A long-running venue for conceptual modeling research and applications.\n",
+        "source": {
+          "url": "https://conceptualmodeling.org/",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ER 2026 Workshop Proposals",
+      "recordType": "workshop",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Requirements",
+          "Architecture",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://er2026.org/cfp.html"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://er2026.org/dates.html",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Workshop proposal dates are listed as end-of-day AoE on the official ER 2026 dates page.\n",
+      "deadlineLabel": "proposal",
+      "deadlineDescription": "Workshop proposals due, extended deadline",
+      "deadlineDate": "2026-03-07",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "caise-2026-workshops:0:submission",
+      "recordId": "caise-2026-workshops",
+      "venueId": "caise",
+      "venue": {
+        "id": "caise",
+        "name": "International Conference on Advanced Information Systems Engineering",
+        "shortName": "CAiSE",
+        "type": "conference",
+        "publisher": "Springer",
+        "website": "https://caise26.polimi.it/",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Architecture",
+            "MDE",
+            "DigitalTwins",
+            "HumanCenteredSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A major information systems engineering conference with strong links to modeling, requirements, architecture, and process engineering.\n",
+        "source": {
+          "url": "https://caise26.polimi.it/",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "CAiSE 2026 Workshops",
+      "recordType": "workshop",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Requirements",
+          "Architecture",
+          "MDE",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://caise26.polimi.it/"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://caise26.polimi.it/",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Aggregated workshop dates listed on the official CAiSE 2026 homepage.\n",
+      "deadlineLabel": "submission",
+      "deadlineDescription": "Workshop paper submission",
+      "deadlineDate": "2026-03-08",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "jss-ai-for-software-architecting-2026:0:full_paper",
+      "recordId": "jss-ai-for-software-architecting-2026",
+      "venueId": "jss",
+      "venue": {
+        "id": "jss",
+        "name": "Journal of Systems and Software",
+        "shortName": "JSS",
+        "type": "journal",
+        "publisher": "Elsevier",
+        "website": "https://www.sciencedirect.com/journal/journal-of-systems-and-software",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Architecture",
+            "Maintenance",
+            "MDE",
+            "Testing"
+          ]
+        },
+        "ranking": {
+          "ccf": "B"
+        },
+        "metrics": {
+          "impactFactor": 4.1,
+          "jcrQuartile": "Q1"
+        },
+        "metricsYear": 2025,
+        "notes": "A broad software systems and software engineering journal.\n",
+        "source": {
+          "url": "https://www.sciencedirect.com/journal/journal-of-systems-and-software",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "Artificial Intelligence for Software Architecting",
+      "recordType": "special_issue",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Architecture"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://www.sciencedirect.com/journal/journal-of-systems-and-software"
+      },
+      "rank": {
+        "ccf": "B"
+      },
+      "source": {
+        "url": "https://www.sciencedirect.com/journal/journal-of-systems-and-software",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Listed under calls for papers on the Journal of Systems and Software page.\n",
+      "deadlineLabel": "full_paper",
+      "deadlineDescription": "Manuscript submission deadline",
+      "deadlineDate": "2026-03-15",
+      "timezone": "Not specified by source"
+    },
+    {
+      "id": "er-2026-workshop-proposals:1:notification",
+      "recordId": "er-2026-workshop-proposals",
+      "venueId": "er",
+      "venue": {
+        "id": "er",
+        "name": "International Conference on Conceptual Modeling",
+        "shortName": "ER",
+        "type": "conference",
+        "publisher": "Springer",
+        "website": "https://conceptualmodeling.org/",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Requirements",
+            "Architecture",
+            "DigitalTwins",
+            "HumanCenteredSE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A long-running venue for conceptual modeling research and applications.\n",
+        "source": {
+          "url": "https://conceptualmodeling.org/",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ER 2026 Workshop Proposals",
+      "recordType": "workshop",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Requirements",
+          "Architecture",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://er2026.org/cfp.html"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://er2026.org/dates.html",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Workshop proposal dates are listed as end-of-day AoE on the official ER 2026 dates page.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Workshop proposals notification, extended deadline",
+      "deadlineDate": "2026-03-17",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "edoc-2026-research-papers:0:submission",
+      "recordId": "edoc-2026-research-papers",
+      "venueId": "edoc",
+      "venue": {
+        "id": "edoc",
+        "name": "IEEE International Enterprise Distributed Object Computing Conference",
+        "shortName": "EDOC",
+        "type": "conference",
+        "publisher": "IEEE/Springer",
+        "website": "https://conf.researchr.org/series/edoc",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Architecture",
+            "MDE",
+            "Requirements",
+            "Security",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "B"
+        },
+        "notes": "A conference on enterprise computing, enterprise architecture, process modeling, service systems, and model-driven approaches.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/edoc",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "EDOC 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Architecture",
+          "MDE",
+          "Requirements",
+          "Security",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/edoc-2026/edoc-2026-papers",
+        "submission": "https://easychair.org/conferences/?conf=cbiedoc2026"
+      },
+      "rank": {
+        "core": "B"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/edoc-2026/edoc-2026-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "EDOC 2026 offers two submission deadlines according to the official Researchr page.\n",
+      "deadlineLabel": "submission",
+      "deadlineDescription": "First submission deadline",
+      "deadlineDate": "2026-03-20",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "models-2026-research-papers:0:abstract",
+      "recordId": "models-2026-research-papers",
+      "venueId": "models",
+      "venue": {
+        "id": "models",
+        "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+        "shortName": "MODELS",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/models",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Architecture",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A primary conference for model-driven engineering research and practice.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/models",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "MODELS 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/models-2026/models-2026-research-papers"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/models-2026/models-2026-research-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official MODELS 2026 Research Papers page.\n",
+      "deadlineLabel": "abstract",
+      "deadlineDescription": "Abstract submission",
+      "deadlineDate": "2026-03-20",
       "timezone": "Anywhere on Earth"
     },
     {
@@ -851,6 +2289,178 @@
       "timezone": "Anywhere on Earth"
     },
     {
+      "id": "models-2026-research-papers:1:full_paper",
+      "recordId": "models-2026-research-papers",
+      "venueId": "models",
+      "venue": {
+        "id": "models",
+        "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+        "shortName": "MODELS",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/models",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Architecture",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A primary conference for model-driven engineering research and practice.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/models",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "MODELS 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/models-2026/models-2026-research-papers"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/models-2026/models-2026-research-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official MODELS 2026 Research Papers page.\n",
+      "deadlineLabel": "full_paper",
+      "deadlineDescription": "Paper submission",
+      "deadlineDate": "2026-03-27",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "models-2026-workshops:1:notification",
+      "recordId": "models-2026-workshops",
+      "venueId": "models",
+      "venue": {
+        "id": "models",
+        "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+        "shortName": "MODELS",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/models",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Architecture",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A primary conference for model-driven engineering research and practice.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/models",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "MODELS 2026 Workshops",
+      "recordType": "workshop",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins",
+          "HumanCenteredSE",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/models-2026/models-2026-workshops"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/models-2026/models-2026-workshops",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Aggregated workshop-track dates for MODELS 2026 from the official Researchr page.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Workshop proposal acceptance notification",
+      "deadlineDate": "2026-03-27",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "caise-2026-workshops:1:notification",
+      "recordId": "caise-2026-workshops",
+      "venueId": "caise",
+      "venue": {
+        "id": "caise",
+        "name": "International Conference on Advanced Information Systems Engineering",
+        "shortName": "CAiSE",
+        "type": "conference",
+        "publisher": "Springer",
+        "website": "https://caise26.polimi.it/",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Architecture",
+            "MDE",
+            "DigitalTwins",
+            "HumanCenteredSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A major information systems engineering conference with strong links to modeling, requirements, architecture, and process engineering.\n",
+        "source": {
+          "url": "https://caise26.polimi.it/",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "CAiSE 2026 Workshops",
+      "recordType": "workshop",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Requirements",
+          "Architecture",
+          "MDE",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://caise26.polimi.it/"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://caise26.polimi.it/",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Aggregated workshop dates listed on the official CAiSE 2026 homepage.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Workshop paper notification",
+      "deadlineDate": "2026-03-31",
+      "timezone": "Anywhere on Earth"
+    },
+    {
       "id": "fse-2026-research-papers:4:camera_ready",
       "recordId": "fse-2026-research-papers",
       "venueId": "fse",
@@ -913,6 +2523,478 @@
       "timezone": "Anywhere on Earth"
     },
     {
+      "id": "edoc-2026-research-papers:1:notification",
+      "recordId": "edoc-2026-research-papers",
+      "venueId": "edoc",
+      "venue": {
+        "id": "edoc",
+        "name": "IEEE International Enterprise Distributed Object Computing Conference",
+        "shortName": "EDOC",
+        "type": "conference",
+        "publisher": "IEEE/Springer",
+        "website": "https://conf.researchr.org/series/edoc",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Architecture",
+            "MDE",
+            "Requirements",
+            "Security",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "B"
+        },
+        "notes": "A conference on enterprise computing, enterprise architecture, process modeling, service systems, and model-driven approaches.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/edoc",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "EDOC 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Architecture",
+          "MDE",
+          "Requirements",
+          "Security",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/edoc-2026/edoc-2026-papers",
+        "submission": "https://easychair.org/conferences/?conf=cbiedoc2026"
+      },
+      "rank": {
+        "core": "B"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/edoc-2026/edoc-2026-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "EDOC 2026 offers two submission deadlines according to the official Researchr page.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "First submission notification",
+      "deadlineDate": "2026-04-26",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "icsme-2026-research-papers:2:notification",
+      "recordId": "icsme-2026-research-papers",
+      "venueId": "icsme",
+      "venue": {
+        "id": "icsme",
+        "name": "IEEE International Conference on Software Maintenance and Evolution",
+        "shortName": "ICSME",
+        "type": "conference",
+        "publisher": "IEEE",
+        "website": "https://conf.researchr.org/series/icsme",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Maintenance",
+            "Testing",
+            "ProgramAnalysis",
+            "EmpiricalSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A premier venue for software maintenance, evolution, comprehension, and related empirical and tooling research.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/icsme",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ICSME 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Maintenance",
+          "Testing",
+          "ProgramAnalysis",
+          "EmpiricalSE",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icsme-2026/icsme-2026-papers",
+        "submission": "https://easychair.org/conferences/?conf=icsme2026"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icsme-2026/icsme-2026-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official ICSME 2026 Research Papers page.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Early decisions notification",
+      "deadlineDate": "2026-05-03",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "icsme-2026-research-papers:3:author_response",
+      "recordId": "icsme-2026-research-papers",
+      "venueId": "icsme",
+      "venue": {
+        "id": "icsme",
+        "name": "IEEE International Conference on Software Maintenance and Evolution",
+        "shortName": "ICSME",
+        "type": "conference",
+        "publisher": "IEEE",
+        "website": "https://conf.researchr.org/series/icsme",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Maintenance",
+            "Testing",
+            "ProgramAnalysis",
+            "EmpiricalSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A premier venue for software maintenance, evolution, comprehension, and related empirical and tooling research.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/icsme",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ICSME 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Maintenance",
+          "Testing",
+          "ProgramAnalysis",
+          "EmpiricalSE",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icsme-2026/icsme-2026-papers",
+        "submission": "https://easychair.org/conferences/?conf=icsme2026"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icsme-2026/icsme-2026-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official ICSME 2026 Research Papers page.\n",
+      "deadlineLabel": "author_response",
+      "deadlineDescription": "Author response period begins",
+      "deadlineDate": "2026-05-04",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "er-2026-research-papers:0:abstract",
+      "recordId": "er-2026-research-papers",
+      "venueId": "er",
+      "venue": {
+        "id": "er",
+        "name": "International Conference on Conceptual Modeling",
+        "shortName": "ER",
+        "type": "conference",
+        "publisher": "Springer",
+        "website": "https://conceptualmodeling.org/",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Requirements",
+            "Architecture",
+            "DigitalTwins",
+            "HumanCenteredSE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A long-running venue for conceptual modeling research and applications.\n",
+        "source": {
+          "url": "https://conceptualmodeling.org/",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ER 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Requirements",
+          "Architecture",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://er2026.org/cfp.html"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://er2026.org/dates.html",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ER 2026 important dates are listed as end-of-day AoE on the official conference site.\n",
+      "deadlineLabel": "abstract",
+      "deadlineDescription": "Mandatory paper abstract submission",
+      "deadlineDate": "2026-05-05",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "er-2026-research-papers:1:full_paper",
+      "recordId": "er-2026-research-papers",
+      "venueId": "er",
+      "venue": {
+        "id": "er",
+        "name": "International Conference on Conceptual Modeling",
+        "shortName": "ER",
+        "type": "conference",
+        "publisher": "Springer",
+        "website": "https://conceptualmodeling.org/",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Requirements",
+            "Architecture",
+            "DigitalTwins",
+            "HumanCenteredSE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A long-running venue for conceptual modeling research and applications.\n",
+        "source": {
+          "url": "https://conceptualmodeling.org/",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ER 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Requirements",
+          "Architecture",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://er2026.org/cfp.html"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://er2026.org/dates.html",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ER 2026 important dates are listed as end-of-day AoE on the official conference site.\n",
+      "deadlineLabel": "full_paper",
+      "deadlineDescription": "Paper submission",
+      "deadlineDate": "2026-05-12",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "edoc-2026-research-papers:2:submission",
+      "recordId": "edoc-2026-research-papers",
+      "venueId": "edoc",
+      "venue": {
+        "id": "edoc",
+        "name": "IEEE International Enterprise Distributed Object Computing Conference",
+        "shortName": "EDOC",
+        "type": "conference",
+        "publisher": "IEEE/Springer",
+        "website": "https://conf.researchr.org/series/edoc",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Architecture",
+            "MDE",
+            "Requirements",
+            "Security",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "B"
+        },
+        "notes": "A conference on enterprise computing, enterprise architecture, process modeling, service systems, and model-driven approaches.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/edoc",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "EDOC 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Architecture",
+          "MDE",
+          "Requirements",
+          "Security",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/edoc-2026/edoc-2026-papers",
+        "submission": "https://easychair.org/conferences/?conf=cbiedoc2026"
+      },
+      "rank": {
+        "core": "B"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/edoc-2026/edoc-2026-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "EDOC 2026 offers two submission deadlines according to the official Researchr page.\n",
+      "deadlineLabel": "submission",
+      "deadlineDescription": "Second submission deadline",
+      "deadlineDate": "2026-05-22",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "models-2026-research-papers:2:author_response",
+      "recordId": "models-2026-research-papers",
+      "venueId": "models",
+      "venue": {
+        "id": "models",
+        "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+        "shortName": "MODELS",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/models",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Architecture",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A primary conference for model-driven engineering research and practice.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/models",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "MODELS 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/models-2026/models-2026-research-papers"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/models-2026/models-2026-research-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official MODELS 2026 Research Papers page.\n",
+      "deadlineLabel": "author_response",
+      "deadlineDescription": "Author response period begins",
+      "deadlineDate": "2026-05-27",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "icsme-2026-research-papers:4:notification",
+      "recordId": "icsme-2026-research-papers",
+      "venueId": "icsme",
+      "venue": {
+        "id": "icsme",
+        "name": "IEEE International Conference on Software Maintenance and Evolution",
+        "shortName": "ICSME",
+        "type": "conference",
+        "publisher": "IEEE",
+        "website": "https://conf.researchr.org/series/icsme",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Maintenance",
+            "Testing",
+            "ProgramAnalysis",
+            "EmpiricalSE",
+            "AI4SE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A premier venue for software maintenance, evolution, comprehension, and related empirical and tooling research.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/icsme",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ICSME 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Maintenance",
+          "Testing",
+          "ProgramAnalysis",
+          "EmpiricalSE",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/icsme-2026/icsme-2026-papers",
+        "submission": "https://easychair.org/conferences/?conf=icsme2026"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/icsme-2026/icsme-2026-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official ICSME 2026 Research Papers page.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Final notification",
+      "deadlineDate": "2026-05-29",
+      "timezone": "Anywhere on Earth"
+    },
+    {
       "id": "emse-ease-2026-invite:0:submission_open",
       "recordId": "emse-ease-2026-invite",
       "venueId": "emse",
@@ -965,6 +3047,62 @@
       "deadlineLabel": "submission_open",
       "deadlineDescription": "Submissions open",
       "deadlineDate": "2026-06-12",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "models-2026-research-papers:3:notification",
+      "recordId": "models-2026-research-papers",
+      "venueId": "models",
+      "venue": {
+        "id": "models",
+        "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+        "shortName": "MODELS",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/models",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Architecture",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A primary conference for model-driven engineering research and practice.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/models",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "MODELS 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/models-2026/models-2026-research-papers"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/models-2026/models-2026-research-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official MODELS 2026 Research Papers page.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Author notification",
+      "deadlineDate": "2026-06-17",
       "timezone": "Anywhere on Earth"
     },
     {
@@ -1158,6 +3296,181 @@
       "timezone": "Anywhere on Earth"
     },
     {
+      "id": "models-2026-workshops:2:submission",
+      "recordId": "models-2026-workshops",
+      "venueId": "models",
+      "venue": {
+        "id": "models",
+        "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+        "shortName": "MODELS",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/models",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Architecture",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A primary conference for model-driven engineering research and practice.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/models",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "MODELS 2026 Workshops",
+      "recordType": "workshop",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins",
+          "HumanCenteredSE",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/models-2026/models-2026-workshops"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/models-2026/models-2026-workshops",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Aggregated workshop-track dates for MODELS 2026 from the official Researchr page.\n",
+      "deadlineLabel": "submission",
+      "deadlineDescription": "Workshop paper submissions deadline",
+      "deadlineDate": "2026-07-03",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "edoc-2026-research-papers:3:notification",
+      "recordId": "edoc-2026-research-papers",
+      "venueId": "edoc",
+      "venue": {
+        "id": "edoc",
+        "name": "IEEE International Enterprise Distributed Object Computing Conference",
+        "shortName": "EDOC",
+        "type": "conference",
+        "publisher": "IEEE/Springer",
+        "website": "https://conf.researchr.org/series/edoc",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Architecture",
+            "MDE",
+            "Requirements",
+            "Security",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "B"
+        },
+        "notes": "A conference on enterprise computing, enterprise architecture, process modeling, service systems, and model-driven approaches.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/edoc",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "EDOC 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Architecture",
+          "MDE",
+          "Requirements",
+          "Security",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/edoc-2026/edoc-2026-papers",
+        "submission": "https://easychair.org/conferences/?conf=cbiedoc2026"
+      },
+      "rank": {
+        "core": "B"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/edoc-2026/edoc-2026-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "EDOC 2026 offers two submission deadlines according to the official Researchr page.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Second submission notification",
+      "deadlineDate": "2026-07-08",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "er-2026-research-papers:2:notification",
+      "recordId": "er-2026-research-papers",
+      "venueId": "er",
+      "venue": {
+        "id": "er",
+        "name": "International Conference on Conceptual Modeling",
+        "shortName": "ER",
+        "type": "conference",
+        "publisher": "Springer",
+        "website": "https://conceptualmodeling.org/",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Requirements",
+            "Architecture",
+            "DigitalTwins",
+            "HumanCenteredSE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A long-running venue for conceptual modeling research and applications.\n",
+        "source": {
+          "url": "https://conceptualmodeling.org/",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ER 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Requirements",
+          "Architecture",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://er2026.org/cfp.html"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://er2026.org/dates.html",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ER 2026 important dates are listed as end-of-day AoE on the official conference site.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Paper acceptance notification",
+      "deadlineDate": "2026-07-14",
+      "timezone": "Anywhere on Earth"
+    },
+    {
       "id": "ase-2026-research-track:2:revision",
       "recordId": "ase-2026-research-track",
       "venueId": "ase",
@@ -1219,6 +3532,64 @@
       "deadlineLabel": "revision",
       "deadlineDescription": "Revision submission for major revisions",
       "deadlineDate": "2026-07-16",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "er-2026-research-papers:3:camera_ready",
+      "recordId": "er-2026-research-papers",
+      "venueId": "er",
+      "venue": {
+        "id": "er",
+        "name": "International Conference on Conceptual Modeling",
+        "shortName": "ER",
+        "type": "conference",
+        "publisher": "Springer",
+        "website": "https://conceptualmodeling.org/",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Requirements",
+            "Architecture",
+            "DigitalTwins",
+            "HumanCenteredSE"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A long-running venue for conceptual modeling research and applications.\n",
+        "source": {
+          "url": "https://conceptualmodeling.org/",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "ER 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Requirements",
+          "Architecture",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://er2026.org/cfp.html"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://er2026.org/dates.html",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "ER 2026 important dates are listed as end-of-day AoE on the official conference site.\n",
+      "deadlineLabel": "camera_ready",
+      "deadlineDescription": "Camera-ready submission and author registration",
+      "deadlineDate": "2026-07-28",
       "timezone": "Anywhere on Earth"
     },
     {
@@ -1286,6 +3657,182 @@
       "timezone": "Anywhere on Earth"
     },
     {
+      "id": "ist-human-factor-genai-2026:0:full_paper",
+      "recordId": "ist-human-factor-genai-2026",
+      "venueId": "ist",
+      "venue": {
+        "id": "ist",
+        "name": "Information and Software Technology",
+        "shortName": "IST",
+        "type": "journal",
+        "publisher": "Elsevier",
+        "website": "https://www.sciencedirect.com/journal/information-and-software-technology",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Architecture",
+            "Testing",
+            "Maintenance",
+            "EmpiricalSE",
+            "HumanCenteredSE"
+          ]
+        },
+        "ranking": {
+          "ccf": "B"
+        },
+        "metrics": {
+          "impactFactor": 4.3,
+          "jcrQuartile": "Q1"
+        },
+        "metricsYear": 2025,
+        "notes": "A software engineering and information systems journal covering methods, tools, empirical studies, and technology transfer.\n",
+        "source": {
+          "url": "https://www.sciencedirect.com/journal/information-and-software-technology",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "Human Factor in Generative AI: Trust, Usability, and Responsible Adoption",
+      "recordType": "special_issue",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "HumanCenteredSE",
+          "EmpiricalSE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://www.sciencedirect.com/journal/information-and-software-technology/special-issues"
+      },
+      "rank": {
+        "ccf": "B"
+      },
+      "source": {
+        "url": "https://www.sciencedirect.com/journal/information-and-software-technology/special-issues",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Listed under calls for papers on the Information and Software Technology special issues page.\n",
+      "deadlineLabel": "full_paper",
+      "deadlineDescription": "Manuscript submission deadline",
+      "deadlineDate": "2026-07-31",
+      "timezone": "Not specified by source"
+    },
+    {
+      "id": "models-2026-workshops:3:notification",
+      "recordId": "models-2026-workshops",
+      "venueId": "models",
+      "venue": {
+        "id": "models",
+        "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+        "shortName": "MODELS",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/models",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Architecture",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A primary conference for model-driven engineering research and practice.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/models",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "MODELS 2026 Workshops",
+      "recordType": "workshop",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins",
+          "HumanCenteredSE",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/models-2026/models-2026-workshops"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/models-2026/models-2026-workshops",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Aggregated workshop-track dates for MODELS 2026 from the official Researchr page.\n",
+      "deadlineLabel": "notification",
+      "deadlineDescription": "Workshop paper notification",
+      "deadlineDate": "2026-07-31",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "models-2026-research-papers:4:camera_ready",
+      "recordId": "models-2026-research-papers",
+      "venueId": "models",
+      "venue": {
+        "id": "models",
+        "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+        "shortName": "MODELS",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/models",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Architecture",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A primary conference for model-driven engineering research and practice.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/models",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "MODELS 2026 Research Papers",
+      "recordType": "conference",
+      "status": "closed",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/models-2026/models-2026-research-papers"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/models-2026/models-2026-research-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Research paper dates are listed as AoE on the official MODELS 2026 Research Papers page.\n",
+      "deadlineLabel": "camera_ready",
+      "deadlineDescription": "Camera-ready due",
+      "deadlineDate": "2026-07-31",
+      "timezone": "Anywhere on Earth"
+    },
+    {
       "id": "ase-2026-research-track:4:camera_ready",
       "recordId": "ase-2026-research-track",
       "venueId": "ase",
@@ -1348,6 +3895,186 @@
       "deadlineDescription": "Camera-ready papers",
       "deadlineDate": "2026-08-03",
       "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "edoc-2026-research-papers:4:camera_ready",
+      "recordId": "edoc-2026-research-papers",
+      "venueId": "edoc",
+      "venue": {
+        "id": "edoc",
+        "name": "IEEE International Enterprise Distributed Object Computing Conference",
+        "shortName": "EDOC",
+        "type": "conference",
+        "publisher": "IEEE/Springer",
+        "website": "https://conf.researchr.org/series/edoc",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Architecture",
+            "MDE",
+            "Requirements",
+            "Security",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "B"
+        },
+        "notes": "A conference on enterprise computing, enterprise architecture, process modeling, service systems, and model-driven approaches.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/edoc",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "EDOC 2026 Research Papers",
+      "recordType": "conference",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Architecture",
+          "MDE",
+          "Requirements",
+          "Security",
+          "DigitalTwins"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/edoc-2026/edoc-2026-papers",
+        "submission": "https://easychair.org/conferences/?conf=cbiedoc2026"
+      },
+      "rank": {
+        "core": "B"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/edoc-2026/edoc-2026-papers",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "EDOC 2026 offers two submission deadlines according to the official Researchr page.\n",
+      "deadlineLabel": "camera_ready",
+      "deadlineDescription": "Camera-ready submission",
+      "deadlineDate": "2026-08-07",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "models-2026-workshops:4:camera_ready",
+      "recordId": "models-2026-workshops",
+      "venueId": "models",
+      "venue": {
+        "id": "models",
+        "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+        "shortName": "MODELS",
+        "type": "conference",
+        "publisher": "ACM/IEEE",
+        "website": "https://conf.researchr.org/series/models",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "MDE",
+            "Architecture",
+            "DigitalTwins"
+          ]
+        },
+        "ranking": {
+          "core": "A"
+        },
+        "notes": "A primary conference for model-driven engineering research and practice.\n",
+        "source": {
+          "url": "https://conf.researchr.org/series/models",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "MODELS 2026 Workshops",
+      "recordType": "workshop",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "MDE",
+          "Architecture",
+          "DigitalTwins",
+          "HumanCenteredSE",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://conf.researchr.org/track/models-2026/models-2026-workshops"
+      },
+      "rank": {
+        "core": "A"
+      },
+      "source": {
+        "url": "https://conf.researchr.org/track/models-2026/models-2026-workshops",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Aggregated workshop-track dates for MODELS 2026 from the official Researchr page.\n",
+      "deadlineLabel": "camera_ready",
+      "deadlineDescription": "Workshop paper camera-ready deadline",
+      "deadlineDate": "2026-08-14",
+      "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "ist-green-software-evolution-2026:0:full_paper",
+      "recordId": "ist-green-software-evolution-2026",
+      "venueId": "ist",
+      "venue": {
+        "id": "ist",
+        "name": "Information and Software Technology",
+        "shortName": "IST",
+        "type": "journal",
+        "publisher": "Elsevier",
+        "website": "https://www.sciencedirect.com/journal/information-and-software-technology",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Requirements",
+            "Architecture",
+            "Testing",
+            "Maintenance",
+            "EmpiricalSE",
+            "HumanCenteredSE"
+          ]
+        },
+        "ranking": {
+          "ccf": "B"
+        },
+        "metrics": {
+          "impactFactor": 4.3,
+          "jcrQuartile": "Q1"
+        },
+        "metricsYear": 2025,
+        "notes": "A software engineering and information systems journal covering methods, tools, empirical studies, and technology transfer.\n",
+        "source": {
+          "url": "https://www.sciencedirect.com/journal/information-and-software-technology",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "Green Software Evolution",
+      "recordType": "special_issue",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "Maintenance",
+          "Architecture",
+          "AI4SE"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://www.sciencedirect.com/journal/information-and-software-technology/special-issues"
+      },
+      "rank": {
+        "ccf": "B"
+      },
+      "source": {
+        "url": "https://www.sciencedirect.com/journal/information-and-software-technology/special-issues",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Listed under calls for papers on the Information and Software Technology special issues page.\n",
+      "deadlineLabel": "full_paper",
+      "deadlineDescription": "Manuscript submission deadline",
+      "deadlineDate": "2026-08-15",
+      "timezone": "Not specified by source"
     },
     {
       "id": "icse-2027-research-track:2:author_response",
@@ -1468,6 +4195,68 @@
       "deadlineDescription": "Final submission deadline",
       "deadlineDate": "2026-09-28",
       "timezone": "Anywhere on Earth"
+    },
+    {
+      "id": "jss-ai-performance-reliability-sustainability-2026:0:full_paper",
+      "recordId": "jss-ai-performance-reliability-sustainability-2026",
+      "venueId": "jss",
+      "venue": {
+        "id": "jss",
+        "name": "Journal of Systems and Software",
+        "shortName": "JSS",
+        "type": "journal",
+        "publisher": "Elsevier",
+        "website": "https://www.sciencedirect.com/journal/journal-of-systems-and-software",
+        "categories": {
+          "primary": "SE",
+          "secondary": [
+            "Architecture",
+            "Maintenance",
+            "MDE",
+            "Testing"
+          ]
+        },
+        "ranking": {
+          "ccf": "B"
+        },
+        "metrics": {
+          "impactFactor": 4.1,
+          "jcrQuartile": "Q1"
+        },
+        "metricsYear": 2025,
+        "notes": "A broad software systems and software engineering journal.\n",
+        "source": {
+          "url": "https://www.sciencedirect.com/journal/journal-of-systems-and-software",
+          "checkedDate": "2026-05-02"
+        }
+      },
+      "title": "Special Issue on AI Techniques for Performance, Reliability, and Sustainability of Modern Software Systems",
+      "recordType": "special_issue",
+      "status": "open",
+      "categories": {
+        "primary": "SE",
+        "secondary": [
+          "AI4SE",
+          "Architecture",
+          "Maintenance",
+          "Testing"
+        ]
+      },
+      "links": {
+        "callForPapers": "https://www.sciencedirect.com/journal/journal-of-systems-and-software"
+      },
+      "rank": {
+        "ccf": "B"
+      },
+      "source": {
+        "url": "https://www.sciencedirect.com/journal/journal-of-systems-and-software",
+        "checkedDate": "2026-05-02"
+      },
+      "notes": "Listed under calls for papers on the Journal of Systems and Software page.\n",
+      "deadlineLabel": "full_paper",
+      "deadlineDescription": "Manuscript submission deadline",
+      "deadlineDate": "2026-09-30",
+      "timezone": "Not specified by source"
     },
     {
       "id": "icse-2027-research-track:3:notification",

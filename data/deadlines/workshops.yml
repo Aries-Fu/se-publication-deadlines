@@ -1,3 +1,99 @@
-# Add workshop deadline records here.
-# Workshops usually use the parent conference venueId and put the workshop name in title.
-[]
+- id: models-2026-workshops
+  venueId: models
+  title: MODELS 2026 Workshops
+  type: workshop
+  status: open
+  deadlines:
+    - label: proposal
+      description: Workshop proposal submissions deadline
+      date: 2026-03-06
+      timezone: Anywhere on Earth
+    - label: notification
+      description: Workshop proposal acceptance notification
+      date: 2026-03-27
+      timezone: Anywhere on Earth
+    - label: submission
+      description: Workshop paper submissions deadline
+      date: 2026-07-03
+      timezone: Anywhere on Earth
+    - label: notification
+      description: Workshop paper notification
+      date: 2026-07-31
+      timezone: Anywhere on Earth
+    - label: camera_ready
+      description: Workshop paper camera-ready deadline
+      date: 2026-08-14
+      timezone: Anywhere on Earth
+  categories:
+    primary: SE
+    secondary:
+      - MDE
+      - Architecture
+      - DigitalTwins
+      - HumanCenteredSE
+      - AI4SE
+  links:
+    callForPapers: https://conf.researchr.org/track/models-2026/models-2026-workshops
+  source:
+    url: https://conf.researchr.org/track/models-2026/models-2026-workshops
+    checkedDate: 2026-05-02
+  notes: >
+    Aggregated workshop-track dates for MODELS 2026 from the official Researchr page.
+
+- id: caise-2026-workshops
+  venueId: caise
+  title: CAiSE 2026 Workshops
+  type: workshop
+  status: closed
+  deadlines:
+    - label: submission
+      description: Workshop paper submission
+      date: 2026-03-08
+      timezone: Anywhere on Earth
+    - label: notification
+      description: Workshop paper notification
+      date: 2026-03-31
+      timezone: Anywhere on Earth
+  categories:
+    primary: SE
+    secondary:
+      - Requirements
+      - Architecture
+      - MDE
+      - DigitalTwins
+  links:
+    callForPapers: https://caise26.polimi.it/
+  source:
+    url: https://caise26.polimi.it/
+    checkedDate: 2026-05-02
+  notes: >
+    Aggregated workshop dates listed on the official CAiSE 2026 homepage.
+
+- id: er-2026-workshop-proposals
+  venueId: er
+  title: ER 2026 Workshop Proposals
+  type: workshop
+  status: closed
+  deadlines:
+    - label: proposal
+      description: Workshop proposals due, extended deadline
+      date: 2026-03-07
+      timezone: Anywhere on Earth
+    - label: notification
+      description: Workshop proposals notification, extended deadline
+      date: 2026-03-17
+      timezone: Anywhere on Earth
+  categories:
+    primary: SE
+    secondary:
+      - MDE
+      - Requirements
+      - Architecture
+      - DigitalTwins
+  links:
+    callForPapers: https://er2026.org/cfp.html
+  source:
+    url: https://er2026.org/dates.html
+    checkedDate: 2026-05-02
+  notes: >
+    Workshop proposal dates are listed as end-of-day AoE on the official ER 2026 dates page.

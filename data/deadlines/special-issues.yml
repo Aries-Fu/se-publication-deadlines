@@ -49,3 +49,99 @@
     checkedDate: 2026-05-02
   notes: >
     Invite-only special issue for selected EASE 2026 contributions.
+
+- id: jss-ai-performance-reliability-sustainability-2026
+  venueId: jss
+  title: Special Issue on AI Techniques for Performance, Reliability, and Sustainability of Modern Software Systems
+  type: special_issue
+  status: open
+  deadlines:
+    - label: full_paper
+      description: Manuscript submission deadline
+      date: 2026-09-30
+      timezone: Not specified by source
+  categories:
+    primary: SE
+    secondary:
+      - AI4SE
+      - Architecture
+      - Maintenance
+      - Testing
+  links:
+    callForPapers: https://www.sciencedirect.com/journal/journal-of-systems-and-software
+  source:
+    url: https://www.sciencedirect.com/journal/journal-of-systems-and-software
+    checkedDate: 2026-05-02
+  notes: >
+    Listed under calls for papers on the Journal of Systems and Software page.
+
+- id: jss-ai-for-software-architecting-2026
+  venueId: jss
+  title: Artificial Intelligence for Software Architecting
+  type: special_issue
+  status: closed
+  deadlines:
+    - label: full_paper
+      description: Manuscript submission deadline
+      date: 2026-03-15
+      timezone: Not specified by source
+  categories:
+    primary: SE
+    secondary:
+      - AI4SE
+      - Architecture
+  links:
+    callForPapers: https://www.sciencedirect.com/journal/journal-of-systems-and-software
+  source:
+    url: https://www.sciencedirect.com/journal/journal-of-systems-and-software
+    checkedDate: 2026-05-02
+  notes: >
+    Listed under calls for papers on the Journal of Systems and Software page.
+
+- id: ist-green-software-evolution-2026
+  venueId: ist
+  title: Green Software Evolution
+  type: special_issue
+  status: open
+  deadlines:
+    - label: full_paper
+      description: Manuscript submission deadline
+      date: 2026-08-15
+      timezone: Not specified by source
+  categories:
+    primary: SE
+    secondary:
+      - Maintenance
+      - Architecture
+      - AI4SE
+  links:
+    callForPapers: https://www.sciencedirect.com/journal/information-and-software-technology/special-issues
+  source:
+    url: https://www.sciencedirect.com/journal/information-and-software-technology/special-issues
+    checkedDate: 2026-05-02
+  notes: >
+    Listed under calls for papers on the Information and Software Technology special issues page.
+
+- id: ist-human-factor-genai-2026
+  venueId: ist
+  title: "Human Factor in Generative AI: Trust, Usability, and Responsible Adoption"
+  type: special_issue
+  status: open
+  deadlines:
+    - label: full_paper
+      description: Manuscript submission deadline
+      date: 2026-07-31
+      timezone: Not specified by source
+  categories:
+    primary: SE
+    secondary:
+      - AI4SE
+      - HumanCenteredSE
+      - EmpiricalSE
+  links:
+    callForPapers: https://www.sciencedirect.com/journal/information-and-software-technology/special-issues
+  source:
+    url: https://www.sciencedirect.com/journal/information-and-software-technology/special-issues
+    checkedDate: 2026-05-02
+  notes: >
+    Listed under calls for papers on the Information and Software Technology special issues page.

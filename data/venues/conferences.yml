@@ -109,3 +109,95 @@
   source:
     url: https://conf.researchr.org/series/models
     checkedDate: 2026-05-02
+
+- id: er
+  name: International Conference on Conceptual Modeling
+  shortName: ER
+  type: conference
+  publisher: Springer
+  website: https://conceptualmodeling.org/
+  categories:
+    primary: SE
+    secondary:
+      - MDE
+      - Requirements
+      - Architecture
+      - DigitalTwins
+      - HumanCenteredSE
+  ranking:
+    core: A
+  notes: >
+    A long-running venue for conceptual modeling research and applications.
+  source:
+    url: https://conceptualmodeling.org/
+    checkedDate: 2026-05-02
+
+- id: caise
+  name: International Conference on Advanced Information Systems Engineering
+  shortName: CAiSE
+  type: conference
+  publisher: Springer
+  website: https://caise26.polimi.it/
+  categories:
+    primary: SE
+    secondary:
+      - Requirements
+      - Architecture
+      - MDE
+      - DigitalTwins
+      - HumanCenteredSE
+      - AI4SE
+  ranking:
+    core: A
+  notes: >
+    A major information systems engineering conference with strong links to modeling,
+    requirements, architecture, and process engineering.
+  source:
+    url: https://caise26.polimi.it/
+    checkedDate: 2026-05-02
+
+- id: edoc
+  name: IEEE International Enterprise Distributed Object Computing Conference
+  shortName: EDOC
+  type: conference
+  publisher: IEEE/Springer
+  website: https://conf.researchr.org/series/edoc
+  categories:
+    primary: SE
+    secondary:
+      - Architecture
+      - MDE
+      - Requirements
+      - Security
+      - DigitalTwins
+  ranking:
+    core: B
+  notes: >
+    A conference on enterprise computing, enterprise architecture, process modeling,
+    service systems, and model-driven approaches.
+  source:
+    url: https://conf.researchr.org/series/edoc
+    checkedDate: 2026-05-02
+
+- id: icsme
+  name: IEEE International Conference on Software Maintenance and Evolution
+  shortName: ICSME
+  type: conference
+  publisher: IEEE
+  website: https://conf.researchr.org/series/icsme
+  categories:
+    primary: SE
+    secondary:
+      - Maintenance
+      - Testing
+      - ProgramAnalysis
+      - EmpiricalSE
+      - AI4SE
+  ranking:
+    core: A
+  notes: >
+    A premier venue for software maintenance, evolution, comprehension, and related
+    empirical and tooling research.
+  source:
+    url: https://conf.researchr.org/series/icsme
+    checkedDate: 2026-05-02

@@ -84,3 +84,202 @@
     checkedDate: 2026-05-02
   notes: >
     Research paper dates are listed as AoE on the official FSE 2026 Research Papers page.
+
+- id: models-2026-research-papers
+  venueId: models
+  title: MODELS 2026 Research Papers
+  type: conference
+  status: closed
+  deadlines:
+    - label: abstract
+      description: Abstract submission
+      date: 2026-03-20
+      timezone: Anywhere on Earth
+    - label: full_paper
+      description: Paper submission
+      date: 2026-03-27
+      timezone: Anywhere on Earth
+    - label: author_response
+      description: Author response period begins
+      date: 2026-05-27
+      timezone: Anywhere on Earth
+    - label: notification
+      description: Author notification
+      date: 2026-06-17
+      timezone: Anywhere on Earth
+    - label: camera_ready
+      description: Camera-ready due
+      date: 2026-07-31
+      timezone: Anywhere on Earth
+  categories:
+    primary: SE
+    secondary:
+      - MDE
+      - Architecture
+      - DigitalTwins
+      - AI4SE
+  links:
+    callForPapers: https://conf.researchr.org/track/models-2026/models-2026-research-papers
+  source:
+    url: https://conf.researchr.org/track/models-2026/models-2026-research-papers
+    checkedDate: 2026-05-02
+  notes: >
+    Research paper dates are listed as AoE on the official MODELS 2026 Research Papers page.
+
+- id: er-2026-research-papers
+  venueId: er
+  title: ER 2026 Research Papers
+  type: conference
+  status: open
+  deadlines:
+    - label: abstract
+      description: Mandatory paper abstract submission
+      date: 2026-05-05
+      timezone: Anywhere on Earth
+    - label: full_paper
+      description: Paper submission
+      date: 2026-05-12
+      timezone: Anywhere on Earth
+    - label: notification
+      description: Paper acceptance notification
+      date: 2026-07-14
+      timezone: Anywhere on Earth
+    - label: camera_ready
+      description: Camera-ready submission and author registration
+      date: 2026-07-28
+      timezone: Anywhere on Earth
+  categories:
+    primary: SE
+    secondary:
+      - MDE
+      - Requirements
+      - Architecture
+      - DigitalTwins
+  links:
+    callForPapers: https://er2026.org/cfp.html
+  source:
+    url: https://er2026.org/dates.html
+    checkedDate: 2026-05-02
+  notes: >
+    ER 2026 important dates are listed as end-of-day AoE on the official conference site.
+
+- id: caise-2026-full-papers
+  venueId: caise
+  title: CAiSE 2026 Full Papers
+  type: conference
+  status: closed
+  deadlines:
+    - label: abstract
+      description: Mandatory abstract submission, extended deadline
+      date: 2025-11-21
+      timezone: Anywhere on Earth
+    - label: full_paper
+      description: Paper submission
+      date: 2025-11-28
+      timezone: Anywhere on Earth
+    - label: notification
+      description: Notification of acceptance
+      date: 2026-02-12
+      timezone: Anywhere on Earth
+  categories:
+    primary: SE
+    secondary:
+      - Requirements
+      - Architecture
+      - MDE
+      - DigitalTwins
+      - AI4SE
+  links:
+    callForPapers: https://caise26.polimi.it/?page_id=60
+    submission: https://easychair.org/my/conference?conf=caise2026
+  source:
+    url: https://caise26.polimi.it/?page_id=60
+    checkedDate: 2026-05-02
+  notes: >
+    Full paper dates are listed on the official CAiSE 2026 call for full papers.
+
+- id: edoc-2026-research-papers
+  venueId: edoc
+  title: EDOC 2026 Research Papers
+  type: conference
+  status: open
+  deadlines:
+    - label: submission
+      description: First submission deadline
+      date: 2026-03-20
+      timezone: Anywhere on Earth
+    - label: notification
+      description: First submission notification
+      date: 2026-04-26
+      timezone: Anywhere on Earth
+    - label: submission
+      description: Second submission deadline
+      date: 2026-05-22
+      timezone: Anywhere on Earth
+    - label: notification
+      description: Second submission notification
+      date: 2026-07-08
+      timezone: Anywhere on Earth
+    - label: camera_ready
+      description: Camera-ready submission
+      date: 2026-08-07
+      timezone: Anywhere on Earth
+  categories:
+    primary: SE
+    secondary:
+      - Architecture
+      - MDE
+      - Requirements
+      - Security
+      - DigitalTwins
+  links:
+    callForPapers: https://conf.researchr.org/track/edoc-2026/edoc-2026-papers
+    submission: https://easychair.org/conferences/?conf=cbiedoc2026
+  source:
+    url: https://conf.researchr.org/track/edoc-2026/edoc-2026-papers
+    checkedDate: 2026-05-02
+  notes: >
+    EDOC 2026 offers two submission deadlines according to the official Researchr page.
+
+- id: icsme-2026-research-papers
+  venueId: icsme
+  title: ICSME 2026 Research Papers
+  type: conference
+  status: closed
+  deadlines:
+    - label: abstract
+      description: Abstract submission
+      date: 2026-02-27
+      timezone: Anywhere on Earth
+    - label: full_paper
+      description: Paper submission
+      date: 2026-03-06
+      timezone: Anywhere on Earth
+    - label: notification
+      description: Early decisions notification
+      date: 2026-05-03
+      timezone: Anywhere on Earth
+    - label: author_response
+      description: Author response period begins
+      date: 2026-05-04
+      timezone: Anywhere on Earth
+    - label: notification
+      description: Final notification
+      date: 2026-05-29
+      timezone: Anywhere on Earth
+  categories:
+    primary: SE
+    secondary:
+      - Maintenance
+      - Testing
+      - ProgramAnalysis
+      - EmpiricalSE
+      - AI4SE
+  links:
+    callForPapers: https://conf.researchr.org/track/icsme-2026/icsme-2026-papers
+    submission: https://easychair.org/conferences/?conf=icsme2026
+  source:
+    url: https://conf.researchr.org/track/icsme-2026/icsme-2026-papers
+    checkedDate: 2026-05-02
+  notes: >
+    Research paper dates are listed as AoE on the official ICSME 2026 Research Papers page.

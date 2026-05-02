@@ -19,6 +19,34 @@
     url: https://link.springer.com/journal/10664
     checkedDate: 2026-05-02
 
+- id: tosem
+  name: ACM Transactions on Software Engineering and Methodology
+  shortName: TOSEM
+  type: journal
+  publisher: ACM
+  website: https://dl.acm.org/journal/tosem
+  categories:
+    primary: SE
+    secondary:
+      - Requirements
+      - Testing
+      - Maintenance
+      - Architecture
+      - EmpiricalSE
+      - ProgramAnalysis
+  ranking:
+    ccf: A
+  metrics:
+    impactFactor: 6.2
+    jcrQuartile: Q1
+  metricsYear: 2025
+  notes: >
+    ACM archival journal for software engineering and methodology. Impact factor
+    follows ACM's 2025 impact factor announcement.
+  source:
+    url: https://dl.acm.org/journal/tosem
+    checkedDate: 2026-05-02
+
 - id: jss
   name: Journal of Systems and Software
   shortName: JSS
@@ -36,6 +64,7 @@
     ccf: B
   metrics:
     impactFactor: 4.1
+    jcrQuartile: Q1
   metricsYear: 2025
   notes: >
     A broad software systems and software engineering journal.
@@ -59,8 +88,65 @@
       - EmpiricalSE
   ranking:
     ccf: A
+  metrics:
+    impactFactor: 5.6
+    jcrQuartile: Q1
+  metricsYear: 2025
   notes: >
     A flagship journal covering the software engineering discipline.
   source:
     url: https://www.computer.org/csdl/journal/ts
+    checkedDate: 2026-05-02
+
+- id: ist
+  name: Information and Software Technology
+  shortName: IST
+  type: journal
+  publisher: Elsevier
+  website: https://www.sciencedirect.com/journal/information-and-software-technology
+  categories:
+    primary: SE
+    secondary:
+      - Requirements
+      - Architecture
+      - Testing
+      - Maintenance
+      - EmpiricalSE
+      - HumanCenteredSE
+  ranking:
+    ccf: B
+  metrics:
+    impactFactor: 4.3
+    jcrQuartile: Q1
+  metricsYear: 2025
+  notes: >
+    A software engineering and information systems journal covering methods,
+    tools, empirical studies, and technology transfer.
+  source:
+    url: https://www.sciencedirect.com/journal/information-and-software-technology
+    checkedDate: 2026-05-02
+
+- id: sosym
+  name: Software and Systems Modeling
+  shortName: SoSyM
+  type: journal
+  publisher: Springer
+  website: https://link.springer.com/journal/10270
+  categories:
+    primary: SE
+    secondary:
+      - MDE
+      - Architecture
+      - DigitalTwins
+      - Requirements
+      - AI4SE
+  metrics:
+    impactFactor: 3.2
+  metricsYear: 2025
+  notes: >
+    A journal focused on software and systems modeling, model-driven engineering,
+    modeling languages, tools, and applications. The 2025 impact factor is reported
+    in the SoSyM 2025 summary editorial.
+  source:
+    url: https://link.springer.com/journal/10270
     checkedDate: 2026-05-02

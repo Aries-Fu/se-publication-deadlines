@@ -55,6 +55,31 @@ function deadlineFavoriteId(row: DeadlineRow): string {
   return `deadline:${row.recordId}`;
 }
 
+function CompactCategories({ categories }: { categories: string[] }): JSX.Element {
+  const visibleCategories = categories.length > 4 ? categories.slice(0, 3) : categories;
+  const hiddenCount = categories.length - visibleCategories.length;
+
+  return (
+    <div className="grid max-w-44 grid-cols-2 gap-1">
+      {visibleCategories.map((category) => (
+        <Badge
+          key={category}
+          variant="muted"
+          className="min-w-0 justify-center truncate px-1.5 text-[11px]"
+          title={category}
+        >
+          {category}
+        </Badge>
+      ))}
+      {hiddenCount > 0 ? (
+        <Badge variant="muted" className="justify-center px-1.5 text-[11px]">
+          +{hiddenCount}
+        </Badge>
+      ) : null}
+    </div>
+  );
+}
+
 const columns: Array<ColumnDef<DeadlineRow>> = [
   {
     header: "Favorite",
@@ -74,17 +99,17 @@ const columns: Array<ColumnDef<DeadlineRow>> = [
   {
     header: "Venue",
     cell: ({ row }) => (
-      <div className="min-w-32">
+      <div className="min-w-0">
         <VenueMetadataPopover venue={row.original.venue} />
-        <div className="mt-1 text-xs text-slate-500">{row.original.venue.name}</div>
+        <div className="mt-1 text-xs leading-5 text-slate-500">{row.original.venue.name}</div>
       </div>
     ),
   },
   {
     header: "Title",
     cell: ({ row }) => (
-      <div className="min-w-56">
-        <div className="font-medium text-slate-950">{row.original.title}</div>
+      <div className="min-w-0">
+        <div className="font-medium leading-5 text-slate-950">{row.original.title}</div>
         {row.original.deadlineDescription ? (
           <div className="mt-1 text-xs text-slate-500">{row.original.deadlineDescription}</div>
         ) : null}
@@ -97,15 +122,7 @@ const columns: Array<ColumnDef<DeadlineRow>> = [
   },
   {
     header: "Categories",
-    cell: ({ row }) => (
-      <div className="flex min-w-48 flex-wrap gap-1">
-        {row.original.categories.secondary.map((category) => (
-          <Badge key={category} variant="muted">
-            {category}
-          </Badge>
-        ))}
-      </div>
-    ),
+    cell: ({ row }) => <CompactCategories categories={row.original.categories.secondary} />,
   },
   {
     header: "Deadline",
@@ -121,7 +138,7 @@ const columns: Array<ColumnDef<DeadlineRow>> = [
   {
     header: "Date",
     cell: ({ row }) => (
-      <div className="min-w-28">
+      <div className="min-w-0">
         <div className="font-medium text-slate-900">{formatDeadlineDate(row.original.deadlineDate)}</div>
         <div className="text-xs text-slate-500">{row.original.timezone}</div>
       </div>
@@ -197,14 +214,28 @@ export function DeadlineTable({
   });
 
   return (
-    <div className="rounded-md border border-slate-200 bg-white shadow-sm">
+    <div className="w-full overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm">
       <div>
-        <table className="w-max min-w-full border-collapse text-left text-sm">
+        <table className="w-full table-fixed border-collapse text-left text-sm">
+          <colgroup>
+            <col className="w-[4%]" />
+            <col className="w-[10%]" />
+            <col className="w-[18%]" />
+            <col className="w-[8%]" />
+            <col className="w-[12%]" />
+            <col className="w-[9%]" />
+            <col className="w-[10%]" />
+            <col className="w-[8%]" />
+            <col className="w-[7%]" />
+            <col className="w-[4%]" />
+            <col className="w-[5%]" />
+            <col className="w-[5%]" />
+          </colgroup>
           <thead className="bg-slate-50 text-xs uppercase tracking-normal text-slate-500">
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
-                  <th key={header.id} className="border-b border-slate-200 px-4 py-3 font-semibold">
+                  <th key={header.id} className="border-b border-slate-200 px-3 py-3 font-semibold">
                     {header.isPlaceholder
                       ? null
                       : flexRender(header.column.columnDef.header, header.getContext())}
@@ -217,7 +248,7 @@ export function DeadlineTable({
             {table.getRowModel().rows.map((row) => (
               <tr key={row.id} className="border-b border-slate-100 transition hover:bg-sky-50/50">
                 {row.getVisibleCells().map((cell) => (
-                  <td key={cell.id} className="align-top px-4 py-4">
+                  <td key={cell.id} className="break-words align-top px-3 py-4">
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </td>
                 ))}
