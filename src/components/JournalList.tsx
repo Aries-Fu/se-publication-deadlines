@@ -23,26 +23,18 @@ function rankParts(venue: Venue): string[] {
 }
 
 function CompactCategories({ categories }: { categories: string[] }): JSX.Element {
-  const visibleCategories = categories.length > 4 ? categories.slice(0, 3) : categories;
-  const hiddenCount = categories.length - visibleCategories.length;
-
   return (
-    <div className="grid max-w-44 grid-cols-2 gap-1">
-      {visibleCategories.map((category) => (
+    <div className="flex max-w-full flex-wrap gap-1">
+      {categories.map((category) => (
         <Badge
           key={category}
           variant="muted"
-          className="min-w-0 justify-center truncate px-1.5 text-[11px]"
+          className="max-w-full whitespace-normal break-words px-1.5 text-[11px] leading-4"
           title={category}
         >
           {category}
         </Badge>
       ))}
-      {hiddenCount > 0 ? (
-        <Badge variant="muted" className="justify-center px-1.5 text-[11px]">
-          +{hiddenCount}
-        </Badge>
-      ) : null}
     </div>
   );
 }
