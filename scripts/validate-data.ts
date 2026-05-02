@@ -5,17 +5,21 @@ import addFormats from "ajv-formats";
 import {
   allowedCcfRanks,
   allowedCoreRanks,
+  allowedDeadlineLabels,
   allowedJcrQuartiles,
+  allowedSourceAdapters,
   categoryIds,
   dataDir,
   isDateOnly,
   isObject,
   loadCategories,
   loadDeadlineRecords,
+  loadSources,
   loadVenues,
   rootDir,
   type CategorySelection,
   type Rank,
+  type SourceDefinition,
   type Venue,
 } from "./data-utils";
 
@@ -148,16 +152,66 @@ function validateVenue(venue: Venue, primaryIds: Set<string>, allCategoryIds: Se
   }
 }
 
+function validateSourceDefinition(
+  source: SourceDefinition,
+  venueIds: Set<string>,
+  recordIds: Set<string>,
+): void {
+  const owner = `source ${source.id ?? "(missing id)"}`;
+
+  if (!source.id) {
+    pushError("A source is missing id");
+  }
+
+  if (!source.url || !isValidUrl(source.url)) {
+    pushError(`${owner} url must be a valid URL`);
+  }
+
+  if (!source.kind) {
+    pushError(`${owner} is missing kind`);
+  }
+
+  if (source.kind && !["deadline", "venue", "workshop", "special_issue"].includes(source.kind)) {
+    pushError(`${owner} has invalid kind: ${source.kind}`);
+  }
+
+  if (source.adapter && !allowedSourceAdapters.includes(source.adapter)) {
+    pushError(`${owner} has invalid adapter: ${source.adapter}`);
+  }
+
+  if (source.venueId && !venueIds.has(source.venueId)) {
+    pushError(`${owner} references unknown venueId: ${source.venueId}`);
+  }
+
+  if (source.recordId && !recordIds.has(source.recordId)) {
+    pushError(`${owner} references unknown recordId: ${source.recordId}`);
+  }
+
+  if (
+    (source.kind === "deadline" || source.kind === "workshop" || source.kind === "special_issue") &&
+    !source.recordId
+  ) {
+    pushError(`${owner} is missing recordId`);
+  }
+
+  for (const label of source.expectedDeadlineLabels ?? []) {
+    if (!allowedDeadlineLabels.includes(label as (typeof allowedDeadlineLabels)[number])) {
+      pushError(`${owner} has invalid expected deadline label: ${label}`);
+    }
+  }
+}
+
 async function main(): Promise<void> {
   const schema = JSON.parse(await readFile(join(rootDir, "schemas/deadline.schema.json"), "utf8"));
   const ajv = new Ajv({ allErrors: true, strict: true });
   addFormats(ajv);
   const validateDeadlineFile = ajv.compile(schema);
 
-  const [categories, venues, records] = await Promise.all([
+  const [categories, venues, records, sources] = await Promise.all([
     loadCategories(),
     loadVenues(),
     loadDeadlineRecords(),
+    loadSources(),
   ]);
 
   const { primaryIds, allIds } = categoryIds(categories);
@@ -198,6 +252,10 @@ async function main(): Promise<void> {
   }
 
   validateUnique(records, "deadline record");
+  validateUnique(sources, "source");
+
+  const venueIds = new Set(venues.map((venue) => venue.id));
+  const recordIds = new Set(records.map((record) => record.id));
 
   for (const record of records) {
     const owner = `deadline ${record.id ?? "(missing id)"}`;
@@ -225,6 +283,10 @@ async function main(): Promise<void> {
     }
   }
 
+  for (const source of sources) {
+    validateSourceDefinition(source, venueIds, recordIds);
+  }
+
   if (errors.length > 0) {
     console.error(`Data validation failed with ${errors.length} error(s):`);
     for (const error of errors) {
@@ -234,7 +296,7 @@ async function main(): Promise<void> {
   }
 
   console.log(
-    `Validated ${venues.length} venues, ${records.length} deadline records, and ${categories.length} category groups from ${rel(dataDir)}.`,
+    `Validated ${venues.length} venues, ${records.length} deadline records, ${sources.length} sources, and ${categories.length} category groups from ${rel(dataDir)}.`,
   );
 }
 

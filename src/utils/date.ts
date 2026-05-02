@@ -19,6 +19,7 @@ export const deadlineLabelText: Record<DeadlineLabel, string> = {
 
 export const recordTypeText: Record<string, string> = {
   conference: "Conference",
+  workshop: "Workshop",
   journal: "Journal",
   special_issue: "Special issue",
 };

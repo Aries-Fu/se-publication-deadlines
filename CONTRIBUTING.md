@@ -19,7 +19,7 @@ Issue form submissions still need maintainer review before they become website d
 
 ## Add a Deadline
 
-Add conference and special issue calls under `data/deadlines/`.
+Add conference, workshop, and special issue calls under `data/deadlines/`.
 
 Journal metadata belongs under `data/venues/`. A journal should not be added as a deadline record unless the contribution is for a dated special issue.
 
@@ -27,6 +27,7 @@ Rules:
 
 - Use a stable lowercase `id`, such as `icse-2027-research-track`.
 - Use an existing `venueId` from `data/venues/`.
+- For colocated workshops, use the parent conference `venueId` and set `type: workshop`.
 - If the venue does not exist, add it first.
 - Put all dates for the same call in one record under `deadlines`.
 - Add `source.url` and `source.checkedDate`.
@@ -79,6 +80,42 @@ Validation checks:
 - Required source URL
 - Known category IDs
 - Known ranking values
+
+## DBLP Metadata Suggestions
+
+Maintainers can refresh DBLP venue metadata suggestions with:
+
+```bash
+npm run sync:dblp
+```
+
+This updates `data/external/dblp-venues.json`. Treat the file as a review aid only. Do not copy suggestions into authoritative YAML data unless the match is clearly correct.
+
+DBLP does not provide submission deadlines. Use official CFP/source pages for deadline updates.
+
+## Source Page Monitoring
+
+Maintainers can refresh source page monitoring output with:
+
+```bash
+npm run check:sources
+```
+
+Sources are configured in `data/sources.yml`. The output in `data/external/source-pages/` records page hashes and low-confidence deadline-like date candidates.
+
+The weekly `Check source page updates` workflow opens a pull request when source monitoring output changes. This PR is a review aid only; it must not be merged as a substitute for manually updating authoritative YAML deadline data.
+
+## Import Issue Form Drafts
+
+Maintainers can convert a structured issue into a draft file:
+
+```bash
+npm run import:issue -- --repo Aries-Fu/se-publication-deadlines --issue ISSUE_NUMBER
+```
+
+The manual `Import issue form draft` workflow does the same thing in GitHub Actions and opens a pull request containing the draft under `data/external/issue-imports/`.
+
+After review, copy accepted data into the authoritative YAML files.
 
 ## Pull Request Checklist
 

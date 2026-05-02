@@ -68,11 +68,10 @@ export function filterDeadlineRows(rows: DeadlineRow[], filters: FiltersState): 
         return false;
       }
 
-      if (filters.venueType === "special_issue" && row.recordType !== "special_issue") {
-        return false;
-      }
-
-      if (filters.venueType !== "special_issue" && row.venue.type !== filters.venueType) {
+      if (
+        ["conference", "workshop", "special_issue"].includes(filters.venueType) &&
+        row.recordType !== filters.venueType
+      ) {
         return false;
       }
     }

@@ -1,0 +1,13 @@
+{
+  "source": {
+    "name": "dblp computer science bibliography",
+    "api": "https://dblp.org/search/venue/api",
+    "documentation": "https://dblp.org/faq/How%2Bto%2Buse%2Bthe%2Bdblp%2Bsearch%2BAPI.html",
+    "license": "CC0 1.0"
+  },
+  "policy": {
+    "mode": "suggestions_only",
+    "note": "This file is generated from DBLP venue search results. Review suggestions manually before changing authoritative YAML data."
+  },
+  "items": []
+}

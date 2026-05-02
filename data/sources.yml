@@ -1,0 +1,73 @@
+- id: ase-2026-research-track
+  kind: deadline
+  recordId: ase-2026-research-track
+  venueId: ase
+  adapter: researchr
+  url: https://conf.researchr.org/track/ase-2026/ase-2026-research-track
+  expectedDeadlineLabels:
+    - full_paper
+    - notification
+    - revision
+    - camera_ready
+  checkFrequency: weekly
+  notes: >
+    Official Researchr page for ASE 2026 research papers.
+
+- id: fse-2026-research-papers
+  kind: deadline
+  recordId: fse-2026-research-papers
+  venueId: fse
+  adapter: researchr
+  url: https://conf.researchr.org/track/fse-2026/fse-2026-research-papers
+  expectedDeadlineLabels:
+    - abstract
+    - full_paper
+    - notification
+    - revision
+    - camera_ready
+  checkFrequency: weekly
+  notes: >
+    Official Researchr page for FSE 2026 research papers.
+
+- id: icse-2027-research-track
+  kind: deadline
+  recordId: icse-2027-research-track
+  venueId: icse
+  adapter: researchr
+  url: https://conf.researchr.org/track/icse-2027/icse-2027-research-track
+  expectedDeadlineLabels:
+    - abstract
+    - full_paper
+    - author_response
+    - notification
+    - revision
+    - camera_ready
+    - final_decision
+  checkFrequency: weekly
+  notes: >
+    Official Researchr page for ICSE 2027 research track.
+
+- id: emse-agentic-se-2026
+  kind: deadline
+  recordId: emse-agentic-se-2026
+  venueId: emse
+  adapter: emseSpecialIssues
+  url: https://emsejournal.github.io/special_issues/2026_SI_Agentic_SE.html
+  expectedDeadlineLabels:
+    - full_paper
+  checkFrequency: weekly
+  notes: >
+    EMSE special issue page.
+
+- id: emse-ease-2026-invite
+  kind: deadline
+  recordId: emse-ease-2026-invite
+  venueId: emse
+  adapter: springerCollections
+  url: https://link.springer.com/collections/jefiadfibb
+  expectedDeadlineLabels:
+    - submission_open
+    - full_paper
+  checkFrequency: weekly
+  notes: >
+    Springer collection page for invite-only EASE 2026 special issue.

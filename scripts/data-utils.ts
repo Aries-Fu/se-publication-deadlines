@@ -8,22 +8,31 @@ export const dataDir = join(rootDir, "data");
 export const allowedCoreRanks = ["A*", "A", "B", "C"] as const;
 export const allowedCcfRanks = ["A", "B", "C"] as const;
 export const allowedJcrQuartiles = ["Q1", "Q2", "Q3", "Q4"] as const;
+export const allowedDeadlineLabels = [
+  "abstract",
+  "full_paper",
+  "submission",
+  "submission_open",
+  "author_response",
+  "notification",
+  "revision",
+  "camera_ready",
+  "final_decision",
+  "registration",
+  "proposal",
+] as const;
+export const allowedSourceAdapters = [
+  "researchr",
+  "springerCollections",
+  "emseSpecialIssues",
+  "genericHtmlDateScanner",
+] as const;
 
 export type VenueType = "conference" | "journal";
-export type DeadlineRecordType = "conference" | "special_issue";
+export type DeadlineRecordType = "conference" | "workshop" | "special_issue";
 export type DeadlineStatus = "open" | "closed" | "tentative";
-export type DeadlineLabel =
-  | "abstract"
-  | "full_paper"
-  | "submission"
-  | "submission_open"
-  | "author_response"
-  | "notification"
-  | "revision"
-  | "camera_ready"
-  | "final_decision"
-  | "registration"
-  | "proposal";
+export type DeadlineLabel = (typeof allowedDeadlineLabels)[number];
+export type SourceAdapterName = (typeof allowedSourceAdapters)[number];
 
 export type CategoryGroup = {
   id: string;
@@ -95,6 +104,18 @@ export type LoadedDeadlineRecord = DeadlineRecord & {
   sourceFile: string;
 };
 
+export type SourceDefinition = {
+  id: string;
+  kind: "deadline" | "venue" | "workshop" | "special_issue";
+  recordId?: string;
+  venueId?: string;
+  adapter?: SourceAdapterName;
+  url: string;
+  expectedDeadlineLabels?: string[];
+  checkFrequency?: "daily" | "weekly" | "monthly";
+  notes?: string;
+};
+
 export async function readYamlArray<T>(filePath: string): Promise<T[]> {
   const raw = await readFile(filePath, "utf8");
   const parsed = yaml.load(raw, { schema: yaml.JSON_SCHEMA });
@@ -137,6 +158,10 @@ export async function loadDeadlineRecords(): Promise<LoadedDeadlineRecord[]> {
     }),
   );
   return recordGroups.flat();
+}
+
+export async function loadSources(): Promise<SourceDefinition[]> {
+  return readYamlArray<SourceDefinition>(join(dataDir, "sources.yml"));
 }
 
 export function categoryIds(categories: CategoryGroup[]): {

@@ -180,7 +180,7 @@ export function Filters({
           </Select>
 
           <Select
-            label="Venue type"
+            label="Tracker type"
             value={filters.venueType}
             onChange={(event) => {
               const venueType = event.target.value;
@@ -197,6 +197,7 @@ export function Filters({
           >
             <option value="">All types</option>
             <option value="conference">Conference</option>
+            <option value="workshop">Workshop</option>
             <option value="journal">Journal</option>
             <option value="special_issue">Special issue</option>
           </Select>

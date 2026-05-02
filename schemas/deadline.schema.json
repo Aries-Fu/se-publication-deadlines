@@ -31,7 +31,7 @@
       },
       "type": {
         "type": "string",
-        "enum": ["conference", "special_issue"]
+        "enum": ["conference", "workshop", "special_issue"]
       },
       "status": {
         "type": "string",

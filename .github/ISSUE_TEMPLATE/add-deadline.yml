@@ -1,5 +1,5 @@
 name: Add a deadline
-description: Suggest a conference or special issue deadline.
+description: Suggest a conference, workshop, or special issue deadline.
 title: "[Deadline]: "
 labels:
   - data
@@ -10,12 +10,12 @@ body:
       value: |
         Thanks for helping improve the tracker.
 
-        Use this form for conference deadlines and special issue calls. Use the journal form for journal metadata without deadlines.
+        Use this form for conference deadlines, workshop calls, and special issue calls. Use the journal form for journal metadata without deadlines.
   - type: input
     id: venue_id
     attributes:
       label: Venue ID
-      description: Existing venue ID if known. If not known, suggest a short lowercase ID.
+      description: Existing venue ID if known. For workshops, use the parent conference venue ID when appropriate.
       placeholder: icse
     validations:
       required: true
@@ -31,8 +31,8 @@ body:
     id: title
     attributes:
       label: Call title
-      description: Name of the track, call, or special issue.
-      placeholder: ICSE 2027 Research Track
+      description: Name of the track, workshop, call, or special issue.
+      placeholder: ICSE 2027 Workshop on AI for Software Engineering
     validations:
       required: true
   - type: dropdown
@@ -41,6 +41,7 @@ body:
       label: Record type
       options:
         - conference
+        - workshop
         - special_issue
     validations:
       required: true

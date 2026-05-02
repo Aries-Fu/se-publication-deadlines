@@ -1,12 +1,13 @@
 # Software Engineering Publication Deadlines
 
-A community-maintained tracker for software engineering conferences, journals, and special issues.
+A community-maintained tracker for software engineering conferences, workshops, journals, and special issues.
 
 The project uses a low-maintenance architecture:
 
 - Static frontend: React, Vite, TypeScript, Tailwind CSS, shadcn-style local UI components, TanStack Table, date-fns
 - Public data: YAML files under `data/`
 - Validation: JSON Schema plus custom consistency checks
+- Metadata assistance: DBLP venue search API suggestions
 - Deployment: GitHub Pages through GitHub Actions
 
 ## Website
@@ -20,6 +21,7 @@ https://aries-fu.github.io/se-publication-deadlines/
 This repository tracks deadlines related to software engineering publication opportunities, including:
 
 - Research track deadlines for conferences
+- Workshop submission deadlines, usually linked to a parent conference venue
 - Journal venue metadata
 - Special issue submission deadlines
 - Multi-stage deadlines such as abstract, full paper, revision, notification, and camera-ready dates
@@ -39,7 +41,8 @@ data/
 `-- deadlines/
     |-- 2026.yml
     |-- 2027.yml
-    `-- special-issues.yml
+    |-- special-issues.yml
+    `-- workshops.yml
 ```
 
 Frontend-ready generated data lives at:
@@ -64,13 +67,15 @@ Add a new entry to one of the files under `data/deadlines/`.
 
 Journal metadata belongs under `data/venues/`. Journals do not need deadline records unless they host a dated special issue call.
 
+For workshop records, use `type: workshop`. If the workshop is colocated with a known conference, use the parent conference `venueId` and put the workshop name in `title`.
+
 Use this format:
 
 ```yaml
 - id: unique-deadline-id
   venueId: venue-id
   title: Title of the call
-  type: special_issue
+  type: workshop
   status: open
 
   deadlines:
@@ -123,6 +128,12 @@ Each item in `deadlines` must include:
 - `timezone`
 
 Dates must use `YYYY-MM-DD`.
+
+Allowed deadline record `type` values are:
+
+- `conference`
+- `workshop`
+- `special_issue`
 
 ## Optional Fields
 
@@ -228,6 +239,80 @@ The website supports local favorites. Users can star deadline records or journal
 
 Favorites are stored in the user's browser with `localStorage`. They are private to that browser and are not committed to the repository.
 
+## DBLP Metadata Suggestions
+
+The repository can use the DBLP venue search API to generate venue metadata suggestions:
+
+```bash
+npm run sync:dblp
+```
+
+This writes `data/external/dblp-venues.json`.
+
+The generated DBLP file is suggestions-only. It must not be treated as authoritative project data. Maintainers should review it manually before copying DBLP links, keys, or venue names into `data/venues/*.yml`.
+
+DBLP does not provide submission deadlines. Deadline and workshop updates should still come from official CFP/source pages and maintainer-reviewed PRs.
+
+A scheduled GitHub Action runs weekly and opens a pull request when DBLP suggestions change.
+
+DBLP API documentation:
+
+https://dblp.org/faq/How%2Bto%2Buse%2Bthe%2Bdblp%2Bsearch%2BAPI.html
+
+## Source Page Monitoring
+
+Known official source pages are listed in:
+
+```text
+data/sources.yml
+```
+
+Maintainers can check those pages with:
+
+```bash
+npm run check:sources
+```
+
+The script writes review artifacts under:
+
+```text
+data/external/source-pages/
+|-- state.json
+|-- candidates.json
+`-- report.md
+```
+
+The monitor:
+
+- fetches each `source.url`
+- normalizes the page text
+- stores a SHA-256 content hash
+- detects source page changes
+- runs a source adapter such as `researchr`, `springerCollections`, `emseSpecialIssues`, or `genericHtmlDateScanner`
+- extracts low-confidence deadline-like date candidates
+
+The extracted candidates are not authoritative deadline data. They are a review aid only.
+
+A scheduled GitHub Action runs weekly and opens a pull request when source-page monitoring output changes.
+
+## Importing Issue Forms
+
+Maintainers can convert a structured issue form into a review draft:
+
+```bash
+npm run import:issue -- --repo Aries-Fu/se-publication-deadlines --issue ISSUE_NUMBER
+```
+
+This writes a draft under:
+
+```text
+data/external/issue-imports/
+```
+
+There is also a manual GitHub Action named `Import issue form draft`. Enter an issue number, and it opens a pull request containing the generated draft.
+
+Issue import drafts are not authoritative data. Review them manually, then copy accepted content into `data/deadlines/*.yml` or `data/venues/*.yml`.
+
 ## How to Submit a Pull Request
 
 1. Fork this repository.
@@ -242,7 +327,7 @@ Favorites are stored in the user's browser with `localStorage`. They are private
 
 Use GitHub Issue Forms if you want to suggest data without editing YAML:
 
-- Add a deadline: conference and special issue calls
+- Add a deadline: conference, workshop, and special issue calls
 - Add a journal: journal metadata without deadline rows
 - Correct existing data: wrong dates, venue metadata, rankings, metrics, or source links
 

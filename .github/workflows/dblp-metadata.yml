@@ -1,0 +1,57 @@
+name: Sync DBLP metadata suggestions
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Sync DBLP venue metadata suggestions
+        run: npm run sync:dblp
+
+      - name: Create pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH_NAME: automation/dblp-metadata
+        run: |
+          if [ -z "$(git status --porcelain data/external/dblp-venues.json)" ]; then
+            echo "No DBLP metadata suggestion changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH_NAME"
+          git add data/external/dblp-venues.json
+          git commit -m "Update DBLP venue metadata suggestions"
+          git push --force-with-lease origin "$BRANCH_NAME"
+
+          if gh pr view "$BRANCH_NAME" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "DBLP metadata PR already exists."
+          else
+            gh pr create \
+              --repo "$GITHUB_REPOSITORY" \
+              --base main \
+              --head "$BRANCH_NAME" \
+              --title "Update DBLP venue metadata suggestions" \
+              --body "This automated PR updates DBLP venue metadata suggestions in data/external/dblp-venues.json. These suggestions are not authoritative data; please review them before copying anything into data/venues/*.yml."
+          fi

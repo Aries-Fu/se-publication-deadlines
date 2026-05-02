@@ -1,5 +1,5 @@
 export type VenueType = "conference" | "journal";
-export type DeadlineRecordType = "conference" | "special_issue";
+export type DeadlineRecordType = "conference" | "workshop" | "special_issue";
 export type DeadlineStatus = "open" | "closed" | "tentative";
 
 export type DeadlineLabel =

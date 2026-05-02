@@ -1,0 +1,63 @@
+name: Import issue form draft
+
+on:
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: "Issue number to convert into a review draft"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: read
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Import issue form
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npm run import:issue -- --repo "$GITHUB_REPOSITORY" --issue "${{ inputs.issue_number }}"
+
+      - name: Create pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH_NAME: automation/import-issue-${{ inputs.issue_number }}
+        run: |
+          if [ -z "$(git status --porcelain data/external/issue-imports)" ]; then
+            echo "No issue import draft changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH_NAME"
+          git add data/external/issue-imports
+          git commit -m "Import issue #${{ inputs.issue_number }} as data draft"
+          git push --force-with-lease origin "$BRANCH_NAME"
+
+          if gh pr view "$BRANCH_NAME" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Issue import PR already exists."
+          else
+            gh pr create \
+              --repo "$GITHUB_REPOSITORY" \
+              --base main \
+              --head "$BRANCH_NAME" \
+              --title "Import issue #${{ inputs.issue_number }} as data draft" \
+              --body "This PR converts issue #${{ inputs.issue_number }} into a review draft under data/external/issue-imports. Please manually review and copy accepted data into data/deadlines/*.yml or data/venues/*.yml."
+          fi

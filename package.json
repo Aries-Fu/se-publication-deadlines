@@ -7,6 +7,9 @@
     "dev": "vite --host 0.0.0.0",
     "build": "npm run build:data && vite build",
     "build:data": "tsx scripts/build-data.ts",
+    "check:sources": "tsx scripts/check-source-updates.ts",
+    "import:issue": "tsx scripts/import-issue.ts",
+    "sync:dblp": "tsx scripts/sync-dblp-metadata.ts",
     "validate:data": "tsx scripts/validate-data.ts",
     "typecheck": "tsc --noEmit"
   },

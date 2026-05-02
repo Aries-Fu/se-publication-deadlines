@@ -1,5 +1,5 @@
 import { CalendarClock, Github, Plus, Sparkles } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import generatedDeadlines from "./data/generated-deadlines.json";
 import { DeadlineCard } from "./components/DeadlineCard";
 import { DeadlineTable } from "./components/DeadlineTable";
@@ -27,6 +27,9 @@ const data = generatedDeadlines as GeneratedData;
 const repoUrl = "https://github.com/Aries-Fu/se-publication-deadlines";
 const suggestDataUrl = `${repoUrl}/issues/new/choose`;
 const favoritesStorageKey = "se-publication-deadlines:favorites";
+const infinitePageSize = 25;
+const pageShellClass =
+  "mx-auto flex min-w-[1680px] max-w-none flex-col px-6 sm:px-8 lg:px-10 xl:px-12";
 
 const initialFilters: FiltersState = {
   search: "",
@@ -174,6 +177,10 @@ function loadFavoriteIds(): Set<string> {
   }
 }
 
+function uniqueCount<T>(items: T[], getKey: (item: T) => string): number {
+  return new Set(items.map(getKey)).size;
+}
+
 function Stat({
   label,
   value,
@@ -267,6 +274,8 @@ export default function App(): JSX.Element {
   const [sortKey, setSortKey] = useState<SortKey>("nearest");
   const [viewMode, setViewMode] = useState<ViewMode>("table");
   const [favoriteIds, setFavoriteIds] = useState<Set<string>>(loadFavoriteIds);
+  const [visibleLimit, setVisibleLimit] = useState(infinitePageSize);
+  const loadMoreRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     window.localStorage.setItem(favoritesStorageKey, JSON.stringify(Array.from(favoriteIds)));
@@ -298,16 +307,130 @@ export default function App(): JSX.Element {
     return sortJournalVenues(filterJournalVenues(data.venues, filters, favoriteIds), sortKey);
   }, [favoriteIds, filters, sortKey]);
 
-  const openRecords = new Set(data.deadlineRows.filter((row) => row.status === "open").map((row) => row.recordId));
-  const nextDeadline = sortDeadlineRows(
-    data.deadlineRows.filter((row) => row.status === "open"),
-    "nearest",
-  )[0];
+  const isJournalView = filters.venueType === "journal";
+  const filteredItemCount = isJournalView ? visibleJournals.length : visibleRows.length;
+  const displayedRows = useMemo(() => {
+    return visibleRows.slice(0, visibleLimit);
+  }, [visibleLimit, visibleRows]);
+  const displayedJournals = useMemo(() => {
+    return visibleJournals.slice(0, visibleLimit);
+  }, [visibleJournals, visibleLimit]);
+  const displayedItemCount = isJournalView ? displayedJournals.length : displayedRows.length;
+  const hasMoreItems = displayedItemCount < filteredItemCount;
+
+  useEffect(() => {
+    setVisibleLimit(infinitePageSize);
+  }, [favoriteIds, filters, isJournalView, sortKey, viewMode]);
+
+  useEffect(() => {
+    const target = loadMoreRef.current;
+
+    if (!target || !hasMoreItems) {
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setVisibleLimit((current) =>
+            Math.min(current + infinitePageSize, filteredItemCount),
+          );
+        }
+      },
+      {
+        root: null,
+        rootMargin: "600px 0px",
+        threshold: 0,
+      },
+    );
+
+    observer.observe(target);
+    return () => observer.disconnect();
+  }, [displayedItemCount, filteredItemCount, hasMoreItems]);
+
+  const headerStats = useMemo(() => {
+    if (isJournalView) {
+      const rankedJournals = visibleJournals.filter(
+        (venue) => venue.ranking?.core || venue.ranking?.ccf || venue.metrics?.jcrQuartile,
+      );
+      const journalWithImpactFactor = visibleJournals.filter(
+        (venue) => venue.metrics?.impactFactor !== undefined,
+      );
+      const favoriteJournals = visibleJournals.filter((venue) => favoriteIds.has(`venue:${venue.id}`));
+      const topJournal = sortJournalVenues(visibleJournals, sortKey)[0];
+
+      return {
+        first: {
+          label: "Journals",
+          value: visibleJournals.length,
+          helper: "Matching current filters",
+        },
+        second: {
+          label: "Ranked journals",
+          value: rankedJournals.length,
+          helper: "CORE, CCF, or JCR listed",
+        },
+        third: {
+          label: "With impact factor",
+          value: journalWithImpactFactor.length,
+          helper: "Among visible journals",
+        },
+        fourth: {
+          label: "Top visible journal",
+          value: topJournal?.shortName ?? "-",
+          helper: favoriteJournals.length
+            ? `${favoriteJournals.length} favorites visible`
+            : "No favorite journals visible",
+        },
+      };
+    }
+
+    const openRecordCount = uniqueCount(
+      visibleRows.filter((row) => row.status === "open"),
+      (row) => row.recordId,
+    );
+    const visibleVenueCount = uniqueCount(visibleRows, (row) => row.venueId);
+    const nextVisibleDeadline = sortDeadlineRows(
+      visibleRows.filter((row) => row.status === "open"),
+      "nearest",
+    )[0];
+    const favoriteDeadlineCount = uniqueCount(
+      visibleRows.filter((row) => favoriteIds.has(deadlineFavoriteId(row))),
+      (row) => row.recordId,
+    );
+
+    return {
+      first: {
+        label: "Deadline rows",
+        value: visibleRows.length,
+        helper: "Matching current filters",
+      },
+      second: {
+        label: "Open calls",
+        value: openRecordCount,
+        helper: "Visible records marked open",
+      },
+      third: {
+        label: "Venues",
+        value: visibleVenueCount,
+        helper: "Visible deadline venues",
+      },
+      fourth: {
+        label: "Next deadline",
+        value: nextVisibleDeadline ? formatDeadlineDate(nextVisibleDeadline.deadlineDate) : "-",
+        helper: nextVisibleDeadline
+          ? `${nextVisibleDeadline.venue.shortName} ${labelDeadline(nextVisibleDeadline.deadlineLabel)}`
+          : favoriteDeadlineCount
+            ? `${favoriteDeadlineCount} favorites visible`
+            : "No open visible deadlines",
+      },
+    };
+  }, [favoriteIds, isJournalView, sortKey, visibleJournals, visibleRows]);
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-950">
       <header className="border-b border-slate-200 bg-white/90 bg-tech-grid backdrop-blur">
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 py-8 sm:px-6 lg:px-8">
+        <div className={cn(pageShellClass, "gap-8 py-8")}>
           <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 rounded-md border border-sky-200 bg-sky-50 px-2.5 py-1 text-xs font-medium text-sky-700">
@@ -318,8 +441,8 @@ export default function App(): JSX.Element {
                 Software Engineering Publication Deadlines
               </h1>
               <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600">
-                Track conference deadlines, special issue calls, and journal metadata with structured YAML
-                data, automatic validation, and a public GitHub Pages frontend.
+                Track conference deadlines, workshop calls, special issues, and journal metadata with
+                structured YAML data, automatic validation, and a public GitHub Pages frontend.
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -346,22 +469,30 @@ export default function App(): JSX.Element {
 
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <Stat
-              label="Deadline rows"
-              value={data.deadlineRows.length}
-              helper="Conference and special issue dates"
+              label={headerStats.first.label}
+              value={headerStats.first.value}
+              helper={headerStats.first.helper}
             />
-            <Stat label="Open calls" value={openRecords.size} helper="Records currently marked open" />
-            <Stat label="Venues" value={data.venues.length} helper="Metadata-backed venues" />
             <Stat
-              label="Next deadline"
-              value={nextDeadline ? formatDeadlineDate(nextDeadline.deadlineDate) : "-"}
-              helper={nextDeadline ? `${nextDeadline.venue.shortName} ${labelDeadline(nextDeadline.deadlineLabel)}` : "No open calls"}
+              label={headerStats.second.label}
+              value={headerStats.second.value}
+              helper={headerStats.second.helper}
+            />
+            <Stat
+              label={headerStats.third.label}
+              value={headerStats.third.value}
+              helper={headerStats.third.helper}
+            />
+            <Stat
+              label={headerStats.fourth.label}
+              value={headerStats.fourth.value}
+              helper={headerStats.fourth.helper}
             />
           </div>
         </div>
       </header>
 
-      <main className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-6 sm:px-6 lg:px-8">
+      <main className={cn(pageShellClass, "gap-6 py-6")}>
         <Filters
           categories={data.categories}
           rows={data.deadlineRows}
@@ -377,45 +508,43 @@ export default function App(): JSX.Element {
           <p className="text-sm text-slate-600">
             Showing{" "}
             <span className="font-semibold text-slate-950">
-              {filters.venueType === "journal" ? visibleJournals.length : visibleRows.length}
+              {displayedItemCount}
             </span>{" "}
             of{" "}
             <span className="font-semibold text-slate-950">
-              {filters.venueType === "journal"
-                ? data.venues.filter((venue) => venue.type === "journal").length
-                : data.deadlineRows.length}
+              {filteredItemCount}
             </span>{" "}
-            {filters.venueType === "journal" ? "journals" : "deadline rows"}
+            matching {isJournalView ? "journals" : "deadline rows"}
           </p>
           <p className="hidden text-xs text-slate-500 sm:block">
             Data generated {new Date(data.generatedAt).toLocaleDateString()}
           </p>
         </div>
 
-        {filters.venueType === "journal" && visibleJournals.length === 0 ? (
+        {isJournalView && visibleJournals.length === 0 ? (
           <EmptyState label="journals" />
         ) : null}
-        {filters.venueType === "journal" && visibleJournals.length > 0 ? (
+        {isJournalView && visibleJournals.length > 0 ? (
           <JournalList
-            venues={visibleJournals}
+            venues={displayedJournals}
             favoriteIds={favoriteIds}
             onToggleFavorite={toggleFavorite}
           />
         ) : null}
 
-        {filters.venueType !== "journal" && visibleRows.length === 0 ? (
+        {!isJournalView && visibleRows.length === 0 ? (
           <EmptyState label="deadlines" />
         ) : null}
-        {filters.venueType !== "journal" && visibleRows.length > 0 && viewMode === "table" ? (
+        {!isJournalView && visibleRows.length > 0 && viewMode === "table" ? (
           <DeadlineTable
-            rows={visibleRows}
+            rows={displayedRows}
             favoriteIds={favoriteIds}
             onToggleFavorite={toggleFavorite}
           />
         ) : null}
-        {filters.venueType !== "journal" && visibleRows.length > 0 && viewMode === "cards" ? (
+        {!isJournalView && visibleRows.length > 0 && viewMode === "cards" ? (
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {visibleRows.map((row) => (
+            {displayedRows.map((row) => (
               <DeadlineCard
                 key={row.id}
                 row={row}
@@ -425,12 +554,23 @@ export default function App(): JSX.Element {
             ))}
           </div>
         ) : null}
-        {filters.venueType !== "journal" && visibleRows.length > 0 && viewMode === "timeline" ? (
+        {!isJournalView && visibleRows.length > 0 && viewMode === "timeline" ? (
           <TimelineView
-            rows={visibleRows}
+            rows={displayedRows}
             favoriteIds={favoriteIds}
             onToggleFavorite={toggleFavorite}
           />
+        ) : null}
+
+        {filteredItemCount > 0 ? (
+          <div
+            ref={loadMoreRef}
+            className="rounded-md border border-slate-200 bg-white px-4 py-4 text-center text-sm text-slate-500 shadow-sm"
+          >
+            {hasMoreItems
+              ? `Loading more... ${displayedItemCount} of ${filteredItemCount} shown`
+              : `All ${filteredItemCount} ${isJournalView ? "journals" : "deadline rows"} shown`}
+          </div>
         ) : null}
       </main>
     </div>

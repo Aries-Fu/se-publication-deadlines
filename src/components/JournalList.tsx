@@ -28,15 +28,15 @@ export function JournalList({
   onToggleFavorite,
 }: JournalListProps): JSX.Element {
   return (
-    <div className="overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm">
+    <div className="rounded-md border border-slate-200 bg-white shadow-sm">
       <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
         <h2 className="text-sm font-semibold text-slate-950">Journal list</h2>
         <p className="mt-1 text-xs text-slate-500">
           Journals are venue metadata entries. Deadline fields are shown as N/A.
         </p>
       </div>
-      <div className="overflow-x-auto">
-        <table className="w-full border-collapse text-left text-sm">
+      <div>
+        <table className="w-max min-w-full border-collapse text-left text-sm">
           <thead className="bg-white text-xs uppercase tracking-normal text-slate-500">
             <tr>
               <th className="border-b border-slate-200 px-4 py-3 font-semibold">Favorite</th>

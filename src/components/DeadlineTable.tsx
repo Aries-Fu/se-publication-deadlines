@@ -197,9 +197,9 @@ export function DeadlineTable({
   });
 
   return (
-    <div className="overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm">
-      <div className="overflow-x-auto">
-        <table className="w-full border-collapse text-left text-sm">
+    <div className="rounded-md border border-slate-200 bg-white shadow-sm">
+      <div>
+        <table className="w-max min-w-full border-collapse text-left text-sm">
           <thead className="bg-slate-50 text-xs uppercase tracking-normal text-slate-500">
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>

@@ -1,0 +1,57 @@
+name: Check source page updates
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check source pages
+        run: npm run check:sources
+
+      - name: Create pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH_NAME: automation/source-page-updates
+        run: |
+          if [ -z "$(git status --porcelain data/external/source-pages)" ]; then
+            echo "No source page update report changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH_NAME"
+          git add data/external/source-pages
+          git commit -m "Update source page monitoring report"
+          git push --force-with-lease origin "$BRANCH_NAME"
+
+          if gh pr view "$BRANCH_NAME" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Source page update PR already exists."
+          else
+            gh pr create \
+              --repo "$GITHUB_REPOSITORY" \
+              --base main \
+              --head "$BRANCH_NAME" \
+              --title "Review source page updates" \
+              --body "This automated PR reports source page hash changes and low-confidence deadline-like date extraction from data/sources.yml. It does not update authoritative deadline YAML. Please review data/external/source-pages/report.md before deciding whether data/deadlines/*.yml needs a manual edit."
+          fi
