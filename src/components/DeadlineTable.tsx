@@ -183,10 +183,11 @@ const columns: Array<ColumnDef<DeadlineRow>> = [
         href={row.original.source.url}
         target="_blank"
         rel="noreferrer"
-        className="inline-flex items-center gap-1 text-sm font-medium text-sky-700 hover:text-sky-900"
+        className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-slate-200 bg-white text-sky-700 transition hover:border-sky-200 hover:bg-sky-50 hover:text-sky-900"
+        title="Open source"
+        aria-label={`Open source for ${row.original.title}`}
       >
-        Source
-        <ExternalLink className="h-3.5 w-3.5" />
+        <ExternalLink className="h-4 w-4 shrink-0" aria-hidden="true" />
       </a>
     ),
   },
@@ -218,24 +219,24 @@ export function DeadlineTable({
       <div>
         <table className="w-full table-fixed border-collapse text-left text-sm">
           <colgroup>
-            <col className="w-[4%]" />
+            <col className="w-[5%]" />
             <col className="w-[10%]" />
-            <col className="w-[18%]" />
+            <col className="w-[17%]" />
             <col className="w-[8%]" />
             <col className="w-[12%]" />
             <col className="w-[9%]" />
             <col className="w-[10%]" />
             <col className="w-[8%]" />
-            <col className="w-[7%]" />
+            <col className="w-[6%]" />
             <col className="w-[4%]" />
-            <col className="w-[5%]" />
+            <col className="w-[6%]" />
             <col className="w-[5%]" />
           </colgroup>
           <thead className="bg-slate-50 text-xs uppercase tracking-normal text-slate-500">
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
-                  <th key={header.id} className="border-b border-slate-200 px-3 py-3 font-semibold">
+                  <th key={header.id} className="border-b border-slate-200 px-2 py-3 font-semibold">
                     {header.isPlaceholder
                       ? null
                       : flexRender(header.column.columnDef.header, header.getContext())}
@@ -248,7 +249,7 @@ export function DeadlineTable({
             {table.getRowModel().rows.map((row) => (
               <tr key={row.id} className="border-b border-slate-100 transition hover:bg-sky-50/50">
                 {row.getVisibleCells().map((cell) => (
-                  <td key={cell.id} className="break-words align-top px-3 py-4">
+                  <td key={cell.id} className="break-words align-top px-2 py-4">
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </td>
                 ))}

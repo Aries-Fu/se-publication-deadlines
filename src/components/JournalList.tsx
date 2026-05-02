@@ -139,10 +139,11 @@ export function JournalList({
                         href={venue.website}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center gap-1 font-medium text-sky-700 hover:text-sky-900"
+                        className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-slate-200 bg-white text-sky-700 transition hover:border-sky-200 hover:bg-sky-50 hover:text-sky-900"
+                        title={`Open ${venue.shortName} website`}
+                        aria-label={`Open ${venue.shortName} website`}
                       >
-                        Website
-                        <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+                        <ExternalLink className="h-4 w-4 shrink-0" aria-hidden="true" />
                       </a>
                     ) : (
                       <span className="text-slate-400">N/A</span>
