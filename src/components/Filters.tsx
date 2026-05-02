@@ -223,7 +223,7 @@ export function Filters({
               value={filters.status}
               onChange={(event) => update({ status: event.target.value })}
             >
-              <option value="">All statuses</option>
+              <option value="">All statuses (default)</option>
               <option value="open">Open</option>
               <option value="closed">Closed</option>
               <option value="tentative">Tentative</option>

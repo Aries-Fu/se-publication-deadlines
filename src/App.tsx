@@ -181,6 +181,22 @@ function uniqueCount<T>(items: T[], getKey: (item: T) => string): number {
   return new Set(items.map(getKey)).size;
 }
 
+function statusLabel(status: string): string {
+  if (status === "open") {
+    return "Open";
+  }
+
+  if (status === "closed") {
+    return "Closed";
+  }
+
+  if (status === "tentative") {
+    return "Tentative";
+  }
+
+  return "Visible";
+}
+
 function Stat({
   label,
   value,
@@ -276,6 +292,22 @@ export default function App(): JSX.Element {
   const [favoriteIds, setFavoriteIds] = useState<Set<string>>(loadFavoriteIds);
   const [visibleLimit, setVisibleLimit] = useState(infinitePageSize);
   const loadMoreRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    setFilters((current) => {
+      const looksLikeOldDefault =
+        current.status === "open" &&
+        !current.search &&
+        !current.primaryCategory &&
+        !current.secondaryCategory &&
+        !current.venueType &&
+        !current.deadlineLabel &&
+        !current.ranking &&
+        !current.favoritesOnly;
+
+      return looksLikeOldDefault ? { ...current, status: "" } : current;
+    });
+  }, []);
 
   useEffect(() => {
     window.localStorage.setItem(favoritesStorageKey, JSON.stringify(Array.from(favoriteIds)));
@@ -385,10 +417,8 @@ export default function App(): JSX.Element {
       };
     }
 
-    const openRecordCount = uniqueCount(
-      visibleRows.filter((row) => row.status === "open"),
-      (row) => row.recordId,
-    );
+    const visibleRecordCount = uniqueCount(visibleRows, (row) => row.recordId);
+    const openRecordCount = uniqueCount(visibleRows.filter((row) => row.status === "open"), (row) => row.recordId);
     const visibleVenueCount = uniqueCount(visibleRows, (row) => row.venueId);
     const nextVisibleDeadline = sortDeadlineRows(
       visibleRows.filter((row) => row.status === "open"),
@@ -406,9 +436,11 @@ export default function App(): JSX.Element {
         helper: "Matching current filters",
       },
       second: {
-        label: "Open calls",
-        value: openRecordCount,
-        helper: "Visible records marked open",
+        label: `${statusLabel(filters.status)} calls`,
+        value: visibleRecordCount,
+        helper: filters.status
+          ? `Records marked ${filters.status}`
+          : `${openRecordCount} open among visible records`,
       },
       third: {
         label: "Venues",
@@ -425,7 +457,7 @@ export default function App(): JSX.Element {
             : "No open visible deadlines",
       },
     };
-  }, [favoriteIds, isJournalView, sortKey, visibleJournals, visibleRows]);
+  }, [favoriteIds, filters.status, isJournalView, sortKey, visibleJournals, visibleRows]);
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-950">
