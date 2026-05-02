@@ -24,12 +24,25 @@ function rankParts(venue: Venue): string[] {
 
 function CompactCategories({ categories }: { categories: string[] }): JSX.Element {
   return (
-    <div className="flex w-full min-w-0 flex-wrap items-start gap-1">
+    <div
+      className="w-full min-w-0"
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        alignItems: "flex-start",
+        gap: "0.25rem",
+      }}
+    >
       {categories.map((category) => (
         <Badge
           key={category}
           variant="muted"
-          className="w-fit max-w-full shrink-0 whitespace-nowrap px-1.5 text-[11px] leading-4"
+          className="px-1.5 text-[11px] leading-4"
+          style={{
+            flex: "0 0 auto",
+            maxWidth: "100%",
+            whiteSpace: "nowrap",
+          }}
           title={category}
         >
           {category}
