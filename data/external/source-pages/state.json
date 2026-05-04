@@ -1,4 +1,157 @@
 {
-  "generatedAt": null,
-  "items": []
+  "generatedAt": "2026-05-04T05:53:38.718Z",
+  "items": [
+    {
+      "sourceId": "ase-2026-research-track",
+      "url": "https://conf.researchr.org/track/ase-2026/ase-2026-research-track",
+      "adapter": "researchr",
+      "status": "ok",
+      "contentHash": "04f202e1b9ea7c659cac5c86b6e9619b85bd24439d2e5b9a290712742607fd99",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "caise-2026-full-papers",
+      "url": "https://caise26.polimi.it/?page_id=60",
+      "adapter": "genericHtmlDateScanner",
+      "status": "ok",
+      "contentHash": "e73362249091351fbc11738c36972711e9492b2a576e487dfc40ff99ae6ceb46",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "caise-2026-workshops",
+      "url": "https://caise26.polimi.it/",
+      "adapter": "genericHtmlDateScanner",
+      "status": "ok",
+      "contentHash": "ce38b402ce3dd187d6a8be9d9c68b098019602694086631404216855a7a7ea4a",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "edoc-2026-research-papers",
+      "url": "https://conf.researchr.org/track/edoc-2026/edoc-2026-papers",
+      "adapter": "researchr",
+      "status": "ok",
+      "contentHash": "c866d3d98c81a5d323d26cbd6f767969c6139ec449919536b40a46c65847b827",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "emse-agentic-se-2026",
+      "url": "https://emsejournal.github.io/special_issues/2026_SI_Agentic_SE.html",
+      "adapter": "emseSpecialIssues",
+      "status": "ok",
+      "contentHash": "0a7cee97391062d62f2e0323f82263a14742743ea19aaf40f43148e30a85e893",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "emse-ease-2026-invite",
+      "url": "https://link.springer.com/collections/jefiadfibb",
+      "adapter": "springerCollections",
+      "status": "ok",
+      "contentHash": "94a31e3174c83e26b9e9dd566b2063bce855bb57dddfffa6a73b26bb0f5217d4",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "er-2026-research-papers",
+      "url": "https://er2026.org/dates.html",
+      "adapter": "genericHtmlDateScanner",
+      "status": "ok",
+      "contentHash": "1b64f740abe1524db21f83d33d00ffab30d21601efe557056ab2b581d2a157cd",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "er-2026-workshop-proposals",
+      "url": "https://er2026.org/dates.html",
+      "adapter": "genericHtmlDateScanner",
+      "status": "ok",
+      "contentHash": "1b64f740abe1524db21f83d33d00ffab30d21601efe557056ab2b581d2a157cd",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "fse-2026-research-papers",
+      "url": "https://conf.researchr.org/track/fse-2026/fse-2026-research-papers",
+      "adapter": "researchr",
+      "status": "ok",
+      "contentHash": "ce3eece02073bee5a5dc50d8289cf534531dbdcd22278f6b2f869fed074b57bb",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "icse-2027-research-track",
+      "url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+      "adapter": "researchr",
+      "status": "ok",
+      "contentHash": "01de0153b6993e763971d9ead72a223ea3726ab94d8a250bd1e2d903ff19830e",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "icsme-2026-research-papers",
+      "url": "https://conf.researchr.org/track/icsme-2026/icsme-2026-papers",
+      "adapter": "researchr",
+      "status": "ok",
+      "contentHash": "54bed73af3e43c2d257b05d641884f5b34547e7347304ae4cc7974b652efe3cd",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "ist-green-software-evolution-2026",
+      "url": "https://www.sciencedirect.com/journal/information-and-software-technology/special-issues",
+      "adapter": "genericHtmlDateScanner",
+      "status": "ok",
+      "contentHash": "dce04149d38fe0960889aa25c0667d9f50643105d51f2d81e4ec41ef7e4b49c7",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "ist-human-factor-genai-2026",
+      "url": "https://www.sciencedirect.com/journal/information-and-software-technology/special-issues",
+      "adapter": "genericHtmlDateScanner",
+      "status": "ok",
+      "contentHash": "dce04149d38fe0960889aa25c0667d9f50643105d51f2d81e4ec41ef7e4b49c7",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "jss-ai-for-software-architecting-2026",
+      "url": "https://www.sciencedirect.com/journal/journal-of-systems-and-software",
+      "adapter": "genericHtmlDateScanner",
+      "status": "ok",
+      "contentHash": "f8dca3e878adfeb893d0a5407bbe40edbba1a2e2ee68fd9d1d88c64ff2986959",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "jss-ai-performance-reliability-sustainability-2026",
+      "url": "https://www.sciencedirect.com/journal/journal-of-systems-and-software",
+      "adapter": "genericHtmlDateScanner",
+      "status": "error",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastError": "403 Forbidden"
+    },
+    {
+      "sourceId": "models-2026-research-papers",
+      "url": "https://conf.researchr.org/track/models-2026/models-2026-research-papers",
+      "adapter": "researchr",
+      "status": "ok",
+      "contentHash": "7047db2217bf90cf1b7b6dcb67d6fb65ffbfe8e3b2cbbe19b1cc5f983b0e33e3",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    },
+    {
+      "sourceId": "models-2026-workshops",
+      "url": "https://conf.researchr.org/track/models-2026/models-2026-workshops",
+      "adapter": "researchr",
+      "status": "ok",
+      "contentHash": "e8cb8730e6895dc8da586ccbbf6b3e790b823e6a98b2184f4fcf4acab9b2f2bb",
+      "firstSeenAt": "2026-05-04T05:53:38.718Z",
+      "lastChangedAt": "2026-05-04T05:53:38.718Z"
+    }
+  ]
 }
