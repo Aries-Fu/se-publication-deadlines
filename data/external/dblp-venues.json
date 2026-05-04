@@ -9,5 +9,672 @@
     "mode": "suggestions_only",
     "note": "This file is generated from DBLP venue search results. Review suggestions manually before changing authoritative YAML data."
   },
-  "items": []
+  "items": [
+    {
+      "venueId": "icse",
+      "name": "International Conference on Software Engineering",
+      "shortName": "ICSE",
+      "type": "conference",
+      "queries": [
+        "ICSE",
+        "International Conference on Software Engineering"
+      ],
+      "bestCandidate": {
+        "title": "International Conference on Software Engineering (ICSE)",
+        "url": "https://dblp.org/db/conf/icse/",
+        "type": "Conference or Workshop",
+        "score": 1,
+        "confidence": 0.9,
+        "confidenceReason": "full name match"
+      },
+      "candidates": [
+        {
+          "title": "Cooperative and Human Aspects of Software Engineering (CHASE)",
+          "url": "https://dblp.org/db/conf/icse-chase/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "Formal Methods in Software Engineering (FormaliSE)",
+          "url": "https://dblp.org/db/conf/icse-formalise/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "ICSE Workshop on Search-driven Development: Users, Infrastructure, Tools and Evaluation (SUITE)",
+          "url": "https://dblp.org/db/conf/icse-suite/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "International Conference on Serviceology (ICServ)",
+          "url": "https://dblp.org/db/conf/icserv/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "International Conference on Software Engineering (ICSE)",
+          "url": "https://dblp.org/db/conf/icse/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "International Conference on Conceptual Modeling (ER)",
+          "url": "https://dblp.org/db/conf/er/",
+          "type": "Conference or Workshop",
+          "score": 60
+        },
+        {
+          "title": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MoDELS)",
+          "url": "https://dblp.org/db/conf/models/",
+          "type": "Conference or Workshop",
+          "score": 40
+        },
+        {
+          "title": "ACM SIGSOFT Conference on the Foundations of Software Engineering (FSE)",
+          "url": "https://dblp.org/db/conf/sigsoft/",
+          "type": "Conference or Workshop",
+          "score": 32
+        },
+        {
+          "title": "International Conference on Advanced Information Systems Engineering (CAiSE)",
+          "url": "https://dblp.org/db/conf/caise/",
+          "type": "Conference or Workshop",
+          "score": 32
+        },
+        {
+          "title": "International Conference for High Performance Computing, Networking, Storage and Analysis (SC)",
+          "url": "https://dblp.org/db/conf/sc/",
+          "type": "Conference or Workshop",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "venueId": "fse",
+      "name": "ACM International Conference on the Foundations of Software Engineering",
+      "shortName": "FSE",
+      "type": "conference",
+      "queries": [
+        "FSE",
+        "ACM International Conference on the Foundations of Software Engineering"
+      ],
+      "bestCandidate": {
+        "title": "ACM SIGSOFT Conference on the Foundations of Software Engineering (FSE)",
+        "url": "https://dblp.org/db/conf/sigsoft/",
+        "type": "Conference or Workshop",
+        "score": 1,
+        "confidence": 0.82,
+        "confidenceReason": "short name appears in title"
+      },
+      "candidates": [
+        {
+          "title": "ACM SIGSOFT Conference on the Foundations of Software Engineering (FSE)",
+          "url": "https://dblp.org/db/conf/sigsoft/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "Fast Software Encryption Workshop (FSE)",
+          "url": "https://dblp.org/db/conf/fse/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "Fundamentals of Software Engineering (FSEN)",
+          "url": "https://dblp.org/db/conf/fsen/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "International Conference on Conceptual Modeling (ER)",
+          "url": "https://dblp.org/db/conf/er/",
+          "type": "Conference or Workshop",
+          "score": 76
+        }
+      ]
+    },
+    {
+      "venueId": "ase",
+      "name": "IEEE/ACM International Conference on Automated Software Engineering",
+      "shortName": "ASE",
+      "type": "conference",
+      "queries": [
+        "ASE",
+        "IEEE/ACM International Conference on Automated Software Engineering"
+      ],
+      "bestCandidate": {
+        "title": "Automated Software Engineering",
+        "url": "https://dblp.org/db/journals/ase/",
+        "type": "Journal",
+        "score": 1,
+        "confidence": 0.9,
+        "confidenceReason": "full name match"
+      },
+      "candidates": [
+        {
+          "title": "ASE BigData &amp; SocialInformatics (ASE BD&amp;SI)",
+          "url": "https://dblp.org/db/conf/ase-bigdata/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "ASE International Conference on Cyber Security (Cyber Security)",
+          "url": "https://dblp.org/db/conf/cybersecurity/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "Automated Software Engineering",
+          "url": "https://dblp.org/db/journals/ase/",
+          "type": "Journal",
+          "score": 1
+        },
+        {
+          "title": "IEEE International Conference on Social Computing (SocialCom)",
+          "url": "https://dblp.org/db/conf/socialcom/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "International Conference on Automated Software Engineering (ASE)",
+          "url": "https://dblp.org/db/conf/kbse/",
+          "type": "Conference or Workshop",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "venueId": "issta",
+      "name": "ACM SIGSOFT International Symposium on Software Testing and Analysis",
+      "shortName": "ISSTA",
+      "type": "conference",
+      "queries": [
+        "ISSTA",
+        "ACM SIGSOFT International Symposium on Software Testing and Analysis"
+      ],
+      "bestCandidate": {
+        "title": "International Symposium on Software Testing and Analysis (ISSTA)",
+        "url": "https://dblp.org/db/conf/issta/",
+        "type": "Conference or Workshop",
+        "score": 1,
+        "confidence": 0.82,
+        "confidenceReason": "short name appears in title"
+      },
+      "candidates": [
+        {
+          "title": "International Symposium on Software Testing and Analysis (ISSTA)",
+          "url": "https://dblp.org/db/conf/issta/",
+          "type": "Conference or Workshop",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "venueId": "models",
+      "name": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems",
+      "shortName": "MODELS",
+      "type": "conference",
+      "queries": [
+        "MODELS",
+        "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems"
+      ],
+      "bestCandidate": {
+        "title": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MoDELS)",
+        "url": "https://dblp.org/db/conf/models/",
+        "type": "Conference or Workshop",
+        "score": 1,
+        "confidence": 0.9,
+        "confidenceReason": "full name match"
+      },
+      "candidates": [
+        {
+          "title": "ACM SIGPLAN Symposium on Principles &amp; Practice of Parallel Programming (PPoPP)",
+          "url": "https://dblp.org/db/conf/ppopp/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (GIS)",
+          "url": "https://dblp.org/db/conf/gis/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "ACM Symposium on Access Control Models and Technologies (SACMAT)",
+          "url": "https://dblp.org/db/conf/sacmat/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "ACM-SIGPLAN Symposium on Programming Language Design and Implementation (PLDI)",
+          "url": "https://dblp.org/db/conf/pldi/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MoDELS)",
+          "url": "https://dblp.org/db/conf/models/",
+          "type": "Conference or Workshop",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "venueId": "er",
+      "name": "International Conference on Conceptual Modeling",
+      "shortName": "ER",
+      "type": "conference",
+      "queries": [
+        "ER",
+        "International Conference on Conceptual Modeling"
+      ],
+      "bestCandidate": {
+        "title": "International Conference on Conceptual Modeling (ER)",
+        "url": "https://dblp.org/db/conf/er/",
+        "type": "Conference or Workshop",
+        "score": 72,
+        "confidence": 0.9,
+        "confidenceReason": "full name match"
+      },
+      "candidates": [
+        {
+          "title": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
+          "url": "https://dblp.org/db/conf/sigir/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "ERCIM Annual Workshop on Constraint Solving and Constraint Logic Programming (CSCLP)",
+          "url": "https://dblp.org/db/conf/csclp/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "ERCIM News",
+          "url": "https://dblp.org/db/journals/ercim/",
+          "type": "Journal",
+          "score": 1
+        },
+        {
+          "title": "ERCIM Workshop on Software Evolution (EVOL)",
+          "url": "https://dblp.org/db/conf/evol/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "Engineering Reality of Virtual Reality (ERVR)",
+          "url": "https://dblp.org/db/conf/ervr/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "International Conference on Conceptual Modeling (ER)",
+          "url": "https://dblp.org/db/conf/er/",
+          "type": "Conference or Workshop",
+          "score": 72
+        },
+        {
+          "title": "International Conference on Advanced Information Systems Engineering (CAiSE)",
+          "url": "https://dblp.org/db/conf/caise/",
+          "type": "Conference or Workshop",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "venueId": "caise",
+      "name": "International Conference on Advanced Information Systems Engineering",
+      "shortName": "CAiSE",
+      "type": "conference",
+      "queries": [
+        "CAiSE",
+        "International Conference on Advanced Information Systems Engineering"
+      ],
+      "bestCandidate": {
+        "title": "International Conference on Advanced Information Systems Engineering (CAiSE)",
+        "url": "https://dblp.org/db/conf/caise/",
+        "type": "Conference or Workshop",
+        "score": 1,
+        "confidence": 0.9,
+        "confidenceReason": "full name match"
+      },
+      "candidates": [
+        {
+          "title": "International Conference on Advanced Information Systems Engineering (CAiSE)",
+          "url": "https://dblp.org/db/conf/caise/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "IEEE/IFIP International Conference on Information Technology for Balanced Automation Systems in Manufacturing and Services (BASYS)",
+          "url": "https://dblp.org/db/conf/ifip5-3/",
+          "type": "Conference or Workshop",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "venueId": "edoc",
+      "name": "IEEE International Enterprise Distributed Object Computing Conference",
+      "shortName": "EDOC",
+      "type": "conference",
+      "queries": [
+        "EDOC",
+        "IEEE International Enterprise Distributed Object Computing Conference"
+      ],
+      "bestCandidate": {
+        "title": "International Conference on Enterprise Design, Operations, and Computing (EDOC)",
+        "url": "https://dblp.org/db/conf/edoc/",
+        "type": "Conference or Workshop",
+        "score": 1,
+        "confidence": 0.82,
+        "confidenceReason": "short name appears in title"
+      },
+      "candidates": [
+        {
+          "title": "International Conference on Enterprise Design, Operations, and Computing (EDOC)",
+          "url": "https://dblp.org/db/conf/edoc/",
+          "type": "Conference or Workshop",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "venueId": "icsme",
+      "name": "IEEE International Conference on Software Maintenance and Evolution",
+      "shortName": "ICSME",
+      "type": "conference",
+      "queries": [
+        "ICSME",
+        "IEEE International Conference on Software Maintenance and Evolution"
+      ],
+      "bestCandidate": {
+        "title": "IEEE International Conference on Software Maintenance and Evolution (ICSME)",
+        "url": "https://dblp.org/db/conf/icsm/",
+        "type": "Conference or Workshop",
+        "score": 1,
+        "confidence": 0.9,
+        "confidenceReason": "full name match"
+      },
+      "candidates": [
+        {
+          "title": "IEEE International Conference on Software Maintenance and Evolution (ICSME)",
+          "url": "https://dblp.org/db/conf/icsm/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "European Conference on Software Maintenance and Reengineering (CSMR)",
+          "url": "https://dblp.org/db/conf/csmr/",
+          "type": "Conference or Workshop",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "venueId": "emse",
+      "name": "Empirical Software Engineering",
+      "shortName": "EMSE",
+      "type": "journal",
+      "queries": [
+        "EMSE",
+        "Empirical Software Engineering"
+      ],
+      "bestCandidate": {
+        "title": "Empirical Software Engineering",
+        "url": "https://dblp.org/db/journals/ese/",
+        "type": "Journal",
+        "score": 3,
+        "confidence": 0.98,
+        "confidenceReason": "exact title match"
+      },
+      "candidates": [
+        {
+          "title": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MoDELS)",
+          "url": "https://dblp.org/db/conf/models/",
+          "type": "Conference or Workshop",
+          "score": 5
+        },
+        {
+          "title": "International Symposium on Empirical Software Engineering and Measurement (ESEM)",
+          "url": "https://dblp.org/db/conf/esem/",
+          "type": "Conference or Workshop",
+          "score": 4
+        },
+        {
+          "title": "Empirical Software Engineering",
+          "url": "https://dblp.org/db/journals/ese/",
+          "type": "Journal",
+          "score": 3
+        },
+        {
+          "title": "International Symposium on Empirical Software Engineering (ISESE)",
+          "url": "https://dblp.org/db/conf/isese/",
+          "type": "Conference or Workshop",
+          "score": 3
+        },
+        {
+          "title": "International Workshop on Empirical Software Engineering in Practice (IWESEP)",
+          "url": "https://dblp.org/db/conf/iwesep/",
+          "type": "Conference or Workshop",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "venueId": "tosem",
+      "name": "ACM Transactions on Software Engineering and Methodology",
+      "shortName": "TOSEM",
+      "type": "journal",
+      "queries": [
+        "TOSEM",
+        "ACM Transactions on Software Engineering and Methodology"
+      ],
+      "bestCandidate": {
+        "title": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
+        "url": "https://dblp.org/db/journals/tosem/",
+        "type": "Journal",
+        "score": 1,
+        "confidence": 0.9,
+        "confidenceReason": "full name match"
+      },
+      "candidates": [
+        {
+          "title": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
+          "url": "https://dblp.org/db/journals/tosem/",
+          "type": "Journal",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "venueId": "jss",
+      "name": "Journal of Systems and Software",
+      "shortName": "JSS",
+      "type": "journal",
+      "queries": [
+        "JSS",
+        "Journal of Systems and Software"
+      ],
+      "bestCandidate": {
+        "title": "Journal of Systems and Software (JSS)",
+        "url": "https://dblp.org/db/journals/jss/",
+        "type": "Journal",
+        "score": 1,
+        "confidence": 0.9,
+        "confidenceReason": "full name match"
+      },
+      "candidates": [
+        {
+          "title": "IEEE Journal of Solid-State Circuits",
+          "url": "https://dblp.org/db/journals/jssc/",
+          "type": "Journal",
+          "score": 1
+        },
+        {
+          "title": "Job Scheduling Strategies for Parallel Processing (JSSPP)",
+          "url": "https://dblp.org/db/conf/jsspp/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "Joint Symposium on Semantic Processing (JSSP)",
+          "url": "https://dblp.org/db/conf/acl-jssp/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "Journal of Systems and Software (JSS)",
+          "url": "https://dblp.org/db/journals/jss/",
+          "type": "Journal",
+          "score": 1
+        },
+        {
+          "title": "Journal of Systems Architecture (JSA)",
+          "url": "https://dblp.org/db/journals/jsa/",
+          "type": "Journal",
+          "score": 10
+        },
+        {
+          "title": "International Journal of Systems and Software Security and Protection (IJSSSP)",
+          "url": "https://dblp.org/db/journals/ijsssp/",
+          "type": "Journal",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "venueId": "tse",
+      "name": "IEEE Transactions on Software Engineering",
+      "shortName": "TSE",
+      "type": "journal",
+      "queries": [
+        "TSE",
+        "IEEE Transactions on Software Engineering"
+      ],
+      "bestCandidate": {
+        "title": "IEEE Transactions on Software Engineering (TSE)",
+        "url": "https://dblp.org/db/journals/tse/",
+        "type": "Journal",
+        "score": 1,
+        "confidence": 0.9,
+        "confidenceReason": "full name match"
+      },
+      "candidates": [
+        {
+          "title": "IEEE Transactions on Software Engineering (TSE)",
+          "url": "https://dblp.org/db/journals/tse/",
+          "type": "Journal",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "venueId": "ist",
+      "name": "Information and Software Technology",
+      "shortName": "IST",
+      "type": "journal",
+      "queries": [
+        "IST",
+        "Information and Software Technology"
+      ],
+      "bestCandidate": {
+        "title": "ISTE International Conference on Transdisciplinary Engineering (TE)",
+        "url": "https://dblp.org/db/conf/ispe/",
+        "type": "Conference or Workshop",
+        "score": 1,
+        "confidence": 0.82,
+        "confidenceReason": "short name appears in title"
+      },
+      "candidates": [
+        {
+          "title": "ISTE International Conference on Transdisciplinary Engineering (TE)",
+          "url": "https://dblp.org/db/conf/ispe/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "International Conference on Imaging Systems and Techniques (IST)",
+          "url": "https://dblp.org/db/conf/ist/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "International Symposium on Technology and Society (ISTAS)",
+          "url": "https://dblp.org/db/conf/istas/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "International Symposium on Telecommunication Technologies (ISTT)",
+          "url": "https://dblp.org/db/conf/istt/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "International Symposium on Telecommunications (IST)",
+          "url": "https://dblp.org/db/conf/istel/",
+          "type": "Conference or Workshop",
+          "score": 1
+        },
+        {
+          "title": "International Joint Conferences on Computer, Information, and Systems Sciences, and Engineering (CISSE)",
+          "url": "https://dblp.org/db/conf/cisse/",
+          "type": "Conference or Workshop",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "venueId": "sosym",
+      "name": "Software and Systems Modeling",
+      "shortName": "SoSyM",
+      "type": "journal",
+      "queries": [
+        "SoSyM",
+        "Software and Systems Modeling"
+      ],
+      "bestCandidate": {
+        "title": "Software and Systems Modeling",
+        "url": "https://dblp.org/db/journals/sosym/",
+        "type": "Journal",
+        "score": 1,
+        "confidence": 0.98,
+        "confidenceReason": "exact title match"
+      },
+      "candidates": [
+        {
+          "title": "Software and Systems Modeling",
+          "url": "https://dblp.org/db/journals/sosym/",
+          "type": "Journal",
+          "score": 1
+        },
+        {
+          "title": "International Conference on Conceptual Modeling (ER)",
+          "url": "https://dblp.org/db/conf/er/",
+          "type": "Conference or Workshop",
+          "score": 21
+        },
+        {
+          "title": "International Conference on Advanced Information Systems Engineering (CAiSE)",
+          "url": "https://dblp.org/db/conf/caise/",
+          "type": "Conference or Workshop",
+          "score": 20
+        },
+        {
+          "title": "ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MoDELS)",
+          "url": "https://dblp.org/db/conf/models/",
+          "type": "Conference or Workshop",
+          "score": 17
+        },
+        {
+          "title": "International Conference on Software and Systems Process (ICSSP)",
+          "url": "https://dblp.org/db/conf/ispw/",
+          "type": "Conference or Workshop",
+          "score": 8
+        }
+      ]
+    }
+  ]
 }
